@@ -1,6 +1,10 @@
 import sys
 import csv
 
+
+elo_teams = ['Aachen', 'Aalen', 'Aberdeen', 'Academica', 'Adanaspor', 'Ahlen', 'Ajaccio', 'Ajax', 'Akhisar', 'Alanyaspor', 'Alaves', 'Albinoleffe', 'Alkmaar', 'Almeria', 'Amiens', 'Ancona', 'Anderlecht', 'Angers', 'Ankaraguecue', 'Antalyaspor', 'Antwerp', 'Arles-Avignon', 'Arouca', 'Arsenal', 'Ascoli', 'Aston Villa', 'Atalanta', 'Atletico', 'Aue', 'Augsburg', 'Auxerre', 'Avellino', 'Aves', 'Barcelona', 'Bari', 'Barnsley', 'Bastia', 'Bayern', 'Beerschot AC', 'Beira Mar', 'Belenenses', 'Benevento', 'Benfica', 'Bergen', 'Besiktas', 'Betis', 'Beveren', 'Bielefeld', 'Bilbao', 'Birmingham', 'Blackburn', 'Blackpool', 'Boavista', 'Bochum', 'Bologna', 'Bolton', 'Bordeaux', 'Boulogne', 'Bournemouth', 'Braga', 'Braunschweig', 'Breda', 'Brentford', 'Brescia', 'Brest', 'Brighton', 'Bristol City', 'Brugge', 'Bucaspor', 'Bueyueksehir', 'Burnley', 'Bursaspor', 'Burton', 'CA Bastia', 'Caen', 'Cagliari', 'Cambuur', 'Cardiff', 'Carpi', 'Catania', 'Celta', 'Celtic', 'Cercle Brugge', 'Cesena', 'Charleroi', 'Charlton', 'Chateauroux', 'Chaves', 'Chelsea', 'Chievo', 'Cittadella', 'Clermont', 'Como', 'Cordoba', 'Cottbus', 'Coventry', 'Cremonese', 'Creteil', 'Crotone', 'Crystal Palace', 'Darmstadt', 'De Graafschap', 'Den Haag', 'Denizlispor', 'Depor', 'Derby', 'Dijon', 'Diyarbakirspor', 'Doncaster', 'Dordrecht', 'Dortmund', 'Dresden', 'Duesseldorf', 'Duisburg', 'Dundee', 'Dundee United', 'Dunfermline', 'Eibar', 'Elche', 'Empoli', 'Eskisehirspor', 'Espanyol', 'Estoril', 'Eupen', 'Everton', 'Evian TG', 'Excelsior', 'FSV Frankfurt', 'Falkirk', 'Feirense', 'Fenerbahce', 'Feyenoord', 'Fiorentina', 'Foggia', 'Frankfurt', 'Freiburg', 'Frosinone', 'Fuerth', 'Fulham', 'Galatasaray', 'Gallipoli', 'Gaziantepspor', 'Genclerbirligi', 'Genk', 'Genoa', 'Gent', 'Getafe', 'Gijon', 'Gil Vicente', 'Go Ahead Eagles', 'Granada', 'Grenoble', 'Groningen', 'Grosseto', 'Gubbio', 'Guimaraes', 'Guingamp', 'Hamburg', 'Hamilton', 'Hannover', 'Hearts', 'Heerenveen', 'Heidenheim', 'Heracles', 'Hercules', 'Hertha', 'Hibernian', 'Hoffenheim', 'Huddersfield', 'Hull', 'Ingolstadt', 'Inter', 'Inverness', 'Ipswich', 'Istres', 'Juve Stabia', 'Juventus', 'Karabuekspor', 'Karlsruhe', 'Kasimpasa', 'Kayseri', 'Kilmarnock', 'Koblenz', 'Koeln', 'Konyaspor', 'Kortrijk', 'Las Palmas', 'Latina', 'Lautern', 'Laval', 'Lazio', 'Le Havre', 'Le Mans', 'Lecce', 'Leeds', 'Leganes', 'Leicester', 'Leiria', 'Leixoes', 'Lens', 'Leuven', 'Levante', 'Leverkusen', 'Lierse', 'Lille', 'Liverpool', 'Livorno', 'Lokeren', 'Lorient', 'Lyon', 'Mainz', 'Malaga', 'Mallorca', 'Man City', 'Man United', 'Manisaspor', 'Mantova', 'Maritimo', 'Marseille', 'Mechelen', 'Mersin Idman', 'Metz', 'Middlesbrough', 'Milan', 'Millwall', 'Modena', 'Monaco', 'Montpellier', 'Moreirense', 'Motherwell', 'Mouscron', 'Muenchen 60', 'Nacional', 'Nancy', 'Nantes', 'Napoli', 'Naval', 'Newcastle', 'Nice', 'Nijmegen', 'Nimes', 'Niort', 'Nocerina', 'Norwich', 'Novara', 'Nuernberg', 'Oberhausen', 'Olhanense', 'Oostende', 'Orduspor', 'Orleans', 'Osasuna', 'Osnabrueck', 'PSV', 'Pacos Ferreira', 'Paderborn', 'Padova', 'Palermo', 'Paris FC', 'Paris SG', 'Parma', 'Partick', 'Perugia', 'Pescara', 'Peterboro', 'Piacenza', 'Pisa', 'Plymouth', 'Portimonense', 'Porto', 'Portogruaro', 'Portsmouth', 'Preston', 'Pro Vercelli', 'QPR', 'RB Leipzig', 'Rangers', 'Rayo Vallecano', 'Reading', 'Real Madrid', 'Red Star', 'Regensburg', 'Reggina', 'Reims', 'Rennes', 'Rio Ave', 'Rizespor', 'Roda', 'Roeselare', 'Roma', 'Ross County', 'Rostock', 'Rotherham', 'Saint-Etienne', 'Salernitana', 'Sampdoria', 'Samsunspor', 'Sandhausen', 'Santander', 'Sassuolo', 'Schalke', 'Scunthorpe', 'Sedan', 'Setubal', 'Sevilla', 'Sheffield United', 'Sheffield Weds', 'Siena', 'Sivasspor', 'Sochaux', 'Sociedad', 'Southampton', 'Spal', 'Sparta Rotterdam', 'Spezia', 'Sporting', 'St Johnstone', 'St Mirren', 'St Pauli', 'St Truiden', 'Standard', 'Stoke', 'Strasbourg', 'Stuttgart', 'Sunderland', 'Swansea', 'Tenerife', 'Ternana', 'Tondela', 'Torino', 'Tottenham', 'Toulouse', 'Tours', 'Trabzonspor', 'Trapani', 'Triestina', 'Troyes', 'Twente', 'Udinese', 'Union Berlin', 'Utrecht', 'Valencia', 'Valenciennes', 'Valladolid', 'Vannes', 'Varese', 'Venezia', 'Venlo', 'Verona', 'Vicenza', 'Villarreal', 'Virtus Lanciano', 'Vitesse', 'Waalwijk', 'Watford', 'Werder', 'West Brom', 'West Ham', 'Westerlo', 'Wigan', 'Willem II', 'Wolfsburg', 'Wolves', 'Xerez', 'Yeovil', 'Zaragoza', 'Zulte Waregem', 'Zwolle']
+elo_teams = set(elo_teams)
+
 elo_ratings = dict()
 team_elo_map = {'Ajaccio GFCO' : 'Ajaccio', 'Albacete': None,
  'Alcorcon' : None,
@@ -682,7 +686,11 @@ for num in range(1):
                       }
 
         #elo ratings
-        dates = team_elo_map[game['HomeTeam']]
+        dates = ''
+        if game['HomeTeam'] not in elo_teams:
+            dates = team_elo_map[game['HomeTeam']]
+        else:
+            dates = team_elo_map[game['HomeTeam']]
         date = game['Date']
         index = find_elo_date(date, dates)
         game_state['h_elo'] = dates[index][0]
@@ -754,10 +762,10 @@ for num in range(1):
                 game_state['a_scored_a'] += int(pre_game['FTAG'])
                 game_state['a_conced'] += int(pre_game['FTHG'])
                 game_state['a_conced_a'] += int(pre_game['FTHG'])
-                #game_state['a_shots'] += int(pre_game['AS'])
-                #game_state['a_shots_a'] += int(pre_game['AS'])
-                #game_state['a_shots_target'] += int(pre_game['AST'])
-                #game_state['a_shots_target_a'] += int(pre_game['AST'])
+                game_state['a_shots'] += int(pre_game['AS'])
+                game_state['a_shots_a'] += int(pre_game['AS'])
+                game_state['a_shots_target'] += int(pre_game['AST'])
+                game_state['a_shots_target_a'] += int(pre_game['AST'])
 
                 if pre_game['FTAG'] == '0':
                     game_state['a_fail'] += 1
@@ -784,8 +792,8 @@ for num in range(1):
                 game_state['h_played'] += 1
                 game_state['h_scored'] += int(pre_game['FTAG'])
                 game_state['h_conced'] += int(pre_game['FTHG'])
-                #game_state['h_shots'] += int(pre_game['AS'])
-                #game_state['h_shots_target'] += int(pre_game['AST'])
+                game_state['h_shots'] += int(pre_game['AS'])
+                game_state['h_shots_target'] += int(pre_game['AST'])
 
                 if pre_game['FTAG'] == '0':
                     game_state['h_fail'] += 1
@@ -805,8 +813,8 @@ for num in range(1):
                 game_state['a_played'] += 1
                 game_state['a_scored'] += int(pre_game['FTHG'])
                 game_state['a_conced'] += int(pre_game['FTAG'])
-                #game_state['a_shots'] += int(pre_game['HS'])
-                #game_state['a_shots_target'] += int(pre_game['HST'])
+                game_state['a_shots'] += int(pre_game['HS'])
+                game_state['a_shots_target'] += int(pre_game['HST'])
 
                 if pre_game['FTHG'] == '0':
                     game_state['a_fail'] += 1
