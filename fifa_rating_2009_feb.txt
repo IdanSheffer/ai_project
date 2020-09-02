@@ -566,23 +566,6 @@ Nîmes Olympique
  French Ligue 2 (2)
 59	59	57	56	€500K	29	17
 
-
-NAME	
-OVA
-ATT
-MID
-DEF
-TRANSFER BUDGET
-PLAYERS
-HITS	NAME	
-OVA
-ATT
-MID
-DEF
-TRANSFER BUDGET
-PLAYERS
-HITS
-	
 1. FC Nürnberg
  German 2. Bundesliga (2)
 72	70	65	67	€3.5M	26	16
