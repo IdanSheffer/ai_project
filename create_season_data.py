@@ -119,19 +119,19 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'Albinoleffe' : 'UC AlbinoLeffe',
  'Alcorcon' : 'AD Alcorcón',
  'Alcoyano': 'CD Alcoyano',
- 'Alicante' : None,
+ 'Alicante' : 'Alicante CF',
  'Almeria' : 'UD Almería',
  'Amiens' : 'Amiens SC',
  'Ancona' : 'Ancona',
  'Angers' : 'Angers SCO',
- 'Arezzo' : None,
+ 'Arezzo' : 'Arezzo',
  'Arles' : 'AC Arles Avignon',
  'Arsenal' : 'Arsenal',
  'Ascoli' : 'Ascoli',
  'Aston Villa' : 'Aston Villa',
  'Atalanta' : 'Atalanta',
  'Ath Bilbao' : 'Athletic Club de Bilbao',
- 'Ath Bilbao B' : None,
+ 'Ath Bilbao B' : 'Bilbao Athletic',
  'Ath Madrid' : 'Atlético Madrid',
  'Augsburg' : 'FC Augsburg',
  'Auxerre' : 'AJ Auxerre',
@@ -162,11 +162,11 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'Brest' : 'Stade Brestois 29 ',
  'Brighton' : 'Brighton & Hove Albion',
  'Bristol City' : 'Bristol City',
- 'Burghausen' : None,
+ 'Burghausen' : 'Wacker Burghausen',
  'Burnley' : 'Burnley',
  'Burton' : 'Burton Albion',
  'CA Bastia' : 'Sporting Club de Bastia',
- 'CZ Jena' : None,
+ 'CZ Jena' : 'FC Carl Zeiss Jena',
  'Cadiz' : 'Cádiz CF',
  'Caen' : 'Stade Malherbe Caen',
  'Cagliari' : 'Cagliari',
@@ -184,7 +184,7 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'Chelsea' : 'Chelsea',
  'Chievo' : 'Chievo Verona',
  'Cittadella' : 'Cittadella',
- 'Ciudad de Murcia' : None,
+ 'Ciudad de Murcia' : 'CF Ciudad de Murcia',
  'Clermont' : 'Clermont Foot 63',
  'Colchester' : None,
  'Como' : 'Como',
@@ -215,7 +215,7 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'Evian Thonon Gaillard' : 'Évian Thonon Gaillard FC',
  'Extremadura UD' : 'Extremadura UD',
  'FC Koln' : 'FC Köln',
- 'Ferrol' : None,
+ 'Ferrol' : 'Racing de Ferrol',
  'Fiorentina' : 'Fiorentina',
  'Foggia' : 'Foggia',
  'Fortuna Dusseldorf' : 'Fortuna Düsseldorf',
@@ -236,7 +236,7 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'Grosseto' : 'Grosseto',
  'Guadalajara' : 'CD Guadalajara',
  'Gubbio' : 'Gubbio',
- 'Gueugnon' : None,
+ 'Gueugnon' : 'FC Gueugnon',
  'Guingamp' : 'En Avant de Guingamp',
  'Hamburg' : 'Hamburger SV',
  'Hannover' : 'Hannover 96',
@@ -274,7 +274,7 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'Leonesa' : 'Cultural Leonesa',
  'Levante' : 'Levante UD',
 'Leverkusen' : 'Bayer 04 Leverkusen',
- 'Libourne': None,
+ 'Libourne': 'FC Libourne-Saint-Seurin',
  'Lille' : 'LOSC Lille',
  'Liverpool' : 'Liverpool',
  'Livorno' : 'Livorno',
@@ -295,7 +295,7 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
 'Man United': 'Manchester United',
  'Mantova' : 'Mantova',
  'Marseille' : 'Olympique de Marseille',
- 'Messina' : None,
+ 'Messina' : 'Messina',
  'Metz' : 'FC Metz',
  'Middlesbrough' : 'Middlesbrough',
  'Milan' : 'Milan',
@@ -321,7 +321,7 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'Numancia' : 'CD Numancia',
  'Nurnberg' : 'FC Nürnberg',
  'Oberhausen' : 'Rot-Weiß Oberhausen',
- 'Offenbach' : None,
+ 'Offenbach' : 'Kickers Offenbach',
  'Orleans' : 'US Orléans Loiret Football',
  'Osasuna' : 'CA Osasuna',
  'Osnabruck' : 'VfL Osnabrück',
@@ -338,7 +338,7 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'Piacenza' : 'Piacenza',
  'Pisa' : 'Pisa',
  'Plymouth' : ' Plymouth Argyle',
- 'Poli Ejido' : None,
+ 'Poli Ejido' : 'C.P. Ejido',
  'Ponferradina' : 'SD Ponferradina',
  'Pordenone' : 'Pordenone',
  'Portogruaro' : 'Portogruaro Calcio ASD',
@@ -348,7 +348,7 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'QPR' : 'Queens Park Rangers',
  'Quevilly Rouen' : 'US Quevilly Rouen Métropole',
  'RB Leipzig' : 'RB Leipzig',
- 'Ravenna' : None,
+ 'Ravenna' : 'Ravenna',
  'Rayo Majadahonda' : 'CF Rayo Majadahonda',
  'Reading' : 'Reading',
  'Real Madrid' : 'Real Madrid',
@@ -361,7 +361,7 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'Reims' : 'Stade de Reims',
  'Rennes' : 'Stade Rennais FC ',
  'Reus Deportiu' : 'CF Reus Deportiu',
- 'Rimini' : None,
+ 'Rimini' : 'Rimini',
  'Rodez' : 'Rodez Aveyron Football',
  'Roma' : 'Roma',
  'Rotherham' : 'Rotherham United',
@@ -386,7 +386,7 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'Sochaux' : 'FC Sochaux-Montbéliard',
  'Sociedad' : 'Real Sociedad',
  'Southampton' : 'Southampton',
- 'Southend' : None,
+ 'Southend' : 'Southend United',
  'Sp Gijon' : 'Real Sporting de Gijón',
  'Spal' : 'SPAL',
  'Spezia' : 'Spezia',
@@ -404,19 +404,19 @@ team_fifa_map ={'Aachen' : 'Alemannia Aachen',
  'Toulouse' : 'Toulouse Football Club',
  'Tours' : 'Tours FC',
  'Trapani' : 'Trapani',
-'Treviso': None,
+'Treviso': 'Treviso',
  'Triestina' : 'Triestina',
  'Troyes' : 'ESTAC Troyes',
  'UCAM Murcia' : 'Real Murcia Club de Fútbol',
  'Udinese' : 'Udinese', 'Union Berlin' : 'FC Union Berlin',
- 'Unterhaching' : None,
+ 'Unterhaching' : 'pVgg Unterhaching',
  'Valencia' : 'Valencia CF',
  'Valenciennes' : 'Valenciennes FC',
  'Valladolid' : 'Real Valladolid CF',
  'Vallecano' : 'Rayo Vallecano',
  'Vannes' : 'Vannes OC',
 'Varese' : 'Varese',
- 'Vecindario' : None,
+ 'Vecindario' : 'UD Vecindario',
  'Venezia' : 'Venezia FC',
  'Verona' : 'Chievo Verona',
  'Vicenza' : 'Vicenza',
@@ -447,6 +447,8 @@ with open(r'C:\Users\Idan\PycharmProjects\project_ai\elo_scores.csv', encoding="
                 elo_ratings[club] = [data]
             else:
                 elo_ratings[club].append(data)
+    for club in elo_ratings.values():
+        club.sort(key=lambda x: x[1])
 
 
 def find_elo_date(date, elo_ratings):
@@ -461,8 +463,12 @@ league_names_skip = {'English Premier League (1)', 'French Ligue 1 (1)', 'German
                      'French Ligue 2 (2)', 'Italian Serie B (2)', 'German 2. Bundesliga (2)',
                      'Spanish Segunda División (2)'}
 
-
-
+fifa_2006_aug_ratings = dict()
+fifa_2007_feb_ratings = dict()
+fifa_2007_aug_ratings = dict()
+fifa_2008_feb_ratings = dict()
+fifa_2008_aug_ratings = dict()
+fifa_2009_feb_ratings = dict()
 fifa_2009_aug_ratings = dict()
 fifa_2010_feb_ratings = dict()
 fifa_2010_aug_ratings = dict()
@@ -504,6 +510,25 @@ def fifa_create_ratings(ratings, dates):
         dates[names[i]] = rating_number[i]
 
 
+with open(r'C:\Users\Idan\PycharmProjects\project_ai\fifa_rating_2006_aug.txt', encoding="utf8") as fifa_file:
+ ratings = fifa_file.read().splitlines()
+ fifa_create_ratings(ratings, fifa_2006_aug_ratings)
+
+with open(r'C:\Users\Idan\PycharmProjects\project_ai\fifa_rating_2007_aug.txt', encoding="utf8") as fifa_file:
+ ratings = fifa_file.read().splitlines()
+ fifa_create_ratings(ratings, fifa_2007_aug_ratings)
+
+with open(r'C:\Users\Idan\PycharmProjects\project_ai\fifa_rating_2008_aug.txt', encoding="utf8") as fifa_file:
+ ratings = fifa_file.read().splitlines()
+ fifa_create_ratings(ratings, fifa_2008_aug_ratings)
+
+with open(r'C:\Users\Idan\PycharmProjects\project_ai\fifa_rating_2009_aug.txt', encoding="utf8") as fifa_file:
+ ratings = fifa_file.read().splitlines()
+ fifa_create_ratings(ratings, fifa_2009_aug_ratings)
+
+with open(r'C:\Users\Idan\PycharmProjects\project_ai\fifa_rating_2009_aug.txt', encoding="utf8") as fifa_file:
+ ratings = fifa_file.read().splitlines()
+ fifa_create_ratings(ratings, fifa_2009_aug_ratings)
 
 with open(r'C:\Users\Idan\PycharmProjects\project_ai\fifa_rating_2009_aug.txt', encoding="utf8") as fifa_file:
     ratings = fifa_file.read().splitlines()
@@ -550,6 +575,17 @@ with open(r'C:\Users\Idan\PycharmProjects\project_ai\fifa_rating_2019_aug.txt', 
     ratings = fifa_file.read().splitlines()
     fifa_create_ratings(ratings, fifa_2019_aug_ratings)
 
+with open(r'C:\Users\Idan\PycharmProjects\project_ai\fifa_rating_2007_feb.txt', encoding="utf8") as fifa_file:
+ ratings = fifa_file.read().splitlines()
+ fifa_create_ratings(ratings, fifa_2007_feb_ratings)
+
+with open(r'C:\Users\Idan\PycharmProjects\project_ai\fifa_rating_2008_feb.txt', encoding="utf8") as fifa_file:
+ ratings = fifa_file.read().splitlines()
+ fifa_create_ratings(ratings, fifa_2008_feb_ratings)
+
+with open(r'C:\Users\Idan\PycharmProjects\project_ai\fifa_rating_2009_feb.txt', encoding="utf8") as fifa_file:
+ ratings = fifa_file.read().splitlines()
+ fifa_create_ratings(ratings, fifa_2009_feb_ratings)
 
 with open(r'C:\Users\Idan\PycharmProjects\project_ai\fifa_rating_2010_feb.txt', encoding="utf8") as fifa_file:
     ratings = fifa_file.read().splitlines()
@@ -688,13 +724,16 @@ for num in range(1):
         #elo ratings
         dates = ''
         if game['HomeTeam'] not in elo_teams:
-            dates = team_elo_map[game['HomeTeam']]
+            dates = elo_ratings[game['HomeTeam']]
         else:
-            dates = team_elo_map[game['HomeTeam']]
+            dates = elo_ratings[team_elo_map[game['HomeTeam']]]
         date = game['Date']
         index = find_elo_date(date, dates)
         game_state['h_elo'] = dates[index][0]
-        dates = team_elo_map[game['AwayTeam']]
+        if game['AwayTeam'] not in elo_teams:
+            dates = elo_ratings[game['AwayTeam']]
+        else:
+            dates = elo_ratings[team_elo_map[game['AwayTeam']]]
         date = game['Date']
         index = find_elo_date(date, dates)
         game_state['a_elo'] = dates[index][0]
