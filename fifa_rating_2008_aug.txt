@@ -1,0 +1,812 @@
+Chelsea
+ English Premier League (1)
+84	80	78	79	€100M	30	378
+	
+Manchester United
+ English Premier League (1)
+84	76	76	75	€85M	34	463
+	
+Arsenal
+ English Premier League (1)
+81	78	74	78	€45M	30	676
+	
+Liverpool
+ English Premier League (1)
+81	76	72	74	€60M	33	555
+	
+Manchester City
+ English Premier League (1)
+79	75	71	70	€40M	35	279
+	
+Tottenham Hotspur
+ English Premier League (1)
+79	78	75	74	€40M	30	253
+	
+Aston Villa
+ English Premier League (1)
+78	76	71	72	€37.5M	31	96
+	
+Everton
+ English Premier League (1)
+78	67	70	72	€25M	35	347
+	
+Blackburn Rovers
+ English Premier League (1)
+76	68	68	70	€27.5M	35	39
+	
+Newcastle United
+ English Premier League (1)
+76	71	69	69	€45M	35	85
+	
+West Ham United
+ English Premier League (1)
+76	67	69	66	€37.5M	34	95
+	
+Portsmouth
+ English Premier League (1)
+76	75	69	73	€35M	30	46
+	
+Sunderland
+ English Premier League (1)
+75	70	70	66	€15M	35	63
+	
+Bolton Wanderers
+ English Premier League (1)
+74	69	71	69	€15M	29	31
+	
+Middlesbrough
+ English Premier League (1)
+74	70	69	66	€15M	29	42
+	
+Fulham
+ English Premier League (1)
+74	74	69	66	€11M	31	108
+	
+Wigan Athletic
+ English Premier League (1)
+73	74	67	72	€15M	23	26
+	
+West Bromwich Albion
+ English Premier League (1)
+71	64	69	69	€7.5M	28	79
+	
+Hull City
+ English Premier League (1)
+71	61	60	62	€4M	35	47
+	
+Stoke City
+ English Premier League (1)
+70	69	62	63	€6M	35	61
+	
+Olympique Lyonnais
+ French Ligue 1 (1)
+80	76	72	71	€55M	33	184
+	
+FC Girondins de Bordeaux
+ French Ligue 1 (1)
+77	73	72	75	€15M	24	38
+	
+Olympique de Marseille
+ French Ligue 1 (1)
+77	73	71	70	€30M	33	103
+	
+AS Saint-Étienne
+ French Ligue 1 (1)
+75	67	66	71	€9M	32	55
+	
+Paris Saint-Germain
+ French Ligue 1 (1)
+74	70	68	70	€13M	27	220
+	
+LOSC Lille
+ French Ligue 1 (1)
+73	67	62	58	€13M	32	298
+	
+Stade Rennais FC
+ French Ligue 1 (1)
+73	65	68	62	€10M	33	153
+	
+AS Monaco
+ French Ligue 1 (1)
+72	67	68	66	€25M	35	128
+	
+AS Nancy Lorraine
+ French Ligue 1 (1)
+71	65	66	65	€4M	29	9
+	
+Le Mans FC
+ French Ligue 1 (1)
+71	69	68	66	€5.5M	28	2
+	
+FC Sochaux-Montbéliard
+ French Ligue 1 (1)
+71	63	64	68	€5M	29	8
+	
+Toulouse Football Club
+ French Ligue 1 (1)
+70	66	63	64	€5M	30	83
+	
+FC Nantes
+ French Ligue 1 (1)
+70	65	66	61	€5M	35	23
+	
+OGC Nice
+ French Ligue 1 (1)
+70	67	64	63	€5M	28	46
+	
+Stade Malherbe Caen
+ French Ligue 1 (1)
+70	65	66	65	€1M	27	9
+	
+AJ Auxerre
+ French Ligue 1 (1)
+69	62	62	60	€10M	35	15
+	
+Valenciennes FC
+ French Ligue 1 (1)
+69	68	61	63	€2.5M	32	5
+	
+Grenoble Foot 38
+ French Ligue 1 (1)
+68	62	63	63	€500K	33	4
+	
+Le Havre AC
+ French Ligue 1 (1)
+68	61	60	62	€500K	35	5
+	
+FC Lorient
+ French Ligue 1 (1)
+68	64	64	60	€2.5M	30	18
+	
+FC Bayern München
+ German 1. Bundesliga (1)
+82	75	76	77	€60M	29	335
+	
+FC Schalke 04
+ German 1. Bundesliga (1)
+79	79	71	76	€35M	29	107
+	
+SV Werder Bremen
+ German 1. Bundesliga (1)
+79	77	73	72	€30M	28	105
+	
+Hamburger SV
+ German 1. Bundesliga (1)
+77	71	71	72	€13M	30	37
+	
+Bayer 04 Leverkusen
+ German 1. Bundesliga (1)
+77	70	73	71	€10M	28	153
+	
+VfB Stuttgart
+ German 1. Bundesliga (1)
+77	70	69	69	€12M	29	42
+	
+Borussia Dortmund
+ German 1. Bundesliga (1)
+76	73	73	70	€15M	30	216
+	
+VfL Wolfsburg
+ German 1. Bundesliga (1)
+76	68	68	70	€20M	35	61
+	
+Hannover 96
+ German 1. Bundesliga (1)
+75	75	70	69	€5M	27	32
+	
+Eintracht Frankfurt
+ German 1. Bundesliga (1)
+74	76	70	67	€7.5M	28	54
+	
+Hertha BSC
+ German 1. Bundesliga (1)
+74	70	66	66	€10M	30	54
+	
+VfL Bochum 1848
+ German 1. Bundesliga (1)
+73	70	68	68	€3M	30	9
+	
+Borussia Mönchengladbach
+ German 1. Bundesliga (1)
+72	69	69	66	€6.5M	30	66
+	
+1. FC Köln
+ German 1. Bundesliga (1)
+72	68	61	67	€10M	31	39
+	
+Karlsruher SC
+ German 1. Bundesliga (1)
+71	69	66	67	€3M	25	5
+	
+TSG 1899 Hoffenheim
+ German 1. Bundesliga (1)
+70	72	65	66	€10M	25	50
+	
+DSC Arminia Bielefeld
+ German 1. Bundesliga (1)
+70	68	67	64	€3.5M	29	7
+	
+FC Energie Cottbus
+ German 1. Bundesliga (1)
+69	65	67	65	€3.5M	32	2
+
+Inter
+ Italian Serie A (1)
+83	81	79	78	€80M	31	259
+	
+Juventus
+ Italian Serie A (1)
+82	84	75	76	€60M	32	267
+	
+Milan
+ Italian Serie A (1)
+82	81	78	75	€70M	28	392
+	
+Roma
+ Italian Serie A (1)
+81	76	79	80	€45M	26	132
+	
+Fiorentina
+ Italian Serie A (1)
+79	76	73	74	€30M	35	70
+	
+Sampdoria
+ Italian Serie A (1)
+77	72	75	74	€8M	25	30
+	
+Udinese
+ Italian Serie A (1)
+77	71	69	71	€8M	35	33
+	
+Lazio
+ Italian Serie A (1)
+76	74	75	71	€10M	30	74
+	
+Napoli
+ Italian Serie A (1)
+76	75	68	71	€15M	27	138
+	
+Palermo
+ Italian Serie A (1)
+76	72	73	67	€10M	26	5
+	
+Genoa
+ Italian Serie A (1)
+75	76	70	69	€6M	29	19
+	
+Atalanta
+ Italian Serie A (1)
+74	66	70	72	€6M	27	142
+	
+Torino
+ Italian Serie A (1)
+74	71	72	66	€8M	28	42
+	
+Catania
+ Italian Serie A (1)
+73	71	71	73	€4M	30	3
+	
+Cagliari
+ Italian Serie A (1)
+73	71	65	65	€4M	32	41
+	
+Chievo Verona
+ Italian Serie A (1)
+73	69	68	69	€4M	30	13
+	
+Siena
+ Italian Serie A (1)
+72	68	67	68	€3M	32	1
+	
+Lecce
+ Italian Serie A (1)
+71	67	66	66	€4M	32	13
+	
+Urbs Reggina 1914
+ Italian Serie A (1)
+71	68	70	64	€4M	28	3
+	
+Bologna
+ Italian Serie A (1)
+70	66	65	68	€6M	29	29
+
+FC Barcelona
+ Spain Primera Division (1)
+84	76	77	81	€75M	27	606
+	
+Real Madrid
+ Spain Primera Division (1)
+83	81	81	79	€85M	24	368
+	
+Valencia CF
+ Spain Primera Division (1)
+80	80	78	76	€20M	27	112
+	
+Sevilla FC
+ Spain Primera Division (1)
+79	82	76	75	€25M	26	157
+	
+Villarreal CF
+ Spain Primera Division (1)
+79	78	79	76	€16.5M	24	94
+	
+Atlético Madrid
+ Spain Primera Division (1)
+79	79	74	74	€25M	29	151
+	
+Getafe CF
+ Spain Primera Division (1)
+76	75	73	74	€2.5M	29	44
+	
+Real Betis
+ Spain Primera Division (1)
+75	75	70	68	€7M	32	79
+	
+RCD Espanyol
+ Spain Primera Division (1)
+75	72	71	72	€14M	27	85
+	
+RCD Mallorca
+ Spain Primera Division (1)
+75	76	73	74	€3M	27	36
+	
+Racing Santander
+ Spain Primera Division (1)
+75	67	70	69	€3.5M	27	7
+	
+Deportivo de La Coruña
+ Spain Primera Division (1)
+75	72	73	68	€8M	34	22
+	
+UD Almería
+ Spain Primera Division (1)
+74	73	72	67	€1.3M	25	31
+	
+RC Recreativo de Huelva
+ Spain Primera Division (1)
+73	72	67	68	€2M	33	1
+	
+Athletic Club de Bilbao
+ Spain Primera Division (1)
+73	66	69	67	€1.5M	30	56
+	
+Real Valladolid CF
+ Spain Primera Division (1)
+73	73	72	72	€1.3M	27	41
+	
+CA Osasuna
+ Spain Primera Division (1)
+73	73	69	69	€6.5M	28	29
+	
+Málaga CF
+ Spain Primera Division (1)
+70	69	67	65	€2.5M	28	30
+	
+CD Numancia
+ Spain Primera Division (1)
+70	71	70	68	€1.3M	24	8
+	
+Real Sporting de Gijón
+ Spain Primera Division (1)
+68	65	65	63	€1.3M	30	12
+
+Reading
+ English League Championship (2)
+70	65	66	60	€9M	33	33
+	
+Birmingham City
+ English League Championship (2)
+70	72	67	66	€7.5M	24	49
+	
+Charlton Athletic
+ English League Championship (2)
+68	64	60	61	€8M	32	33
+	
+Derby County
+ English League Championship (2)
+68	64	65	65	€8M	29	50
+	
+Wolverhampton Wanderers
+ English League Championship (2)
+68	63	59	64	€8.5M	30	154
+	
+Sheffield United
+ English League Championship (2)
+67	65	63	62	€7M	32	75
+	
+Watford
+ English League Championship (2)
+67	59	61	64	€7M	29	59
+	
+Crystal Palace
+ English League Championship (2)
+67	63	60	62	€6M	33	60
+	
+Queens Park Rangers
+ English League Championship (2)
+67	64	65	66	€15M	27	58
+	
+Ipswich Town
+ English League Championship (2)
+67	64	61	62	€4.5M	28	24
+	
+Bristol City
+ English League Championship (2)
+67	64	62	59	€4M	28	35
+	
+Norwich City
+ English League Championship (2)
+66	60	61	64	€4.5M	29	70
+	
+Burnley
+ English League Championship (2)
+66	61	61	66	€3M	25	46
+	
+Preston North End
+ English League Championship (2)
+66	63	60	63	€5M	30	31
+	
+Cardiff City
+ English League Championship (2)
+66	63	62	60	€3M	24	40
+	
+Sheffield Wednesday
+ English League Championship (2)
+65	65	62	62	€3M	27	31
+	
+Plymouth Argyle
+ English League Championship (2)
+65	63	60	63	€3M	29	12
+	
+Barnsley
+ English League Championship (2)
+65	61	62	57	€1.5M	28	20
+	
+Swansea City
+ English League Championship (2)
+65	57	59	60	€6M	33	51
+	
+Nottingham Forest
+ English League Championship (2)
+64	59	57	54	€3M	33	76
+	
+Blackpool
+ English League Championship (2)
+64	58	59	59	€3M	30	8
+	
+Coventry City
+ English League Championship (2)
+63	61	58	60	€5M	26	15
+	
+Southampton
+ English League Championship (2)
+63	57	59	54	€9M	33	98
+	
+Doncaster Rovers
+ English League Championship (2)
+63	59	60	59	€3M	28	8
+
+Racing Club de Lens
+ French Ligue 2 (2)
+68	61	67	64	€8M	27	25
+	
+RC Strasbourg Alsace
+ French Ligue 2 (2)
+67	60	65	63	€2M	29	23
+	
+ESTAC Troyes
+ French Ligue 2 (2)
+66	63	62	62	€4M	28	15
+	
+FC Metz
+ French Ligue 2 (2)
+66	62	64	60	€1M	27	16
+	
+Stade de Reims
+ French Ligue 2 (2)
+64	61	60	60	€500K	28	28
+	
+En Avant de Guingamp
+ French Ligue 2 (2)
+63	56	60	57	€500K	26	7
+	
+La Berrichonne de Châteauroux
+ French Ligue 2 (2)
+63	58	56	60	€650K	24	5
+	
+Dijon FCO
+ French Ligue 2 (2)
+63	61	61	59	€500K	29	14
+	
+Amiens SC
+ French Ligue 2 (2)
+62	57	57	59	€500K	26	11
+	
+Montpellier HSC
+ French Ligue 2 (2)
+62	61	58	56	€500K	30	21
+	
+CS Sedan Ardennes
+ French Ligue 2 (2)
+62	61	59	59	€2.5M	26	1
+	
+Stade Brestois 29
+ French Ligue 2 (2)
+62	61	57	61	€500K	24	14
+	
+Tours FC
+ French Ligue 2 (2)
+62	56	57	60	€450K	26	3
+	
+Angers SCO
+ French Ligue 2 (2)
+62	64	58	61	€500K	25	19
+	
+US Boulogne Cote D'Opale
+ French Ligue 2 (2)
+61	59	56	58	€250K	26	1
+	
+Vannes OC
+ French Ligue 2 (2)
+61	59	54	59	€400K	30	1
+	
+Clermont Foot 63
+ French Ligue 2 (2)
+60	57	58	58	€500K	26	5
+	
+Sporting Club de Bastia
+ French Ligue 2 (2)
+60	58	55	62	€500K	27	4
+	
+AC Ajaccio
+ French Ligue 2 (2)
+60	60	61	59	€500K	20	8
+	
+Nîmes Olympique
+ French Ligue 2 (2)
+59	58	57	57	€500K	26	15
+
+1. FC Nürnberg
+ German 2. Bundesliga (2)
+72	69	68	66	€3.5M	25	15
+	
+MSV Duisburg
+ German 2. Bundesliga (2)
+68	64	65	66	€2.5M	30	5
+	
+1. FSV Mainz 05
+ German 2. Bundesliga (2)
+68	66	64	68	€2.5M	28	33
+	
+SC Freiburg
+ German 2. Bundesliga (2)
+66	60	61	64	€2M	26	62
+	
+FC Hansa Rostock
+ German 2. Bundesliga (2)
+66	61	64	63	€2M	27	7
+	
+TSV 1860 München
+ German 2. Bundesliga (2)
+66	65	65	62	€1M	27	15
+	
+FC Augsburg
+ German 2. Bundesliga (2)
+66	61	60	65	€1.5M	27	43
+	
+Alemannia Aachen
+ German 2. Bundesliga (2)
+65	62	63	63	€2.5M	28	1
+	
+1. FC Kaiserslautern
+ German 2. Bundesliga (2)
+64	61	60	62	€1.5M	29	20
+	
+SpVgg Greuther Fürth
+ German 2. Bundesliga (2)
+64	59	61	62	€1.5M	25	7
+	
+TuS Koblenz
+ German 2. Bundesliga (2)
+64	61	61	61	€750K	30	1
+	
+FSV Frankfurt
+ German 2. Bundesliga (2)
+63	60	62	59	€750K	27	1
+	
+SV Wehen Wiesbaden
+ German 2. Bundesliga (2)
+63	62	57	59	€750K	30	3
+	
+FC Ingolstadt 04
+ German 2. Bundesliga (2)
+62	58	56	61	€750K	30	10
+	
+VfL Osnabrück
+ German 2. Bundesliga (2)
+62	59	56	61	€750K	26	4
+	
+FC St. Pauli
+ German 2. Bundesliga (2)
+62	57	59	59	€750K	28	10
+	
+Rot-Weiß Oberhausen
+ German 2. Bundesliga (2)
+59	59	57	56	€750K	24	1
+	
+Rot-Weiß Ahlen
+ German 2. Bundesliga (2)
+59	56	54	62	€750K	22	1
+	
+Parma
+ Italian Serie B (2)
+70	68	66	63	€4M	26	27
+	
+Bari
+ Italian Serie B (2)
+67	62	62	64	€2.5M	30	1
+	
+Mantova
+ Italian Serie B (2)
+67	66	58	59	€2M	25	1
+	
+Brescia
+ Italian Serie B (2)
+67	64	62	64	€3.5M	28	62
+	
+Livorno
+ Italian Serie B (2)
+66	63	63	58	€2.5M	26	15
+	
+Empoli
+ Italian Serie B (2)
+66	63	65	62	€2.5M	27	14
+	
+Triestina
+ Italian Serie B (2)
+65	61	60	62	€1.5M	26	1
+	
+Vicenza
+ Italian Serie B (2)
+65	63	63	62	€1.5M	26	1
+	
+Rimini
+ Italian Serie B (2)
+65	57	60	61	€2M	29	1
+	
+Grosseto
+ Italian Serie B (2)
+65	58	60	61	€1.5M	29	1
+	
+Pisa
+ Italian Serie B (2)
+65	62	64	61	€2M	27	13
+	
+UC AlbinoLeffe
+ Italian Serie B (2)
+65	64	57	57	€750K	29	2
+	
+Frosinone
+ Italian Serie B (2)
+64	57	58	58	€1.5M	30	17
+	
+Sassuolo
+ Italian Serie B (2)
+64	65	58	58	€1.5M	27	46
+	
+Modena
+ Italian Serie B (2)
+64	63	63	60	€1.5M	26	1
+	
+Piacenza
+ Italian Serie B (2)
+63	59	58	59	€1.5M	26	1
+	
+Ascoli
+ Italian Serie B (2)
+63	60	57	59	€2M	29	8
+	
+US Salernitana 1919
+ Italian Serie B (2)
+62	61	60	61	€1M	28	9
+	
+Ancona
+ Italian Serie B (2)
+62	63	60	61	€1M	30	1
+	
+Treviso
+ Italian Serie B (2)
+62	62	59	59	€1.5M	30	1
+	
+Avellino
+ Italian Serie B (2)
+62	60	59	60	€1.5M	28	2
+	
+Cittadella
+ Italian Serie B (2)
+60	56	53	54	€1M	29	7
+	
+Real Zaragoza
+ Spanish Segunda División (2)
+72	75	69	71	€5M	24	30
+	
+Real Murcia Club de Fútbol
+ Spanish Segunda División (2)
+71	71	70	69	€1.5M	26	1
+	
+Real Sociedad
+ Spanish Segunda División (2)
+70	68	68	65	€2.5M	26	78
+	
+Hércules CF
+ Spanish Segunda División (2)
+69	66	67	65	€600K	25	1
+	
+Levante UD
+ Spanish Segunda División (2)
+68	66	67	66	€800K	23	36
+	
+Gimnàstic de Tarragona
+ Spanish Segunda División (2)
+68	64	67	61	€1.5M	27	2
+	
+CD Tenerife
+ Spanish Segunda División (2)
+67	66	66	64	€800K	27	7
+	
+UD Salamanca
+ Spanish Segunda División (2)
+67	67	67	66	€700K	26	1
+	
+C.D. Castellón
+ Spanish Segunda División (2)
+67	64	68	63	€800K	24	1
+	
+RC Celta
+ Spanish Segunda División (2)
+66	68	62	63	€5M	25	43
+	
+Xerez Club Deportivo
+ Spanish Segunda División (2)
+66	65	61	61	€600K	29	1
+	
+Elche CF
+ Spanish Segunda División (2)
+66	59	63	61	€800K	27	13
+	
+Albacete BP
+ Spanish Segunda División (2)
+65	61	62	61	€1M	28	5
+	
+Córdoba CF
+ Spanish Segunda División (2)
+65	62	62	63	€600K	24	2
+	
+Deportivo Alavés
+ Spanish Segunda División (2)
+65	55	63	64	€1.3M	27	25
+	
+UD Las Palmas
+ Spanish Segunda División (2)
+65	64	60	64	€700K	25	19
+	
+Alicante CF
+ Spanish Segunda División (2)
+64	64	61	60	€2.5M	25	1
+	
+SD Eibar
+ Spanish Segunda División (2)
+64	61	64	62	€1M	26	27
+	
+Rayo Vallecano
+ Spanish Segunda División (2)
+64	66	61	62	€600K	27	20
+	
+SD Huesca
+ Spanish Segunda División (2)
+61	63	57	58	€2.5M	27	22
+	
+Girona FC
+ Spanish Segunda División (2)
+60	59	61	57	€2.5M	23	31
+

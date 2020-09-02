@@ -725,22 +725,6 @@ Fortuna Düsseldorf
 SC Paderborn 07
  German 2. Bundesliga (2)
 60	63	62	59	€750K	28	48
-
-	NAME	
-OVA
-ATT
-MID
-DEF
-TRANSFER BUDGET
-PLAYERS
-HITS	NAME	
-OVA
-ATT
-MID
-DEF
-TRANSFER BUDGET
-PLAYERS
-HITS
 	
 Real Betis
  Spanish Segunda División (2)
@@ -829,5 +813,100 @@ SD Huesca
 Real Unión Club Irún
  Spanish Segunda División (2)
 62	63	61	63	€600K	27	1
-
+	
+Newcastle United
+ English League Championship (2)
+72	67	71	69	€25M	30	127
+	
+Middlesbrough
+ English League Championship (2)
+70	69	69	67	€10M	28	73
+	
+Queens Park Rangers
+ English League Championship (2)
+69	64	65	61	€20M	30	79
+	
+West Bromwich Albion
+ English League Championship (2)
+69	65	66	67	€7.5M	30	124
+	
+Reading
+ English League Championship (2)
+68	63	65	63	€8M	30	44
+	
+Bristol City
+ English League Championship (2)
+68	67	64	63	€4M	30	50
+	
+Cardiff City
+ English League Championship (2)
+68	67	63	62	€7M	28	51
+	
+Sheffield United
+ English League Championship (2)
+67	70	65	64	€7M	27	113
+	
+Crystal Palace
+ English League Championship (2)
+67	63	61	63	€5M	25	108
+	
+Preston North End
+ English League Championship (2)
+67	64	64	63	€5M	30	43
+	
+Sheffield Wednesday
+ English League Championship (2)
+67	64	63	62	€3M	29	40
+	
+Derby County
+ English League Championship (2)
+67	69	65	63	€4.5M	30	68
+	
+Ipswich Town
+ English League Championship (2)
+67	62	61	66	€4.5M	30	37
+	
+Nottingham Forest
+ English League Championship (2)
+66	67	67	63	€3M	24	120
+	
+Leicester City
+ English League Championship (2)
+66	68	63	63	€3M	30	195
+	
+Swansea City
+ English League Championship (2)
+66	62	65	60	€6M	30	84
+	
+Watford
+ English League Championship (2)
+65	59	61	62	€7M	29	105
+	
+Barnsley
+ English League Championship (2)
+65	64	62	61	€2.5M	26	27
+	
+Coventry City
+ English League Championship (2)
+64	63	60	59	€5M	30	24
+	
+Plymouth Argyle
+ English League Championship (2)
+64	61	63	61	€3M	24	19
+	
+Doncaster Rovers
+ English League Championship (2)
+64	61	62	58	€3M	28	12
+	
+Scunthorpe United
+ English League Championship (2)
+64	63	61	60	€2.5M	28	10
+	
+Blackpool
+ English League Championship (2)
+63	60	63	64	€3M	30	15
+	
+Peterborough United
+ English League Championship (2)
+61	57	58	55	€2.5M	29	28
 
