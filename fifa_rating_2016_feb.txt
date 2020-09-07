@@ -229,6 +229,87 @@ FC Ingolstadt 04
 SV Darmstadt 98
  German 1. Bundesliga (1)
 71	70	71	71	€2.2M	30	36
+	
+Juventus
+ Italian Serie A (1)
+82	81	80	83	€60M	32	214
+	
+Roma
+ Italian Serie A (1)
+80	79	74	79	€34M	33	122
+	
+Inter
+ Italian Serie A (1)
+79	79	78	78	€37.5M	26	199
+	
+Lazio
+ Italian Serie A (1)
+79	79	78	77	€17.5M	31	82
+	
+Napoli
+ Italian Serie A (1)
+79	83	78	78	€27.5M	25	105
+	
+Milan
+ Italian Serie A (1)
+78	79	76	77	€40M	28	305
+	
+Fiorentina
+ Italian Serie A (1)
+77	76	76	78	€19.5M	24	64
+	
+Sampdoria
+ Italian Serie A (1)
+76	76	73	74	€10.5M	30	30
+	
+Torino
+ Italian Serie A (1)
+76	75	75	77	€14M	26	65
+	
+Udinese
+ Italian Serie A (1)
+75	77	74	75	€17.5M	29	41
+	
+Atalanta
+ Italian Serie A (1)
+74	75	74	72	€6.8M	31	93
+	
+Bologna
+ Italian Serie A (1)
+74	75	72	72	€12M	33	39
+	
+Chievo Verona
+ Italian Serie A (1)
+74	73	75	74	€4.6M	29	12
+	
+Genoa
+ Italian Serie A (1)
+74	75	73	74	€12M	30	32
+	
+Sassuolo
+ Italian Serie A (1)
+73	73	72	73	€10M	24	42
+	
+Hellas Verona
+ Italian Serie A (1)
+73	74	73	72	€5.3M	29	31
+	
+Carpi
+ Italian Serie A (1)
+72	72	71	67	€1.9M	31	2
+	
+Palermo
+ Italian Serie A (1)
+72	75	72	71	€9M	29	5
+	
+Empoli
+ Italian Serie A (1)
+72	71	72	72	€3.4M	25	15
+	
+Frosinone
+ Italian Serie A (1)
+69	68	68	67	€1.8M	26	5
+
 
 FC Barcelona
  Spain Primera Division (1)
