@@ -718,16 +718,16 @@ for num in range(1):
     games = []
     # print(len(sys.argv))
     # print(sys.argv[1], sys.argv[2])
-    """if len(sys.argv) == 3:
+    if len(sys.argv) == 3:
         file_name = sys.argv[1]
         output_file_name = sys.argv[2] + '.csv'
     else:
         file_name = sys.argv[1] + ' ' + sys.argv[2]
-        output_file_name = sys.argv[3] + '.csv'"""
+        output_file_name = sys.argv[3] + '.csv'
     #print(file_name)
     #print('BUGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG')
-    file_name = 'data/I1 (10).csv'
-    output_file_name = '43.csv'
+    #file_name = 'data/I1 (10).csv'
+    #output_file_name = '43.csv'
     """print("BUg")
     for r in fifa_ratings_dates:
         print(r)
@@ -755,7 +755,9 @@ for num in range(1):
                       # new from here, home
                       'h_goal_diff': 0, 'h_goal_diff_h': 0,
                       'h_shots': 0, 'h_shots_h': 0, 'h_shots_against': 0, 'h_shots_against_h': 0,
-                      'h_shots_target': 0, 'h_shots_target_h': 0, 'h_shots_diff_h': 0, 'h_shots_diff': 0,
+                      'h_shots_target': 0, 'h_shots_target_h': 0, 'h_shots_target_against': 0, 'h_shots_target_against_h': 0,
+                      'h_shots_diff_h': 0, 'h_shots_diff': 0,
+                      'h_shots_target_diff': 0,
                       'h_shots_target_diff_h': 0,
                       #'h_hit_woodwork': 0, 'h_hit_woodwork_h': 0,
                       #'h_hit_woodwork_against': 0, 'h_hit_woodwork_diff': 0,
@@ -776,8 +778,11 @@ for num in range(1):
                       'a_goal_diff': 0, 'a_goal_diff_a': 0,
                       'a_shots': 0, 'a_shots_a': 0,
                       'a_shots_target': 0, 'a_shots_target_a': 0, 'a_shots_against': 0, 'a_shots_against_a': 0,
+                      'a_shots_target_against': 0, 'a_shots_target_against_a': 0,
                       'a_shots_diff': 0,
-                      'a_shots_diff_a': 0, 'a_shots_target_diff_a': 0,
+                      'a_shots_diff_a': 0,
+                      'a_shots_target_diff': 0,
+                      'a_shots_target_diff_a': 0,
                       #'a_hit_woodwork': 0, 'a_hit_woodwork_a': 0,
                       #'a_hit_woodwork_against': 0, 'a_hit_woodwork_diff': 0,
                       #'a_hit_woodwork_against_a': 0, 'a_hit_woodwork_diff_a': 0,
@@ -872,6 +877,8 @@ for num in range(1):
                 game_state['h_shots_h'] += int(pre_game['HS'])
                 game_state['h_shots_target'] += int(pre_game['HST'])
                 game_state['h_shots_target_h'] += int(pre_game['HST'])
+                game_state['h_shots_target_against'] += int(pre_game['AST'])
+                game_state['h_shots_target_against_h'] += int(pre_game['AST'])
                 ###
                 """game_state['h_hit_woodwork'] += int(pre_game['HHW'])
                 game_state['h_hit_woodwork_h'] += int(pre_game['HHW'])"""
@@ -940,6 +947,8 @@ for num in range(1):
                 game_state['a_shots_a'] += int(pre_game['AS'])
                 game_state['a_shots_target'] += int(pre_game['AST'])
                 game_state['a_shots_target_a'] += int(pre_game['AST'])
+                game_state['a_shots_target_against'] += int(pre_game['HST'])
+                game_state['a_shots_target_against_a'] += int(pre_game['HST'])
                 ###
                 """game_state['a_hit_woodwork'] += int(pre_game['AHW'])
                 game_state['a_hit_woodwork_a'] += int(pre_game['AHW'])"""
@@ -1002,6 +1011,7 @@ for num in range(1):
                 ###
                 game_state['h_shots'] += int(pre_game['AS'])
                 game_state['h_shots_target'] += int(pre_game['AST'])
+                game_state['h_shots_target_against'] += int(pre_game['HST'])
                 ###
                 """game_state['h_hit_woodwork'] += int(pre_game['AHW'])"""
                 ###
@@ -1053,6 +1063,7 @@ for num in range(1):
                 ###
                 game_state['a_shots'] += int(pre_game['HS'])
                 game_state['a_shots_target'] += int(pre_game['HST'])
+                game_state['a_shots_target_against'] += int(pre_game['AST'])
                 ###
                 """game_state['a_hit_woodwork'] += int(pre_game['HHW'])"""
                 ###
@@ -1103,6 +1114,8 @@ for num in range(1):
         ### shots diff
         game_state['h_shots_diff'] = game_state['h_shots'] - game_state['h_shots_against']
         game_state['h_shots_diff_h'] = game_state['h_shots_h'] - game_state['h_shots_against_h']
+        game_state['h_shots_target_diff'] = game_state['h_shots_target'] - game_state['h_shots_target_against']
+        game_state['h_shots_target_diff_h'] = game_state['h_shots_target_h'] - game_state['h_shots_target_against_h']
         ### red cards diff
         game_state['h_red_cards_diff'] = game_state['h_red_cards'] - game_state['h_red_cards_against']
         game_state['h_red_cards_diff_h'] = game_state['h_red_cards_h'] - game_state['h_red_cards_against_h']
@@ -1113,6 +1126,8 @@ for num in range(1):
         ###shots diff
         game_state['a_shots_diff'] += game_state['a_shots'] - game_state['a_shots_against']
         game_state['a_shots_diff_a'] += game_state['a_shots_a'] - game_state['a_shots_against_a']
+        game_state['a_shots_target_diff'] = game_state['a_shots_target'] - game_state['a_shots_target_against']
+        game_state['a_shots_target_diff_a'] = game_state['a_shots_target_a'] - game_state['a_shots_target_against_a']
         ### red cards diff
         game_state['a_red_cards_diff'] += game_state['a_red_cards'] - game_state['a_red_cards_against']
         game_state['a_red_cards_diff_a'] += game_state['a_red_cards_a'] - game_state['a_red_cards_against_a']
@@ -1203,8 +1218,11 @@ for num in range(1):
                       # new
                       'h_goal_diff', 'h_goal_diff_h',
                       'h_shots', 'h_shots_h', 'h_shots_against', 'h_shots_against_h',
-                      'h_shots_target', 'h_shots_target_h', 'h_shots_diff_h', 'h_shots_diff',
+                      'h_shots_target', 'h_shots_target_h', 'h_shots_target_against', 'h_shots_target_against_h',
+                      'h_shots_diff_h', 'h_shots_diff',
+                      'h_shots_target_diff',
                       'h_shots_target_diff_h',
+
                       #'h_hit_woodwork', 'h_hit_woodwork_h',
                       #'h_hit_woodwork_against', 'h_hit_woodwork_diff',
                       'h_red_cards', 'h_red_cards_h',
@@ -1224,7 +1242,9 @@ for num in range(1):
                       # new
                       'a_goal_diff', 'a_goal_diff_a',
                       'a_shots', 'a_shots_a', 'a_shots_against', 'a_shots_against_a',
-                      'a_shots_target', 'a_shots_target_a', 'a_shots_diff_a', 'a_shots_diff',
+                      'a_shots_target', 'a_shots_target_a', 'a_shots_target_against', 'a_shots_target_against_a',
+                      'a_shots_diff_a', 'a_shots_diff',
+                      'a_shots_target_diff',
                       'a_shots_target_diff_a',
                       #'a_hit_woodwork', 'a_hit_woodwork_a',
                       #'a_hit_woodwork_against', 'a_hit_woodwork_diff',
@@ -1265,6 +1285,9 @@ for num in range(1):
                  'h_shots_against': game_state['h_shots_against'], 'h_shots_against_h': game_state['h_shots_against_h'],
                  'h_shots_target': game_state['h_shots_target'], 'h_shots_target_h': game_state['h_shots_target_h'],
                  'h_shots_diff_h': game_state['h_shots_diff_h'], 'h_shots_diff': game_state['h_shots_diff'],
+                 'h_shots_target_against': game_state['h_shots_target_against'],
+                 'h_shots_target_against_h': game_state['h_shots_target_against_h'],
+                 'h_shots_target_diff': game_state['h_shots_target_diff'],
                  'h_shots_target_diff_h': game_state['h_shots_target_diff_h'],
                  # hit woodwork
                  #'h_hit_woodwork': game_state['h_hit_woodwork'],
@@ -1314,6 +1337,9 @@ for num in range(1):
                  'a_shots_against_a': game_state['a_shots_against_a'],
                  'a_shots_target': game_state['a_shots_target'], 'a_shots_target_a': game_state['a_shots_target_a'],
                  'a_shots_diff_a': game_state['a_shots_diff_a'], 'a_shots_diff': game_state['a_shots_diff'],
+                 'a_shots_target_against': game_state['a_shots_target_against'],
+                 'a_shots_target_against_a': game_state['a_shots_target_against_a'],
+                 'a_shots_target_diff': game_state['a_shots_target_diff'],
                  'a_shots_target_diff_a': game_state['a_shots_target_diff_a'],
                  # hit woodwork
                  #'a_hit_woodwork': game_state['a_hit_woodwork'],
