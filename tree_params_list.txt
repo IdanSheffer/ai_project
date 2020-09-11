@@ -1,0 +1,12 @@
+estimators = [100]
+min_samples_leaf_lst = list(range(10,100))
+max_depth = [None] + list(range(10,36))
+criteria = ['gini', 'entropy']
+weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+#max_features = [None, 'sqrt', 'log2']
+profits = dict()
+
+params = {'min_samples_leaf' : min_samples_leaf_lst, 'min_samples_split' : min_samples_leaf_lst,
+          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth}
+params_list = list(ParameterSampler(params, n_iter=10000))
+best_params = dict()
