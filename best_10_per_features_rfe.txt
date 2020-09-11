@@ -1,0 +1,10 @@
+h_points
+h_shots
+h_shots_against
+h_shots_target
+h_shots_diff_h
+h_elo
+a_conced
+a_shots_against_a
+a_shots_target
+a_elo

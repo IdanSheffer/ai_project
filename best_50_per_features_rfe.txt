@@ -1,0 +1,63 @@
+h_drawn
+h_drawn_h
+h_lost
+h_points
+h_points_h
+h_scored
+h_scored_h
+h_conced
+h_conced_h
+h_clean
+h_fail
+h_goal_diff
+h_shots
+h_shots_against
+h_shots_against_h
+h_shots_target
+h_shots_target_h
+h_shots_diff
+h_shots_target_against
+h_shots_target_diff
+h_shots_target_diff_h
+h_red_cards
+h_red_cards_against
+h_elo
+a_won
+a_drawn
+a_lost
+a_points
+a_points_a
+a_scored
+a_scored_a
+a_conced
+a_conced_a
+a_clean
+a_fail
+a_goal_diff
+a_shots
+a_shots_a
+a_shots_against
+a_shots_against_a
+a_shots_target
+a_shots_target_a
+a_shots_diff_a
+a_shots_diff
+a_shots_target_diff
+a_shots_target_diff_a
+a_red_cards_a
+a_red_cards_against
+a_elo
+a_fifa_rating
+a_last_5_games_goal_diff
+
+code:
+clf = tree.DecisionTreeClassifier(max_features=None)
+rfe = RFE(estimator=clf)
+rfe.fit(games, results)
+chosen = rfe.get_support()
+selected = []
+for i in range(len(features)):
+    if chosen[i]:
+        print(features[i])
+		
+#different  n_features_to_select were used for the other ones
