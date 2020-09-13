@@ -2,8 +2,15 @@ import csv
 from sklearn import tree
 import numpy
 import graphviz
+from matplotlib import pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.feature_selection import RFE
+from sklearn.feature_selection import SelectFromModel
+from sklearn.model_selection import ParameterSampler
+from sklearn.model_selection import ParameterGrid
 #clf_rand_10_3 = RandomForestClassifier(n_estimators = 10, min_samples_leaf = 3, min_samples_split=3,
 #                                  random_state=42, max_features=None)
 #clf_rand_100_def = RandomForestClassifier()
@@ -12,6 +19,7 @@ from sklearn.ensemble import ExtraTreesClassifier
 #clf_rand_20_1 = RandomForestClassifier(n_estimators=20, random_state=42, max_features=None )
 #clf_rand_100_1 = RandomForestClassifier(n_estimators=100, random_state=42, max_features=None)
 
+import LogiReg, LinearReg, MultiReg
 import random
 from itertools import product
 
@@ -20,22 +28,20 @@ results = []
 
 rows = []
 
+
+
 def rows_extrac():
-    with open(r'C:\Users\Idan\PycharmProjects\project_ai\Soccer_Data.csv', encoding="utf8") as f:
+    with open(r'C:\Users\Idan\PycharmProjects\project_ai\combine_data.csv', encoding="utf8") as f:
         reader = csv.DictReader(f)
-        counter = 0
         for row in reader:
             rows.append(row)
-            if (float(row['home_odd']) < 0.0) or (float(row['draw_odd']) <0.0) or (float(row['away_odd']) < 0.0):
-                counter +=1
-        #print("kaki")
 
 def create_training_group():
     global games, results
     games = []
     results = []
     i = 2
-    #random.shuffle(rows)
+    # random.shuffle(rows)
     for row in rows:
         h_played = row['h_played']
         h_played_h = row['h_played_h']
@@ -60,12 +66,48 @@ def create_training_group():
         lst.append(float(row['h_scored']) / float(h_played))
         lst.append(float(row['h_scored_h']) / float(h_played_h))
         lst.append(float(row['h_conced']) / float(h_played))
-
         lst.append(float(row['h_conced_h']) / float(h_played_h))
-        lst.append(float(row['h_clean']) / 100)
-        lst.append(float(row['h_clean_h']) / 100)
-        lst.append(float(row['h_fail']) / 100)
-        lst.append(float(row['h_fail_h']) / 100)
+
+        lst.append(float(row['h_clean']) / float(h_played))
+        lst.append(float(row['h_clean_h']) / float(h_played_h))
+        lst.append(float(row['h_fail']) / float(h_played))
+        lst.append(float(row['h_fail_h']) / float(h_played_h))
+        ####
+        lst.append(float(row['h_goal_diff']) / 100)
+        lst.append(float(row['h_goal_diff_h']) / 100)
+        lst.append(float(row['h_shots']) / float(h_played))
+        lst.append(float(row['h_shots_h']) / float(h_played_h))
+        lst.append(float(row['h_shots_against']) / float(h_played))
+        lst.append(float(row['h_shots_against_h']) / float(h_played_h))
+        lst.append(float(row['h_shots_target']) / float(h_played))
+        lst.append(float(row['h_shots_target_h']) / float(h_played_h))
+        lst.append(float(row['h_shots_diff_h']))
+        lst.append(float(row['h_shots_diff']))
+        lst.append(float(row['h_shots_target_against']))
+        lst.append(float(row['h_shots_target_against_h']))
+        lst.append(float(row['h_shots_target_diff']))
+        lst.append(float(row['h_shots_target_diff_h']))
+        lst.append(float(row['h_red_cards']) / float(h_played))
+        lst.append(float(row['h_red_cards_h']) / float(h_played_h))
+        lst.append(float(row['h_red_cards_against']) / float(h_played))
+        lst.append(float(row['h_red_cards_diff']))
+        lst.append(float(row['h_red_cards_against_h']) / float(h_played_h))
+        lst.append(float(row['h_red_cards_diff_h']))
+        lst.append(float(row['h_elo']) / 2200)
+        lst.append(float(row['h_fifa_rating']) / 100)
+        lst.append(float(row['h_current_win_streak']))
+        lst.append(float(row['h_current_no_lose_streak']))
+        lst.append(float(row['h_current_lose_streak']))
+        lst.append(float(row['h_current_no_win_streak']))
+        lst.append(float(row['h_last_5_games_points']) / 5)
+        lst.append(float(row['h_last_5_games_wins']) / 5)
+        lst.append(float(row['h_last_5_games_loss']) / 5)
+        lst.append(float(row['h_last_5_games_draw']) / 5)
+        lst.append(float(row['h_last_5_games_scored']) / 5)
+        lst.append(float(row['h_last_5_games_conced']) / 5)
+        lst.append(float(row['h_last_5_games_goal_diff']) / 5)
+        lst.append(float(row['h_last_5_games_clean']) / 5)
+        lst.append(float(row['h_last_5_games_failed']) / 5)
 
         lst.append(float(row['a_won']) / float(a_played))
         lst.append(float(row['a_won_a']) / float(a_played_a))
@@ -82,12 +124,50 @@ def create_training_group():
         lst.append(float(row['a_scored']) / float(a_played))
         lst.append(float(row['a_scored_a']) / float(a_played_a))
         lst.append(float(row['a_conced']) / float(a_played))
-
         lst.append(float(row['a_conced_a']) / float(a_played_a))
-        lst.append(float(row['a_clean']) / 100)
-        lst.append(float(row['a_clean_a']) / 100)
-        lst.append(float(row['a_fail']) / 100)
-        lst.append(float(row['a_fail_a']) / 100)
+
+        lst.append(float(row['a_clean']) / float(a_played))
+        lst.append(float(row['a_clean_a']) / float(a_played_a))
+        lst.append(float(row['a_fail']) / float(a_played))
+        lst.append(float(row['a_fail_a']) / float(a_played_a))
+        ####
+        lst.append(float(row['a_goal_diff']) / 100)
+        lst.append(float(row['a_goal_diff_a']) / 100)
+        lst.append(float(row['a_shots']) / float(h_played))
+        lst.append(float(row['a_shots_a']) / float(h_played_h))
+        lst.append(float(row['a_shots_against']) / float(h_played))
+        lst.append(float(row['a_shots_against_a']) / float(h_played_h))
+        lst.append(float(row['a_shots_target']) / float(h_played))
+        lst.append(float(row['a_shots_target_a']) / float(h_played_h))
+        lst.append(float(row['a_shots_diff_a']))
+        lst.append(float(row['a_shots_diff']))
+        lst.append(float(row['a_shots_target_against']))
+        lst.append(float(row['a_shots_target_against_a']))
+        lst.append(float(row['a_shots_target_diff']))
+        lst.append(float(row['a_shots_target_diff_a']))
+        lst.append(float(row['a_red_cards']) / float(h_played))
+        lst.append(float(row['a_red_cards_a']) / float(h_played_h))
+        lst.append(float(row['a_red_cards_against']) / float(h_played))
+        lst.append(float(row['a_red_cards_diff']))
+        lst.append(float(row['a_red_cards_against_a']) / float(h_played_h))
+        lst.append(float(row['a_red_cards_diff_a']))
+        lst.append(float(row['a_elo']) / 2200)
+        lst.append(float(row['a_fifa_rating']) / 100)
+        lst.append(float(row['a_current_win_streak']))
+        lst.append(float(row['a_current_no_lose_streak']))
+        lst.append(float(row['a_current_lose_streak']))
+        lst.append(float(row['a_current_no_win_streak']))
+        lst.append(float(row['a_last_5_games_points']) / 5)
+        lst.append(float(row['a_last_5_games_wins']) / 5)
+        lst.append(float(row['a_last_5_games_loss']) / 5)
+        lst.append(float(row['a_last_5_games_draw']) / 5)
+        lst.append(float(row['a_last_5_games_scored']) / 5)
+        lst.append(float(row['a_last_5_games_conced']) / 5)
+        lst.append(float(row['a_last_5_games_goal_diff']) / 5)
+        lst.append(float(row['a_last_5_games_clean']) / 5)
+        lst.append(float(row['a_last_5_games_failed']) / 5)
+
+
         if i == 18000:
             break
         games.append(lst)
@@ -99,11 +179,13 @@ def create_training_group():
             results.append(2.0)
         i += 1
 
+
 def odds_func(row):
     home_odds = float(row['home_odd'])
     draw_odds = float(row['draw_odd'])
     away_odds = float(row['away_odd'])
     return home_odds, draw_odds, away_odds
+
 
 def game_stats(row):
     h_played = row['h_played']
@@ -126,12 +208,51 @@ def game_stats(row):
     lst.append(float(row['h_scored']) / float(h_played))
     lst.append(float(row['h_scored_h']) / float(h_played_h))
     lst.append(float(row['h_conced']) / float(h_played))
-
     lst.append(float(row['h_conced_h']) / float(h_played_h))
-    lst.append(float(row['h_clean']) / 100)
-    lst.append(float(row['h_clean_h']) / 100)
-    lst.append(float(row['h_fail']) / 100)
-    lst.append(float(row['h_fail_h']) / 100)
+
+    lst.append(float(row['h_clean']) / float(h_played))
+    lst.append(float(row['h_clean_h']) / float(h_played_h))
+    lst.append(float(row['h_fail']) / float(h_played))
+    lst.append(float(row['h_fail_h']) / float(h_played_h))
+
+    # 'h_hit_woodwork': 0, 'h_hit_woodwork_h': 0,
+    # 'h_hit_woodwork_against': 0, 'h_hit_woodwork_diff': 0,
+
+    lst.append(float(row['h_goal_diff']) / 100)
+    lst.append(float(row['h_goal_diff_h']) / 100)
+    lst.append(float(row['h_shots']) / float(h_played))
+    lst.append(float(row['h_shots_h']) / float(h_played_h))
+    lst.append(float(row['h_shots_against']) / float(h_played))
+    lst.append(float(row['h_shots_against_h']) / float(h_played_h))
+    lst.append(float(row['h_shots_target']) / float(h_played))
+    lst.append(float(row['h_shots_target_h']) / float(h_played_h))
+    lst.append(float(row['h_shots_diff_h']))
+    lst.append(float(row['h_shots_diff']))
+    lst.append(float(row['h_shots_target_against']))
+    lst.append(float(row['h_shots_target_against_h']))
+    lst.append(float(row['h_shots_target_diff']))
+    lst.append(float(row['h_shots_target_diff_h']))
+    lst.append(float(row['h_red_cards']) / float(h_played))
+    lst.append(float(row['h_red_cards_h']) / float(h_played_h))
+    lst.append(float(row['h_red_cards_against']) / float(h_played))
+    lst.append(float(row['h_red_cards_diff']))
+    lst.append(float(row['h_red_cards_against_h']) / float(h_played_h))
+    lst.append(float(row['h_red_cards_diff_h']))
+    lst.append(float(row['h_elo']) / 2200)
+    lst.append(float(row['h_fifa_rating']) / 100)
+    lst.append(float(row['h_current_win_streak']))
+    lst.append(float(row['h_current_no_lose_streak']))
+    lst.append(float(row['h_current_lose_streak']))
+    lst.append(float(row['h_current_no_win_streak']))
+    lst.append(float(row['h_last_5_games_points']) / 5)
+    lst.append(float(row['h_last_5_games_wins']) / 5)
+    lst.append(float(row['h_last_5_games_loss']) / 5)
+    lst.append(float(row['h_last_5_games_draw']) / 5)
+    lst.append(float(row['h_last_5_games_scored']) / 5)
+    lst.append(float(row['h_last_5_games_conced']) / 5)
+    lst.append(float(row['h_last_5_games_goal_diff']) / 5)
+    lst.append(float(row['h_last_5_games_clean']) / 5)
+    lst.append(float(row['h_last_5_games_failed']) / 5)
 
     lst.append(float(row['a_won']) / float(a_played))
     lst.append(float(row['a_won_a']) / float(a_played_a))
@@ -148,12 +269,48 @@ def game_stats(row):
     lst.append(float(row['a_scored']) / float(a_played))
     lst.append(float(row['a_scored_a']) / float(a_played_a))
     lst.append(float(row['a_conced']) / float(a_played))
-
     lst.append(float(row['a_conced_a']) / float(a_played_a))
-    lst.append(float(row['a_clean']) / 100)
-    lst.append(float(row['a_clean_a']) / 100)
-    lst.append(float(row['a_fail']) / 100)
-    lst.append(float(row['a_fail_a']) / 100)
+
+    lst.append(float(row['a_clean']) / float(a_played))
+    lst.append(float(row['a_clean_a']) / float(a_played_a))
+    lst.append(float(row['a_fail']) / float(a_played))
+    lst.append(float(row['a_fail_a']) / float(a_played_a))
+
+    lst.append(float(row['a_goal_diff']) / 100)
+    lst.append(float(row['a_goal_diff_a']) / 100)
+    lst.append(float(row['a_shots']) / float(h_played))
+    lst.append(float(row['a_shots_a']) / float(h_played_h))
+    lst.append(float(row['a_shots_against']) / float(h_played))
+    lst.append(float(row['a_shots_against_a']) / float(h_played_h))
+    lst.append(float(row['a_shots_target']) / float(h_played))
+    lst.append(float(row['a_shots_target_a']) / float(h_played_h))
+    lst.append(float(row['a_shots_diff_a']))
+    lst.append(float(row['a_shots_diff']))
+    lst.append(float(row['a_shots_target_against']))
+    lst.append(float(row['a_shots_target_against_a']))
+    lst.append(float(row['a_shots_target_diff']))
+    lst.append(float(row['a_shots_target_diff_a']))
+    lst.append(float(row['a_red_cards']) / float(h_played))
+    lst.append(float(row['a_red_cards_a']) / float(h_played_h))
+    lst.append(float(row['a_red_cards_against']) / float(h_played))
+    lst.append(float(row['a_red_cards_diff']))
+    lst.append(float(row['a_red_cards_against_a']) / float(h_played_h))
+    lst.append(float(row['a_red_cards_diff_a']))
+    lst.append(float(row['a_elo']) / 2200)
+    lst.append(float(row['a_fifa_rating']) / 100)
+    lst.append(float(row['a_current_win_streak']))
+    lst.append(float(row['a_current_no_lose_streak']))
+    lst.append(float(row['a_current_lose_streak']))
+    lst.append(float(row['a_current_no_win_streak']))
+    lst.append(float(row['a_last_5_games_points']) / 5)
+    lst.append(float(row['a_last_5_games_wins']) / 5)
+    lst.append(float(row['a_last_5_games_loss']) / 5)
+    lst.append(float(row['a_last_5_games_draw']) / 5)
+    lst.append(float(row['a_last_5_games_scored']) / 5)
+    lst.append(float(row['a_last_5_games_conced']) / 5)
+    lst.append(float(row['a_last_5_games_goal_diff']) / 5)
+    lst.append(float(row['a_last_5_games_clean']) / 5)
+    lst.append(float(row['a_last_5_games_failed']) / 5)
     return lst
 
 def choose_bet(odds, predict):
@@ -189,7 +346,22 @@ def win(odds, choice):
         return odds[2]
 
 
-random_results = []
+rets = []
+
+def ret_calc(odds):
+    #print(odds)
+    sum = 0.0
+    for odd in odds:
+        sum += (1/odd)
+    return 1/sum
+
+
+rows_extrac()
+create_training_group()
+clf = tree.DecisionTreeClassifier(max_features=None, random_state=42)
+rfe = RFE(estimator=clf, n_features_to_select=25)
+rfe.fit(games, results)
+best_features = rfe.transform(games)
 
 def play(clf):
     #print("importance =", clf.feature_importances_)
@@ -197,7 +369,7 @@ def play(clf):
     balance = 0.0
     bets = 0
     wins = 0
-    for i in range(18000, 24800, 2):
+    for i in range(18001, 25769, 2):
         # for i in range(len(rows)):
         row = rows[i]
         h_played = row['h_played']
@@ -207,9 +379,18 @@ def play(clf):
         if a_played == '0' or h_played == '0' or h_played_h == '0' or a_played_a == '0':
             continue
         odds = odds_func(row)
+        if odds[0] == 0.0 or odds[1] == 0.0 or odds[2] == 0.0:
+            continue
+        ret = ret_calc(odds)
+        rets.append(ret)
         game_test = game_stats(row)
-        prediction = clf.predict_proba([game_test])
+        game_test = rfe.transform([game_test])
+        #prediction = clf.calculate_prob_for_test_group([game_test])
+        #prediction = tuple(predict[0] for predict in prediction)
+        prediction = clf.predict_proba(game_test)
+        #prediction = clf.predict_proba([game_test])
         # predictions = [1 / result for result in prediction[0]]
+        #bet_chosen = choose_bet(odds, prediction)
         bet_chosen = choose_bet(odds, prediction[0])
         if not bet_chosen:
             continue
@@ -226,12 +407,60 @@ def play(clf):
           #  print("win = ", winning)
         #print("balance = ", balance)
     # print(balance / len(rows))
-   # print("balance = ", balance)
+ #   print("balance = ", balance)
    # print(balance / (len(rows) - 20000))
-    print("number of bets = ", bets )
-    print("number of wins =", wins)
-    print(balance / ((24800-18000)/2))
-    return (balance / ((24800-18000)/2))
+  #  print("number of bets = ", bets )
+  #  print("number of wins =", wins)
+    #print(balance / ((24800-18000)/2))
+    print("return = ", balance / bets )
+    return balance / bets
+
+
+def play_reg(clf):
+    #print("importance =", clf.feature_importances_)
+  #  global row, game_test
+    balance = 0.0
+    bets = 0
+    wins = 0
+    for i in range(18001, 25769, 2):
+        # for i in range(len(rows)):
+        row = rows[i]
+        h_played = row['h_played']
+        h_played_h = row['h_played_h']
+        a_played = row['a_played']
+        a_played_a = row['a_played_a']
+        if a_played == '0' or h_played == '0' or h_played_h == '0' or a_played_a == '0':
+            continue
+        odds = odds_func(row)
+        if odds[0] == 0.0 or odds[1] == 0.0 or odds[2] == 0.0:
+            continue
+        # ret = ret_calc(odds)
+        # rets.append(ret)
+        game_test = game_stats(row)
+        prediction = clf.calculate_prob_for_test_group([game_test])
+        prediction = tuple(predict[0] for predict in prediction)
+        bet_chosen = choose_bet(odds, prediction)
+        if not bet_chosen:
+            continue
+        balance -= 1
+        bets += 1
+       # print("league =", row['league'])
+       #print("date =", row['date'])
+       # print("bet =", bet_chosen)
+     #   print("odds: ", odds)
+        if bet(row, bet_chosen):
+            winning = win(odds, bet_chosen)
+            balance += winning
+            wins += 1
+          #  print("win = ", winning)
+        #print("balance = ", balance)
+    # print(balance / len(rows))
+    #print("balance = ", balance)
+   # print(balance / (len(rows) - 20000))
+   # print("number of bets = ", bets )
+   # print("number of wins =", wins)
+    #print(balance / ((24800-18000)/2))
+    return balance / bets
 
 
 def choose_bet_random(odds):
@@ -248,7 +477,9 @@ def play_random():
    # print("importance =", clf.feature_importances_)
    # global row, game_test
     balance = 0.0
-    for i in range(20000, len(rows)):
+    bets = 0
+    wins = 0
+    for i in range(18001, 25769, 2):
         # for i in range(len(rows)):
         row = rows[i]
         h_played = row['h_played']
@@ -258,20 +489,30 @@ def play_random():
         if a_played == '0' or h_played == '0' or h_played_h == '0' or a_played_a == '0':
             continue
         odds = odds_func(row)
+        if odds[0] == 0.0 or odds[1] == 0.0 or odds[2] == 0.0:
+            continue
+        #if odds != (0.0,0.0,0.0):
+            #print("ret = ", ret_calc(odds))
         game_test = game_stats(row)
         bet_chosen = choose_bet_random(odds)
         if not bet_chosen:
             continue
         balance -= 1
+        bets += 1
         if bet(row, bet_chosen):
             winning = win(odds, bet_chosen)
             balance += winning
-         #   print("win = ", winning)
-       # print("balance = ", balance)
+            wins += 1
+       #     print("win = ", winning)
+      #  print("balance = ", balance)
     # print(balance / len(rows))
-    #print("balance = ", balance)
+   # print("balance = ", balance)
    # print(balance / (len(rows) - 20000))
-    return balance / (len(rows) - 20000)
+   # print("number of bets = ", bets)
+   # print("number of wins =", wins)
+   # print("balance = ", balance)
+   # print("normal balanced = ", balance / ((24800-18000)/2))
+    return balance / bets
 
 
 def choose_bet_specific(odds, string):
@@ -334,8 +575,10 @@ def play_specific(string):
 def play_underdog():
    # print("importance =", clf.feature_importances_)
    # global row, game_test
+    bets = 0
+    wins = 0
     balance = 0.0
-    for i in range(20000, len(rows)):
+    for i in range(45000,59000,2):
         # for i in range(len(rows)):
         row = rows[i]
         h_played = row['h_played']
@@ -345,12 +588,15 @@ def play_underdog():
         if a_played == '0' or h_played == '0' or h_played_h == '0' or a_played_a == '0':
             continue
         odds = odds_func(row)
+        if odds[0] == 0.0 or odds[1] == 0.0 or odds[2] == 0.0:
+            continue
         game_test = game_stats(row)
         #prediction = clf.predict_proba([game_test])
         # predictions = [1 / result for result in prediction[0]]
         bet_chosen = choose_bet_underdog(odds)
         if not bet_chosen:
             continue
+        bets +=1
         balance -= 1
         #  print("league =", row['league'])
         #  print("date =", row['date'])
@@ -359,18 +605,22 @@ def play_underdog():
         if bet(row, bet_chosen):
             winning = win(odds, bet_chosen)
             balance += winning
+            wins += 1
          #   print("win = ", winning)
        # print("balance = ", balance)
     # print(balance / len(rows))
    # print("balance = ", balance)
-    print(balance / (len(rows) - 20000))
-    return balance / (len(rows) - 20000)
+    print("number of bets = ", bets)
+    print("number of wins = ", wins)
+    return (balance / bets)
 
 def play_favourite():
    # print("importance =", clf.feature_importances_)
    # global row, game_test
+    bets = 0
+    wins = 0
     balance = 0.0
-    for i in range(20000, len(rows)):
+    for i in range(45000,59000,2):
         # for i in range(len(rows)):
         row = rows[i]
         h_played = row['h_played']
@@ -380,12 +630,15 @@ def play_favourite():
         if a_played == '0' or h_played == '0' or h_played_h == '0' or a_played_a == '0':
             continue
         odds = odds_func(row)
+        if odds[0] == 0.0 or odds[1] == 0.0 or odds[2] == 0.0:
+            continue
         game_test = game_stats(row)
         #prediction = clf.predict_proba([game_test])
         # predictions = [1 / result for result in prediction[0]]
         bet_chosen = choose_bet_favourite(odds)
         if not bet_chosen:
             continue
+        bets +=1
         balance -= 1
         #  print("league =", row['league'])
         #  print("date =", row['date'])
@@ -394,12 +647,12 @@ def play_favourite():
         if bet(row, bet_chosen):
             winning = win(odds, bet_chosen)
             balance += winning
+            wins += 1
          #   print("win = ", winning)
        # print("balance = ", balance)
-    # print(balance / len(rows))
-   # print("balance = ", balance)
-    print(balance / (len(rows) - 20000))
-    return balance / (len(rows) - 20000)
+    print("number of bets = ", bets)
+    print("number of wins = ", wins)
+    return (balance / bets)
 
 
 #random_profits = []
@@ -410,50 +663,167 @@ def play_favourite():
 # underdog_profits = []
 
 
-estimators = list(range(10,21)) + list(range(20,110,10))
-min_samples_leaf_lst = list(range(1,11))
-max_depth = list(range(10,28, 2)) + [None]
-criteria = ['gini', 'entropy']
-max_features = [None, 'sqrt']
-profits = dict()
-
-
-
-
-
+#estimators = list(range(10,115,15))
 rows_extrac()
 create_training_group()
-for i in product(min_samples_leaf_lst, max_depth, criteria, max_features, estimators):
-    print(i)
-   # clf_reg = RandomForestClassifier()
-   # clf_reg.fit(games, results)
-    if i[0] != 1:
-        clf_reg = RandomForestClassifier(n_estimators=i[4], min_samples_leaf=i[0], min_samples_split=i[0],
-                                         random_state=42, max_depth=i[1], criterion=i[2], max_features=i[3])
+
+
+features = ['h_won'
+,'h_won_h'
+,'h_drawn'
+,'h_drawn_h'
+,'h_lost'
+,'h_lost_h'
+,'h_points'
+,'h_points_h'
+,'h_scored'
+,'h_scored_h'
+,'h_conced'
+,'h_conced_h'
+,'h_clean'
+,'h_clean_h'
+,'h_fail'
+,'h_fail_h'
+,'h_goal_diff'
+,'h_goal_diff_h'
+,'h_shots'
+,'h_shots_h'
+,'h_shots_against'
+,'h_shots_against_h'
+,'h_shots_target'
+,'h_shots_target_h'
+,'h_shots_diff_h'
+,'h_shots_diff'
+,'h_shots_target_against'
+,'h_shots_target_against_h'
+,'h_shots_target_diff'
+,'h_shots_target_diff_h'
+,'h_red_cards'
+,'h_red_cards_h'
+,'h_red_cards_against'
+,'h_red_cards_diff'
+,'h_red_cards_against_h'
+,'h_red_cards_diff_h'
+,'h_elo'
+,'h_fifa_rating'
+,'h_current_win_streak'
+,'h_current_no_lose_streak'
+,'h_current_lose_streak'
+,'h_current_no_win_streak'
+,'h_last_5_games_points'
+,'h_last_5_games_wins'
+,'h_last_5_games_loss'
+,'h_last_5_games_draw'
+,'h_last_5_games_scored'
+,'h_last_5_games_conced'
+,'h_last_5_games_goal_diff'
+,'h_last_5_games_clean'
+,'h_last_5_games_failed'
+,'a_won'
+,'a_won_a'
+,'a_drawn'
+,'a_drawn_a'
+,'a_lost'
+,'a_lost_a'
+,'a_points'
+,'a_points_a'
+,'a_scored'
+,'a_scored_a'
+,'a_conced'
+,'a_conced_a'
+,'a_clean'
+,'a_clean_a'
+,'a_fail'
+,'a_fail_a'
+,'a_goal_diff'
+,'a_goal_diff_a'
+,'a_shots'
+,'a_shots_a'
+,'a_shots_against'
+,'a_shots_against_a'
+,'a_shots_target'
+,'a_shots_target_a'
+,'a_shots_diff_a'
+,'a_shots_diff'
+,'a_shots_target_against'
+,'a_shots_target_against_a'
+,'a_shots_target_diff'
+,'a_shots_target_diff_a'
+,'a_red_cards'
+,'a_red_cards_a'
+,'a_red_cards_against'
+,'a_red_cards_diff'
+,'a_red_cards_against_a'
+,'a_red_cards_diff_a'
+,'a_elo'
+,'a_fifa_rating'
+,'a_current_win_streak'
+,'a_current_no_lose_streak'
+,'a_current_lose_streak'
+,'a_current_no_win_streak'
+,'a_last_5_games_points'
+,'a_last_5_games_wins'
+,'a_last_5_games_loss'
+,'a_last_5_games_draw'
+,'a_last_5_games_scored'
+,'a_last_5_games_conced'
+,'a_last_5_games_goal_diff'
+,'a_last_5_games_clean'
+,'a_last_5_games_failed']
+
+
+estimators = [100]
+min_samples_leaf_lst = list(range(10,100))
+max_depth = [None] + list(range(10,36))
+criteria = ['gini', 'entropy']
+weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+#max_features = [None, 'sqrt', 'log2']
+profits = dict()
+
+params = {'min_samples_leaf' : min_samples_leaf_lst,
+          #'min_samples_split' : min_samples_leaf_lst,
+          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth}
+params_list = list(ParameterGrid(params))
+best_params = dict()
+
+j = 0
+for comb in params_list:
+    clf = tree.DecisionTreeClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
+    max_depth = comb['max_depth'], criterion= comb['criterion'], class_weight= comb['class_weight'], max_features=None,
+                                      random_state=42)
+    #clf.fit(games, results)
+    clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+        is_weighted = 'umweighted'
     else:
-        clf_reg = RandomForestClassifier(n_estimators= i[4], random_state=42,
-        max_depth= i[1], criterion=i[2], max_features = i[3])
-    clf_reg.fit(games, results)
-    params = tuple(i)
-    profits[params] = play(clf_reg)
-sort_orders = sorted(profits.items(), key=lambda x: x[1], reverse=True)
+        is_weighted = 'weighted'
+    params_tuple = (comb['min_samples_leaf'], comb['max_depth'], comb['criterion'], is_weighted )
+    print(j)
+    print(params_tuple)
+    best_params[params_tuple] = play(clf)
+    j += 1
+
+
+sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
 for i in sort_orders:
-    print(i[0], i[1])
-
-
-# rows_extrac()
-# create_training_group()
-# clf_reg_10.fit(games, results)
-#clf_rand_10_3.fit(games, results)
-#clf_rand_20_1.fit(games, results)
-#clf_rand_100_1.fit(games, results)
-#for i in range(18001,21000):
-# print("regular 10")
-# print(play(clf_reg_10))
-# print("depth =", clf_reg_10.get_depth())
-# print("random 10_3")
-# print(play(clf_rand_10_3))
-# print("random 20_1")
-# print(play(clf_rand_20_1))
-# print("random 100_1")
-# print(play(clf_rand_100_1))
+      print(i[0], i[1])
+# sord_orderes_first = [feature[0] for feature in sort_orders]
+# for i in range(len(selected)):
+#     index = features.index(selected[i])
+#     if sord_orderes_first.index(features[index]) > 50:
+#         print('error')
+# for i in sort_orders:
+#       print(i[0], i[1])
+#clf_logiReg = LogiReg.LogiRegSoccerGame(games, results)
+clf_linearReg = LinearReg.LinearRegSoccerGame(games, results)
+#clf_multiReg = MultiReg.MultiRegSoccerGame(games, results)
+#print("Logistic reg")
+#print(play_reg(clf_logiReg))
+print("Linear reg")
+print(play_reg(clf_linearReg))
+#print("Multi reg")
+#print(play_reg(clf_multiReg))
+# random_results = []
+# for i in range(100):
+#     random_results.append(play_random())
+# print((sum(random_results)) / (len(random_results)) )
