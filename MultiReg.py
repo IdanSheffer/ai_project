@@ -6,8 +6,10 @@ class MultiRegSoccerGame:
     # x - features list per game
     # y_h - home win or not
     # y_a - away win or not
-    def __init__(self, x, y):
-        self.clf = LogisticRegression(random_state=0, max_iter=200).fit(x, y)
+    def __init__(self, x, y, params):
+        self.clf = LogisticRegression(solver= 'saga', random_state=42, max_iter=1000, C=params['c'],
+                                      fit_intercept=params['fit_intercept'], penalty='elasticnet',
+                                      class_weight=params['class_weight'], l1_ratio=params['l1_ratio']).fit(x, y)
         self.X = x
         self.Y = y
 

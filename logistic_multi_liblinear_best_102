@@ -1,0 +1,122 @@
+(1.0, True, 'l2', 'weighted') -0.007337503399510496
+(1.0, False, 'l2', 'weighted') -0.008553168343758532
+(0.8, True, 'l2', 'weighted') -0.02656785422899105
+(0.7, True, 'l2', 'weighted') -0.026679358172423243
+(0.7, False, 'l2', 'weighted') -0.027206962197443604
+(0.8, False, 'l2', 'weighted') -0.02862659776992117
+(0.9, False, 'l2', 'weighted') -0.030437976060935856
+(0.9, True, 'l2', 'weighted') -0.03522164808267614
+(1.0, False, 'l1', 'weighted') -0.03648626597769926
+(1.0, True, 'l1', 'weighted') -0.0371144955126462
+(0.9, True, 'l1', 'weighted') -0.03762578188740824
+(0.6, False, 'l2', 'weighted') -0.04314200217627851
+(0.9, False, 'l1', 'weighted') -0.043198259450639084
+(0.6, True, 'l2', 'weighted') -0.046276856132716836
+(0.5, False, 'l2', 'weighted') -0.04849333695947784
+(0.5, True, 'l2', 'weighted') -0.05122415669205653
+(0.6, False, 'l1', 'umweighted') -0.055420179494152656
+(0.5, True, 'l1', 'umweighted') -0.056010334511830163
+(0.1, False, 'l1', 'umweighted') -0.056110960021756646
+(0.2, True, 'l2', 'weighted') -0.0567364699483274
+(0.1, True, 'l1', 'umweighted') -0.057212401414196166
+(0.9, False, 'l2', 'umweighted') -0.058599401686157064
+(0.5, False, 'l1', 'umweighted') -0.059078052760402316
+(0.8, True, 'l1', 'weighted') -0.05941256459069886
+(0.8, False, 'l1', 'weighted') -0.060913788414468234
+(0.7, False, 'l1', 'umweighted') -0.06098993744900715
+(0.3, True, 'l2', 'weighted') -0.06111775904269786
+(0.4, False, 'l1', 'umweighted') -0.061881968996464365
+(0.8, False, 'l2', 'umweighted') -0.0623959749796028
+(0.5, False, 'l2', 'umweighted') -0.06295349469676367
+(0.9, True, 'l2', 'umweighted') -0.06311939080772357
+(1.0, False, 'l1', 'umweighted') -0.06323905357628494
+(0.7, True, 'l1', 'umweighted') -0.0633750339951046
+(0.4, True, 'l1', 'umweighted') -0.06387544193636097
+(0.6, True, 'l1', 'umweighted') -0.06401142235518073
+(0.2, False, 'l2', 'weighted') -0.06427250475931476
+(0.4, False, 'l2', 'umweighted') -0.06463965189012787
+(0.4, True, 'l2', 'umweighted') -0.0659042697851509
+(1.0, True, 'l2', 'umweighted') -0.06600217568670103
+(0.8, False, 'l1', 'umweighted') -0.06612455806363876
+(0.1, True, 'l2', 'umweighted') -0.06717976611367953
+(0.2, True, 'l1', 'umweighted') -0.06772096818058189
+(0.8, True, 'l1', 'umweighted') -0.06813978787054657
+(0.2, False, 'l2', 'umweighted') -0.06826217024748442
+(0.1, False, 'l1', 'weighted') -0.06840087027468031
+(0.5, True, 'l2', 'umweighted') -0.06865107424530868
+(0.8, True, 'l2', 'umweighted') -0.06867283111231974
+(0.2, True, 'l2', 'umweighted') -0.06883872722327988
+(0.1, False, 'l2', 'weighted') -0.06918683709545842
+(0.1, True, 'l1', 'weighted') -0.06930921947239584
+(1.0, False, 'l2', 'umweighted') -0.06933097633940703
+(0.2, False, 'l1', 'umweighted') -0.06940440576556967
+(0.7, False, 'l2', 'umweighted') -0.06975795485450094
+(0.3, False, 'l2', 'weighted') -0.0704733405875952
+(0.1, False, 'l2', 'umweighted') -0.07067990209409833
+(0.7, True, 'l2', 'umweighted') -0.07090587595212182
+(0.3, True, 'l1', 'umweighted') -0.07100081588251286
+(0.3, True, 'l2', 'umweighted') -0.07249388088115308
+(0.3, False, 'l2', 'umweighted') -0.07278759858580361
+(0.1, True, 'l2', 'weighted') -0.07292629861299989
+(1.0, True, 'l1', 'umweighted') -0.07392167527875976
+(0.2, True, 'l1', 'weighted') -0.07407125373946145
+(0.6, False, 'l1', 'weighted') -0.07418275768289354
+(0.5, True, 'l1', 'weighted') -0.0743105792765842
+(0.2, False, 'l1', 'weighted') -0.07477835191732386
+(0.9, False, 'l1', 'umweighted') -0.07518629317378292
+(0.3, False, 'l1', 'umweighted') -0.07539298341038882
+(0.6, True, 'l2', 'umweighted') -0.07556159912972525
+(0.3, True, 'l1', 'weighted') -0.07695403861843897
+(0.6, False, 'l2', 'umweighted') -0.07735382104976868
+(0.3, False, 'l1', 'weighted') -0.07743540930106062
+(0.9, True, 'l1', 'umweighted') -0.07805004079412563
+(0.5, False, 'l1', 'weighted') -0.07833016045689437
+(0.7, True, 'l1', 'weighted') -0.07833559967364692
+(0.4, False, 'l1', 'weighted') -0.0820886592330706
+(0.7, False, 'l1', 'weighted') -0.08244492793037805
+(0.6, True, 'l1', 'weighted') -0.0828501495784608
+(0.4, True, 'l1', 'weighted') -0.08306499864019587
+(0.4, True, 'l2', 'weighted') -0.08314658689148773
+(0.4, False, 'l2', 'weighted') -0.08738373674190916
+
+code:
+    def __init__(self, x, y, params):
+        self.clf = LogisticRegression(solver= 'liblinear', random_state=42, max_iter=1000, C=params['c'],
+                                      fit_intercept=params['fit_intercept'], penalty = params['penalty'],
+                                      class_weight=params['class_weight']).fit(x, y)
+        self.X = x
+        self.Y = y
+
+normal_games()
+c = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+fit = [True, False]
+l1_ratio = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+penalty = ['l1', 'l2']
+# estimators_ada = list(range(10,101))
+params = {'c' : c, 'fit_intercept' : fit,
+          'class_weight' : weigths, 'penalty' : penalty }
+params_list = list(ParameterGrid(params))
+best_params = dict()
+
+
+
+j = 0
+for comb in params_list:
+    clf = clf_linearReg = MultiReg.MultiRegSoccerGame(games, results, comb)
+    #clf.fit(games, results)
+    #clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+         is_weighted = 'umweighted'
+    else:
+         is_weighted = 'weighted'
+    params_tuple = (comb['c'], comb['fit_intercept'], comb['penalty'], is_weighted)
+    print(j)
+    print(params_tuple)
+    best_params[params_tuple] = play_reg(clf)
+    j += 1
+
+
+sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
+for i in sort_orders:
+      print(i[0], i[1])
+Process finished with exit code 0

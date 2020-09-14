@@ -450,14 +450,7 @@ def play_reg(clf):
             winning = win(odds, bet_chosen)
             balance += winning
             wins += 1
-          #  print("win = ", winning)
-        #print("balance = ", balance)
-    # print(balance / len(rows))
-    #print("balance = ", balance)
-   # print(balance / (len(rows) - 20000))
-   # print("number of bets = ", bets )
-   # print("number of wins =", wins)
-    #print(balance / ((24800-18000)/2))
+    print("return = ", balance / bets )
     return balance / bets
 
 
@@ -661,10 +654,21 @@ def play_favourite():
 # underdog_profits = []
 
 
-#estimators = list(range(10,115,15))
-rows_extrac()
-create_training_group()
+def normal_games():
+    global games
+    max_feature = [0] * len(games[0])
+    min_feature = [0] * len(games[0])
+    for game in games:
+        for i, feature in enumerate(game):
+            max_feature[i] = max(max_feature[i], feature)
+            min_feature[i] = min(min_feature[i], feature)
+    for game in games:
+        for i in range(len(game)):
+            game[i] = (game[i] - min_feature[i]) / (max_feature[i] - min_feature[i])
 
+#estimators = list(range(10,115,15))
+
+normal_games()
 
 features = ['h_won'
 ,'h_won_h'
@@ -770,41 +774,44 @@ features = ['h_won'
 ,'a_last_5_games_failed']
 
 
-estimators = list(range(10,150,5))
-min_samples_leaf_lst = list(range(3,51))
-max_depth = [None] + list(range(10,41))
-criteria = ['gini', 'entropy']
+# estimators = list(range(10,150,5))
+# min_samples_leaf_lst = list(range(3,51))
+# max_depth = [None] + list(range(10,41))
+# criteria = ['gini', 'entropy']
 weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
-max_features = ['sqrt', 'log2']
-profits = dict()
-
-
-
-classifier = ['None', 'good_tree']
-estimators_ada = list(range(10,101))
+# max_features = ['sqrt', 'log2']
+# profits = dict()
 # params = {'min_samples_leaf' : min_samples_leaf_lst,
 #           #'min_samples_split' : min_samples_leaf_lst,
 #           'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
 #           'max_features' : max_features, 'n_estimators' : estimators}
-params = {'n_estimators' : estimators_ada}
+
+normalize = [True, False]
+c = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+fit = [True, False]
+l1_ratio = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+#penalty = ['l1', 'l2']
+# estimators_ada = list(range(10,101))
+params = {'c' : c, 'fit_intercept' : fit,
+          'class_weight' : weigths, 'l1_ratio': l1_ratio}
 params_list = list(ParameterGrid(params))
 best_params = dict()
 
+
+
 j = 0
 for comb in params_list:
-    our_tree = tree.DecisionTreeClassifier(min_samples_leaf=10, min_samples_split=10, max_depth=24, random_state=42,
-                                           criterion='entropy', class_weight = {0.0:2.15865, 1.0:3.84336, 2.0:3.61584})
-    clf = AdaBoostClassifier(base_estimator=our_tree ,n_estimators= comb['n_estimators'], random_state=42)
+    clf = clf_linearReg = MultiReg.MultiRegSoccerGame(games, results, comb)
     #clf.fit(games, results)
-    clf.fit(best_features, results)
-    # if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
-    #     is_weighted = 'umweighted'
-    # else:
-    #     is_weighted = 'weighted'
-    params_tuple = (comb['n_estimators'])
+    #clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+         is_weighted = 'umweighted'
+    else:
+         is_weighted = 'weighted'
+    params_tuple = (comb['c'], comb['fit_intercept'], comb['l1_ratio'], is_weighted)
     print(j)
     print(params_tuple)
-    best_params[params_tuple] = play(clf)
+    best_params[params_tuple] = play_reg(clf)
     j += 1
 
 
@@ -819,12 +826,13 @@ for i in sort_orders:
 # for i in sort_orders:
 #       print(i[0], i[1])
 #clf_logiReg = LogiReg.LogiRegSoccerGame(games, results)
-clf_linearReg = LinearReg.LinearRegSoccerGame(games, results)
+#clf.fit(games, results)
+#clf_linearReg = LinearReg.LinearRegSoccerGame(games, results)
 #clf_multiReg = MultiReg.MultiRegSoccerGame(games, results)
 #print("Logistic reg")
 #print(play_reg(clf_logiReg))
-print("Linear reg")
-print(play_reg(clf_linearReg))
+#print("Linear reg")
+#print(play_reg(clf_linearReg))
 #print("Multi reg")
 #print(play_reg(clf_multiReg))
 # random_results = []

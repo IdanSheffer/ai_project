@@ -1,0 +1,80 @@
+(0.8, False, 'weighted') -0.01574653249932013
+(0.7, True, 'weighted') -0.017506119118846915
+(0.4, False, 'weighted') -0.01750883872722332
+(0.5, True, 'weighted') -0.01750883872722335
+(0.4, True, 'weighted') -0.020448735382105048
+(0.9, True, 'weighted') -0.02518629317378301
+(0.6, True, 'weighted') -0.025490889311939057
+(0.9, False, 'weighted') -0.02574925210769644
+(0.5, False, 'weighted') -0.027647538754419318
+(1.0, False, 'weighted') -0.035197171607288594
+(0.7, False, 'weighted') -0.03671471308131633
+(0.2, False, 'weighted') -0.03722599945607828
+(0.3, False, 'weighted') -0.0381968996464509
+(0.3, True, 'weighted') -0.03971444112047865
+(0.2, True, 'weighted') -0.03992655059847659
+(0.4, True, 'umweighted') -0.04038346478107155
+(0.1, True, 'weighted') -0.04094124047878113
+(0.4, False, 'umweighted') -0.04340494968724489
+(0.5, False, 'umweighted') -0.043554528147946595
+(1.0, True, 'weighted') -0.04407125373946143
+(0.3, True, 'umweighted') -0.04435409301060635
+(0.3, False, 'umweighted') -0.04528691868370936
+(0.1, False, 'weighted') -0.04669839543105777
+(1.0, False, 'umweighted') -0.04738101713353266
+(1.0, True, 'umweighted') -0.04796573293445734
+(0.9, True, 'umweighted') -0.049741637204242475
+(0.2, False, 'umweighted') -0.04978787054664111
+(0.9, False, 'umweighted') -0.050429698123470104
+(0.5, True, 'umweighted') -0.05132716888768009
+(0.6, False, 'weighted') -0.052814794669567476
+(0.2, True, 'umweighted') -0.05390263802012487
+(0.6, False, 'umweighted') -0.05491433233614352
+(0.1, False, 'umweighted') -0.055281479466956496
+(0.8, False, 'umweighted') -0.055784607016589445
+(0.1, True, 'umweighted') -0.05657329344574361
+(0.8, True, 'umweighted') -0.05689692684253458
+(0.8, True, 'weighted') -0.05904269785150918
+(0.6, True, 'umweighted') -0.06048137068262162
+(0.7, False, 'umweighted') -0.06450639107968442
+(0.7, True, 'umweighted') -0.0660038084874863
+
+code:
+    def __init__(self, x, y, params):
+        self.clf = LogisticRegression(solver= 'sag', random_state=42, max_iter=1000, C=params['c'],
+                                      fit_intercept=params['fit_intercept'],
+                                      class_weight=params['class_weight']).fit(x, y)
+        self.X = x
+        self.Y = y
+
+
+normal_games()
+c = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+fit = [True, False]
+
+params = {'c' : c, 'fit_intercept' : fit,
+          'class_weight' : weigths,}
+params_list = list(ParameterGrid(params))
+best_params = dict()
+
+
+
+j = 0
+for comb in params_list:
+    clf = clf_linearReg = MultiReg.MultiRegSoccerGame(games, results, comb)
+    #clf.fit(games, results)
+    #clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+         is_weighted = 'umweighted'
+    else:
+         is_weighted = 'weighted'
+    params_tuple = (comb['c'], comb['fit_intercept'], is_weighted)
+    print(j)
+    print(params_tuple)
+    best_params[params_tuple] = play_reg(clf)
+    j += 1
+
+
+sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
+for i in sort_orders:
+      print(i[0], i[1])

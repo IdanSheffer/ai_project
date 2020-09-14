@@ -1,4 +1,5 @@
 from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import Ridge
 import math
 
 
@@ -44,7 +45,8 @@ class LinearRegSoccerGame:
                 draw.append(d / norm_)
                 away.append(a / norm_)
         return home, draw, away
-
+    def predict_proba(self, x):
+        return self.calculate_prob_for_test_group(x)
     # return in how much games the result with more probability is equal to the real result
     # 1 return parameter: number of games
     # 2 return parameter: number of the probability right
