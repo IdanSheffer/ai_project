@@ -359,13 +359,11 @@ def ret_calc(odds):
 rows_extrac()
 create_training_group()
 clf = tree.DecisionTreeClassifier(max_features=None, random_state=42)
-rfe = RFE(estimator=clf, n_features_to_select=25)
+rfe = RFE(estimator=clf, n_features_to_select=102)
 rfe.fit(games, results)
 best_features = rfe.transform(games)
 
 def play(clf):
-    #print("importance =", clf.feature_importances_)
-  #  global row, game_test
     balance = 0.0
     bets = 0
     wins = 0
@@ -772,32 +770,38 @@ features = ['h_won'
 ,'a_last_5_games_failed']
 
 
-estimators = [100]
-min_samples_leaf_lst = list(range(10,100))
-max_depth = [None] + list(range(10,36))
+estimators = list(range(10,150,5))
+min_samples_leaf_lst = list(range(3,51))
+max_depth = [None] + list(range(10,41))
 criteria = ['gini', 'entropy']
 weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
-#max_features = [None, 'sqrt', 'log2']
+max_features = ['sqrt', 'log2']
 profits = dict()
 
-params = {'min_samples_leaf' : min_samples_leaf_lst,
-          #'min_samples_split' : min_samples_leaf_lst,
-          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth}
+
+
+classifier = ['None', 'good_tree']
+estimators_ada = list(range(10,101))
+# params = {'min_samples_leaf' : min_samples_leaf_lst,
+#           #'min_samples_split' : min_samples_leaf_lst,
+#           'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
+#           'max_features' : max_features, 'n_estimators' : estimators}
+params = {'n_estimators' : estimators_ada}
 params_list = list(ParameterGrid(params))
 best_params = dict()
 
 j = 0
 for comb in params_list:
-    clf = tree.DecisionTreeClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
-    max_depth = comb['max_depth'], criterion= comb['criterion'], class_weight= comb['class_weight'], max_features=None,
-                                      random_state=42)
+    our_tree = tree.DecisionTreeClassifier(min_samples_leaf=10, min_samples_split=10, max_depth=24, random_state=42,
+                                           criterion='entropy', class_weight = {0.0:2.15865, 1.0:3.84336, 2.0:3.61584})
+    clf = AdaBoostClassifier(base_estimator=our_tree ,n_estimators= comb['n_estimators'], random_state=42)
     #clf.fit(games, results)
     clf.fit(best_features, results)
-    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
-        is_weighted = 'umweighted'
-    else:
-        is_weighted = 'weighted'
-    params_tuple = (comb['min_samples_leaf'], comb['max_depth'], comb['criterion'], is_weighted )
+    # if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+    #     is_weighted = 'umweighted'
+    # else:
+    #     is_weighted = 'weighted'
+    params_tuple = (comb['n_estimators'])
     print(j)
     print(params_tuple)
     best_params[params_tuple] = play(clf)
