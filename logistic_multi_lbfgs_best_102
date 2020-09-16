@@ -71,7 +71,47 @@ for comb in params_list:
     best_params[params_tuple] = play_reg(clf)
     j += 1
 
-
+no normal_games()
+(0.9, True, 'weighted') -0.03318107221006584
+(0.5, True, 'weighted') -0.039608862144420325
+(0.5, False, 'weighted') -0.04111262985237851
+(0.4, True, 'weighted') -0.04558960328317387
+(0.7, False, 'weighted') -0.04592988222404834
+(0.4, False, 'weighted') -0.046204159824849635
+(0.9, False, 'weighted') -0.04724137931034497
+(0.7, True, 'weighted') -0.048160196828868386
+(0.8, True, 'weighted') -0.048513957307060915
+(0.1, True, 'umweighted') -0.04863595302619702
+(0.2, False, 'weighted') -0.04943060498220654
+(1.0, False, 'weighted') -0.05080098414434131
+(0.3, True, 'weighted') -0.0523912448700412
+(0.1, True, 'weighted') -0.05245546725130186
+(1.0, True, 'weighted') -0.05293811610076685
+(0.3, False, 'weighted') -0.053120897155361224
+(0.6, False, 'weighted') -0.05330142231947494
+(0.4, True, 'umweighted') -0.05543791241751662
+(1.0, False, 'umweighted') -0.05562969642320415
+(0.2, True, 'weighted') -0.05579436696745977
+(0.6, True, 'weighted') -0.056287982480153397
+(0.1, False, 'weighted') -0.05638303693570461
+(0.8, True, 'umweighted') -0.05682061978545896
+(1.0, True, 'umweighted') -0.057613095238095324
+(0.8, False, 'weighted') -0.059695973705834154
+(0.5, False, 'umweighted') -0.06314397354974463
+(0.9, False, 'umweighted') -0.06385628742514968
+(0.6, True, 'umweighted') -0.0666166766646672
+(0.3, False, 'umweighted') -0.07039116154075845
+(0.5, True, 'umweighted') -0.07314532975231282
+(0.4, False, 'umweighted') -0.0737545126353791
+(0.2, True, 'umweighted') -0.07508235998802042
+(0.2, False, 'umweighted') -0.07529394210683378
+(0.6, False, 'umweighted') -0.07593637454981997
+(0.7, True, 'umweighted') -0.07606971153846155
+(0.3, True, 'umweighted') -0.07686678614097985
+(0.8, False, 'umweighted') -0.07816796174536768
+(0.1, False, 'umweighted') -0.07939339339339346
+(0.9, True, 'umweighted') -0.08029649595687341
+(0.7, False, 'umweighted') -0.08425411061285505
 sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
 for i in sort_orders:
       print(i[0], i[1])

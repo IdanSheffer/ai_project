@@ -78,3 +78,45 @@ for comb in params_list:
 sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
 for i in sort_orders:
       print(i[0], i[1])
+	  
+without normal_games()
+(0.7, True, 'weighted') -0.05081280788177353
+(0.8, True, 'weighted') -0.05081280788177353
+(0.9, True, 'weighted') -0.05081280788177353
+(0.1, True, 'weighted') -0.05082101806239749
+(0.3, True, 'weighted') -0.0512315270935962
+(0.4, True, 'weighted') -0.0512315270935962
+(0.5, True, 'weighted') -0.0512315270935962
+(0.6, True, 'weighted') -0.0512315270935962
+(0.2, True, 'weighted') -0.05150519978106199
+(1.0, True, 'weighted') -0.05174329501915721
+(0.1, False, 'weighted') -0.05363711001642043
+(0.2, False, 'weighted') -0.05497810618500281
+(0.3, False, 'weighted') -0.05497810618500281
+(0.4, False, 'weighted') -0.05662014230979759
+(0.5, False, 'weighted') -0.05662014230979759
+(0.6, False, 'weighted') -0.05662014230979759
+(0.7, False, 'weighted') -0.05662014230979759
+(0.8, False, 'weighted') -0.05662014230979759
+(0.9, False, 'weighted') -0.05662014230979759
+(1.0, False, 'weighted') -0.05662014230979759
+(0.1, True, 'umweighted') -0.06620783132530131
+(0.4, True, 'umweighted') -0.06634829768002416
+(0.5, True, 'umweighted') -0.06634829768002416
+(0.6, True, 'umweighted') -0.06634829768002416
+(0.7, True, 'umweighted') -0.06634829768002416
+(0.8, True, 'umweighted') -0.06634829768002416
+(0.9, True, 'umweighted') -0.06634829768002416
+(1.0, True, 'umweighted') -0.06634829768002416
+(0.3, True, 'umweighted') -0.06700120554550941
+(0.2, True, 'umweighted') -0.067282313949985
+(0.5, False, 'umweighted') -0.06743226971703799
+(0.6, False, 'umweighted') -0.06743226971703799
+(0.7, False, 'umweighted') -0.06743226971703799
+(0.8, False, 'umweighted') -0.06743226971703799
+(0.9, False, 'umweighted') -0.06743226971703799
+(1.0, False, 'umweighted') -0.06743226971703799
+(0.1, False, 'umweighted') -0.06758195488721808
+(0.2, False, 'umweighted') -0.06771291002106536
+(0.3, False, 'umweighted') -0.06771291002106536
+(0.4, False, 'umweighted') -0.06771291002106536

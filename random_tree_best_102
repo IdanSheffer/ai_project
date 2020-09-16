@@ -1,0 +1,1284 @@
+52, 40, 19, 'gini', 'weighted', 'log2') 0.026270016565433478
+(55, 40, 19, 'gini', 'weighted', 'log2') 0.024517822602928983
+(53, 40, 19, 'gini', 'weighted', 'log2') 0.022531750414135857
+(53, 40, 17, 'gini', 'weighted', 'log2') 0.014998619165976248
+(57, 40, 19, 'gini', 'weighted', 'log2') 0.01342715231788079
+(53, 41, 16, 'gini', 'weighted', 'log2') 0.01340859030837008
+(53, 41, 19, 'gini', 'weighted', 'log2') 0.013066336361134051
+(56, 40, 19, 'gini', 'weighted', 'log2') 0.01200165425971878
+(52, 40, 17, 'gini', 'weighted', 'log2') 0.011120000000000007
+(53, 41, 18, 'gini', 'weighted', 'log2') 0.010405070267291285
+(55, 40, 17, 'gini', 'weighted', 'log2') 0.010066097493803354
+(55, 41, 18, 'gini', 'weighted', 'log2') 0.009014317180616755
+(54, 40, 18, 'gini', 'weighted', 'log2') 0.0083967991169978
+(56, 41, 17, 'gini', 'weighted', 'log2') 0.007893868572999731
+(54, 40, 17, 'gini', 'weighted', 'log2') 0.007390586292320396
+(55, 41, 16, 'gini', 'weighted', 'log2') 0.007290748898678417
+(56, 41, 16, 'gini', 'weighted', 'log2') 0.006718061674008822
+(55, 40, 18, 'gini', 'weighted', 'log2') 0.0061048275862069165
+(52, 41, 16, 'gini', 'weighted', 'log2') 0.005883810572687236
+(54, 41, 19, 'gini', 'weighted', 'log2') 0.005787444933920702
+(57, 41, 17, 'gini', 'weighted', 'log2') 0.00555372355042595
+(54, 40, 19, 'gini', 'weighted', 'log2') 0.004761379310344853
+(52, 40, 18, 'gini', 'weighted', 'log2') 0.004474192658018245
+(57, 41, 18, 'gini', 'weighted', 'log2') 0.0044083654375344
+(57, 41, 19, 'gini', 'weighted', 'log2') 0.004299477016240047
+(52, 41, 19, 'gini', 'weighted', 'log2') 0.003996696944673845
+(54, 41, 18, 'gini', 'weighted', 'log2') 0.0032361034672537025
+(54, 41, 16, 'gini', 'weighted', 'log2') 0.0025034387895461144
+(57, 40, 17, 'gini', 'weighted', 'log2') 0.0024869182043513855
+(56, 40, 17, 'gini', 'weighted', 'log2') 0.002429752066115683
+(55, 41, 19, 'gini', 'weighted', 'log2') 0.002070484581497769
+(53, 40, 18, 'gini', 'weighted', 'log2') 0.0016754071211702996
+(54, 41, 17, 'gini', 'weighted', 'log2') 0.0012221917055753766
+(56, 40, 18, 'gini', 'weighted', 'log2') 0.0008519437551695597
+(53, 41, 17, 'gini', 'weighted', 'log2') 0.0006231128191051369
+(57, 41, 16, 'gini', 'weighted', 'log2') -0.0008785458551363118
+(56, 41, 19, 'gini', 'weighted', 'log2') -0.0013617606602475804
+(55, 41, 17, 'gini', 'weighted', 'log2') -0.0027357712400330166
+(56, 41, 18, 'gini', 'weighted', 'log2') -0.0031646961781688072
+(52, 41, 18, 'gini', 'weighted', 'log2') -0.003298458149779767
+(52, 41, 17, 'gini', 'weighted', 'log2') -0.0046935971420719825
+(56, 39, 18, 'gini', 'weighted', 'log2') -0.00593318608503588
+(57, 40, 18, 'gini', 'weighted', 'log2') -0.006292723263506073
+(52, 40, 16, 'gini', 'weighted', 'log2') -0.007718379718930825
+(53, 40, 16, 'gini', 'weighted', 'log2') -0.008597023153252474
+(57, 38, 17, 'gini', 'weighted', 'log2') -0.016333333333333328
+(53, 39, 18, 'gini', 'weighted', 'log2') -0.017069394525850178
+(57, 42, 15, 'gini', 'weighted', 'log2') -0.017446984301845204
+(57, 39, 18, 'gini', 'weighted', 'log2') -0.017987317342156122
+(56, 40, 16, 'gini', 'weighted', 'log2') -0.018212321232123272
+(55, 39, 18, 'gini', 'weighted', 'log2') -0.0183724785852446
+(54, 40, 16, 'gini', 'weighted', 'log2') -0.019355371900826458
+(56, 42, 15, 'gini', 'weighted', 'log2') -0.01956796917996698
+(57, 38, 15, 'gini', 'weighted', 'log2') -0.01969638421197902
+(55, 40, 16, 'gini', 'weighted', 'log2') -0.01977410468319564
+(53, 42, 18, 'gini', 'weighted', 'log2') -0.020135247032845704
+(54, 39, 18, 'gini', 'weighted', 'log2') -0.02055540204476377
+(54, 38, 15, 'gini', 'weighted', 'log2') -0.021865342163355426
+(52, 39, 18, 'gini', 'weighted', 'log2') -0.023241150442477883
+(53, 38, 15, 'gini', 'weighted', 'log2') -0.023669699476151086
+(57, 40, 16, 'gini', 'weighted', 'log2') -0.023697687224669722
+(57, 42, 19, 'gini', 'weighted', 'log2') -0.02379537953795383
+(55, 39, 17, 'gini', 'weighted', 'log2') -0.024079092920354067
+(56, 39, 19, 'gini', 'weighted', 'log2') -0.024723216744698462
+(53, 38, 19, 'gini', 'weighted', 'log2') -0.025206839492553784
+(56, 42, 18, 'gini', 'weighted', 'log2') -0.025284059569773837
+(56, 38, 17, 'gini', 'weighted', 'log2') -0.025298980435381625
+(55, 38, 16, 'gini', 'weighted', 'log2') -0.025353006067291763
+(53, 38, 17, 'gini', 'weighted', 'log2') -0.025641238253178565
+(55, 42, 18, 'gini', 'weighted', 'log2') -0.025914482758620717
+(53, 40, 15, 'gini', 'weighted', 'log2') -0.02664551724137939
+(54, 42, 18, 'gini', 'weighted', 'log2') -0.026969613259668523
+(52, 39, 16, 'gini', 'weighted', 'log2') -0.027055417700579013
+(56, 38, 16, 'gini', 'weighted', 'log2') -0.027118457300275487
+(57, 39, 16, 'gini', 'weighted', 'log2') -0.027179487179487215
+(56, 42, 19, 'gini', 'weighted', 'log2') -0.02727497935590424
+(54, 42, 15, 'gini', 'weighted', 'log2') -0.027374655647382902
+(53, 39, 19, 'gini', 'weighted', 'log2') -0.02756212037548315
+(55, 39, 19, 'gini', 'weighted', 'log2') -0.027945960849186678
+(54, 40, 15, 'gini', 'weighted', 'log2') -0.028314917127071893
+(54, 38, 17, 'gini', 'weighted', 'log2') -0.028446655610834717
+(55, 41, 15, 'gini', 'weighted', 'log2') -0.028521882741535966
+(52, 42, 18, 'gini', 'weighted', 'log2') -0.028578918322295806
+(56, 41, 15, 'gini', 'weighted', 'log2') -0.029245127642053368
+(52, 38, 19, 'gini', 'weighted', 'log2') -0.029603415037179837
+(53, 39, 16, 'gini', 'weighted', 'log2') -0.029851280638942494
+(54, 41, 15, 'gini', 'weighted', 'log2') -0.03002753303964763
+(53, 42, 19, 'gini', 'weighted', 'log2') -0.030110344827586257
+(54, 39, 17, 'gini', 'weighted', 'log2') -0.03012430939226527
+(54, 38, 19, 'gini', 'weighted', 'log2') -0.030465180291769898
+(54, 39, 19, 'gini', 'weighted', 'log2') -0.030793825799338505
+(55, 38, 17, 'gini', 'weighted', 'log2') -0.03084320749517773
+(56, 42, 17, 'gini', 'weighted', 'log2') -0.030880330123796474
+(54, 42, 19, 'gini', 'weighted', 'log2') -0.03098867716100532
+(57, 42, 18, 'gini', 'weighted', 'log2') -0.03115278543849972
+(53, 41, 15, 'gini', 'weighted', 'log2') -0.03138177814478396
+(57, 42, 17, 'gini', 'weighted', 'log2') -0.03179769103903244
+(52, 41, 15, 'gini', 'weighted', 'log2') -0.03207599118942741
+(52, 42, 15, 'gini', 'weighted', 'log2') -0.03216134361233489
+(56, 40, 15, 'gini', 'weighted', 'log2') -0.0322618061309031
+(56, 42, 16, 'gini', 'weighted', 'log2') -0.032368348497380774
+(53, 42, 15, 'gini', 'weighted', 'log2') -0.03240847784200393
+(52, 40, 15, 'gini', 'weighted', 'log2') -0.03244272702180523
+(54, 38, 16, 'gini', 'weighted', 'log2') -0.03264462809917359
+(55, 42, 19, 'gini', 'weighted', 'log2') -0.03272777319020094
+(55, 42, 15, 'gini', 'weighted', 'log2') -0.03276080374346272
+(56, 38, 15, 'gini', 'weighted', 'log2') -0.03296500413337007
+(55, 40, 15, 'gini', 'weighted', 'log2') -0.03304407713498633
+(54, 42, 16, 'gini', 'weighted', 'log2') -0.03401820187534474
+(53, 38, 16, 'gini', 'weighted', 'log2') -0.034201379310344865
+(52, 42, 16, 'gini', 'weighted', 'log2') -0.034749449339207025
+(52, 38, 16, 'gini', 'weighted', 'log2') -0.0354460093896714
+(55, 42, 17, 'gini', 'weighted', 'log2') -0.03558062740781522
+(55, 38, 15, 'gini', 'weighted', 'log2') -0.03578090507726268
+(52, 39, 17, 'gini', 'weighted', 'log2') -0.03596515486725669
+(52, 38, 17, 'gini', 'weighted', 'log2') -0.036293222683264154
+(57, 39, 19, 'gini', 'weighted', 'log2') -0.036701570680628355
+(57, 39, 17, 'gini', 'weighted', 'log2') -0.036874827300359285
+(57, 42, 16, 'gini', 'weighted', 'log2') -0.037025909592061826
+(55, 42, 16, 'gini', 'weighted', 'log2') -0.037061415587992294
+(57, 40, 15, 'gini', 'weighted', 'log2') -0.03712117030085572
+(57, 38, 19, 'gini', 'weighted', 'log2') -0.037474496829335596
+(57, 41, 15, 'gini', 'weighted', 'log2') -0.037547997805814796
+(57, 38, 16, 'gini', 'weighted', 'log2') -0.038027548209366456
+(55, 38, 19, 'gini', 'weighted', 'log2') -0.03812413793103448
+(53, 39, 17, 'gini', 'weighted', 'log2') -0.03818986991419874
+(56, 39, 16, 'gini', 'weighted', 'log2') -0.03879823594266817
+(52, 42, 19, 'gini', 'weighted', 'log2') -0.038935466078323294
+(52, 39, 19, 'gini', 'weighted', 'log2') -0.04022357162572449
+(56, 38, 19, 'gini', 'weighted', 'log2') -0.04123552123552128
+(52, 38, 15, 'gini', 'weighted', 'log2') -0.04228413793103446
+(56, 39, 17, 'gini', 'weighted', 'log2') -0.04338861249309016
+(54, 42, 17, 'gini', 'weighted', 'log2') -0.04433020948180833
+(55, 39, 16, 'gini', 'weighted', 'log2') -0.045600882028665926
+(52, 38, 18, 'gini', 'weighted', 'log2') -0.045708769994484276
+(53, 42, 16, 'gini', 'weighted', 'log2') -0.04598566308243726
+(57, 38, 18, 'gini', 'weighted', 'log2') -0.04764413793103446
+(55, 38, 18, 'gini', 'weighted', 'log2') -0.048352194314104376
+(53, 42, 17, 'gini', 'weighted', 'log2') -0.04979378608743485
+(56, 38, 18, 'gini', 'weighted', 'log2') -0.04989517241379304
+(52, 42, 17, 'gini', 'weighted', 'log2') -0.050283122594832474
+(53, 38, 18, 'gini', 'weighted', 'log2') -0.05404026475455043
+(56, 39, 15, 'gini', 'weighted', 'log2') -0.054127553837658784
+(53, 39, 15, 'gini', 'weighted', 'log2') -0.054291240674219345
+(57, 39, 15, 'gini', 'weighted', 'log2') -0.05471140568903618
+(54, 39, 16, 'gini', 'weighted', 'log2') -0.05473814773980155
+(54, 38, 18, 'gini', 'weighted', 'log2') -0.05493786246893124
+(54, 39, 15, 'gini', 'weighted', 'log2') -0.0577495161736246
+(52, 39, 15, 'gini', 'weighted', 'log2') -0.05869541182974016
+(55, 39, 15, 'gini', 'weighted', 'log2') -0.06250138045278851
+
+code:
+estimators = list(range(52,58,1))
+min_samples_leaf_lst = list(range(38,43))
+max_depth = list(range(15,20))
+criteria = ['gini']
+weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+max_features = ['log2']
+params = {'min_samples_leaf' : min_samples_leaf_lst,
+          #'min_samples_split' : min_samples_leaf_lst,
+          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
+          'max_features' : max_features, 'n_estimators' : estimators}
+params_list = list(ParameterGrid(params))
+best_params = dict()
+
+
+j = 0
+for comb in params_list:
+    clf = RandomForestClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
+    max_depth = comb['max_depth'], criterion= comb['criterion'], class_weight= comb['class_weight'],
+                                 max_features=comb['max_features'], n_estimators=comb['n_estimators'],
+                                      random_state=42, bootstrap=True)
+    #clf.fit(games, results)
+    clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+        is_weighted = 'umweighted'
+    else:
+        is_weighted = 'weighted'
+    params_tuple = (comb['n_estimators'],
+                    comb['min_samples_leaf'], comb['max_depth'], comb['criterion'], is_weighted, comb['max_features'] )
+    print(j)
+    print(params_tuple)
+    best_params[params_tuple] = play(clf)
+    j += 1
+
+
+sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
+for i in sort_orders:
+      print(i[0], i[1])
+	  
+(133, 18, 18, 'entropy', 'weighted', 'log2') 0.017464632454923742
+(134, 18, 18, 'entropy', 'weighted', 'log2') 0.007708102108768026
+(135, 18, 18, 'entropy', 'weighted', 'log2') 0.007449459983384088
+(133, 16, 19, 'entropy', 'weighted', 'log2') 0.005510938798116861
+(137, 18, 18, 'entropy', 'weighted', 'log2') 0.004850166481687014
+(135, 16, 17, 'entropy', 'weighted', 'log2') 0.002244672017713781
+(136, 18, 18, 'entropy', 'weighted', 'log2') 0.0019927937915742737
+(134, 16, 19, 'entropy', 'weighted', 'log2') 0.001516325401217497
+(134, 16, 15, 'entropy', 'weighted', 'log2') -0.00040066316662061276
+(137, 16, 15, 'entropy', 'weighted', 'log2') -0.0013453038674033342
+(135, 20, 19, 'entropy', 'weighted', 'log2') -0.0013615023474178487
+(133, 16, 15, 'entropy', 'weighted', 'log2') -0.0018282242474454548
+(136, 16, 17, 'entropy', 'weighted', 'log2') -0.0024868603042877044
+(136, 16, 15, 'entropy', 'weighted', 'log2') -0.0029431253451132158
+(137, 19, 16, 'entropy', 'weighted', 'log2') -0.0031580404096319017
+(135, 16, 19, 'entropy', 'weighted', 'log2') -0.003550884955752217
+(135, 16, 15, 'entropy', 'weighted', 'log2') -0.003622547665100866
+(136, 16, 19, 'entropy', 'weighted', 'log2') -0.005059408676429953
+(137, 16, 19, 'entropy', 'weighted', 'log2') -0.005121546961325963
+(136, 17, 16, 'entropy', 'weighted', 'log2') -0.006536760641238263
+(137, 16, 17, 'entropy', 'weighted', 'log2') -0.006724757952973741
+(136, 19, 16, 'entropy', 'weighted', 'log2') -0.007203319502074686
+(133, 20, 18, 'entropy', 'weighted', 'log2') -0.007221914775871633
+(137, 17, 16, 'entropy', 'weighted', 'log2') -0.007426755113322293
+(136, 16, 20, 'entropy', 'weighted', 'log2') -0.007535347934571672
+(134, 20, 18, 'entropy', 'weighted', 'log2') -0.007713574785734032
+(135, 19, 16, 'entropy', 'weighted', 'log2') -0.007948433601330752
+(134, 19, 16, 'entropy', 'weighted', 'log2') -0.008504155124653735
+(133, 17, 16, 'entropy', 'weighted', 'log2') -0.009143173023770051
+(134, 15, 20, 'entropy', 'weighted', 'log2') -0.010201768933112202
+(135, 16, 20, 'entropy', 'weighted', 'log2') -0.010232622542232063
+(135, 20, 17, 'entropy', 'weighted', 'log2') -0.010572529589870674
+(134, 20, 16, 'entropy', 'weighted', 'log2') -0.010594250967385293
+(134, 16, 20, 'entropy', 'weighted', 'log2') -0.010744533628563568
+(136, 15, 20, 'entropy', 'weighted', 'log2') -0.010784964068546147
+(134, 17, 16, 'entropy', 'weighted', 'log2') -0.010923417196571748
+(137, 20, 16, 'entropy', 'weighted', 'log2') -0.01129041171594362
+(134, 16, 17, 'entropy', 'weighted', 'log2') -0.011596127247579571
+(137, 15, 20, 'entropy', 'weighted', 'log2') -0.011801602652666502
+(133, 20, 19, 'entropy', 'weighted', 'log2') -0.01183977900552486
+(135, 20, 16, 'entropy', 'weighted', 'log2') -0.012044198895027612
+(137, 16, 20, 'entropy', 'weighted', 'log2') -0.012329639889196695
+(137, 20, 19, 'entropy', 'weighted', 'log2') -0.012517269964078497
+(136, 20, 19, 'entropy', 'weighted', 'log2') -0.012883605197677641
+(135, 19, 20, 'entropy', 'weighted', 'log2') -0.013166943982251844
+(136, 20, 16, 'entropy', 'weighted', 'log2') -0.013278145695364247
+(135, 15, 20, 'entropy', 'weighted', 'log2') -0.013323196018800124
+(134, 20, 19, 'entropy', 'weighted', 'log2') -0.013516574585635384
+(133, 19, 16, 'entropy', 'weighted', 'log2') -0.014205270457697674
+(135, 17, 16, 'entropy', 'weighted', 'log2') -0.014398672933370216
+(133, 15, 20, 'entropy', 'weighted', 'log2') -0.014420470262793927
+(133, 20, 16, 'entropy', 'weighted', 'log2') -0.015147994467496559
+(136, 20, 18, 'entropy', 'weighted', 'log2') -0.015265046935394823
+(135, 20, 18, 'entropy', 'weighted', 'log2') -0.01572099447513813
+(137, 19, 19, 'entropy', 'weighted', 'log2') -0.016232004429678856
+(137, 20, 18, 'entropy', 'weighted', 'log2') -0.016683250414593724
+(133, 16, 17, 'entropy', 'weighted', 'log2') -0.016729385722191535
+(133, 16, 20, 'entropy', 'weighted', 'log2') -0.016840940525587933
+(137, 19, 17, 'entropy', 'weighted', 'log2') -0.01722237607310995
+(134, 19, 20, 'entropy', 'weighted', 'log2') -0.017590795675076275
+(134, 20, 17, 'entropy', 'weighted', 'log2') -0.017817230938618266
+(137, 17, 17, 'entropy', 'weighted', 'log2') -0.017959690778575392
+(136, 19, 19, 'entropy', 'weighted', 'log2') -0.018315352697095427
+(133, 20, 17, 'entropy', 'weighted', 'log2') -0.018355371900826506
+(136, 20, 17, 'entropy', 'weighted', 'log2') -0.01836818932306001
+(137, 20, 17, 'entropy', 'weighted', 'log2') -0.01867566079295157
+(133, 19, 19, 'entropy', 'weighted', 'log2') -0.01893834669615703
+(134, 18, 20, 'entropy', 'weighted', 'log2') -0.019584372402327507
+(133, 19, 20, 'entropy', 'weighted', 'log2') -0.019620603710883474
+(135, 15, 16, 'entropy', 'weighted', 'log2') -0.02056969026548675
+(134, 15, 16, 'entropy', 'weighted', 'log2') -0.021487009397457176
+(135, 17, 17, 'entropy', 'weighted', 'log2') -0.0215769124551229
+(134, 19, 19, 'entropy', 'weighted', 'log2') -0.02169983416252077
+(135, 19, 19, 'entropy', 'weighted', 'log2') -0.02203760022117778
+(133, 15, 16, 'entropy', 'weighted', 'log2') -0.022798342541436485
+(136, 18, 20, 'entropy', 'weighted', 'log2') -0.023100388241819182
+(134, 17, 17, 'entropy', 'weighted', 'log2') -0.02311411992263059
+(136, 19, 20, 'entropy', 'weighted', 'log2') -0.023929659374134618
+(136, 17, 17, 'entropy', 'weighted', 'log2') -0.024392265193370184
+(134, 20, 15, 'entropy', 'weighted', 'log2') -0.02472972972972972
+(136, 19, 17, 'entropy', 'weighted', 'log2') -0.02530567081604424
+(133, 18, 20, 'entropy', 'weighted', 'log2') -0.025671931282903838
+(134, 17, 18, 'entropy', 'weighted', 'log2') -0.026048699501936907
+(137, 19, 18, 'entropy', 'weighted', 'log2') -0.026316371681415932
+(134, 19, 18, 'entropy', 'weighted', 'log2') -0.026950511473596915
+(133, 19, 18, 'entropy', 'weighted', 'log2') -0.02716219950262503
+(136, 15, 16, 'entropy', 'weighted', 'log2') -0.02721515486725665
+(133, 19, 17, 'entropy', 'weighted', 'log2') -0.027293108220315523
+(134, 16, 18, 'entropy', 'weighted', 'log2') -0.027391424619640444
+(135, 19, 18, 'entropy', 'weighted', 'log2') -0.028112894299944666
+(135, 17, 15, 'entropy', 'weighted', 'log2') -0.02816579454695677
+(133, 20, 20, 'entropy', 'weighted', 'log2') -0.028195323246217364
+(135, 20, 15, 'entropy', 'weighted', 'log2') -0.028226696083838904
+(137, 19, 20, 'entropy', 'weighted', 'log2') -0.028346260387811673
+(137, 18, 17, 'entropy', 'weighted', 'log2') -0.028357795624480785
+(135, 18, 20, 'entropy', 'weighted', 'log2') -0.028484344693820995
+(134, 19, 17, 'entropy', 'weighted', 'log2') -0.028546511627906966
+(135, 20, 20, 'entropy', 'weighted', 'log2') -0.028569069895432044
+(137, 15, 15, 'entropy', 'weighted', 'log2') -0.02860780514807638
+(137, 16, 18, 'entropy', 'weighted', 'log2') -0.02875966850828735
+(134, 15, 15, 'entropy', 'weighted', 'log2') -0.02877731673582295
+(136, 15, 15, 'entropy', 'weighted', 'log2') -0.028783522256013258
+(137, 19, 15, 'entropy', 'weighted', 'log2') -0.0288394584139265
+(137, 15, 16, 'entropy', 'weighted', 'log2') -0.02918164224495443
+(133, 17, 18, 'entropy', 'weighted', 'log2') -0.029192030990592165
+(133, 17, 17, 'entropy', 'weighted', 'log2') -0.02937033968516987
+(135, 19, 17, 'entropy', 'weighted', 'log2') -0.029614958448753465
+(137, 17, 18, 'entropy', 'weighted', 'log2') -0.029617834394904455
+(137, 15, 17, 'entropy', 'weighted', 'log2') -0.029825484764542925
+(136, 16, 18, 'entropy', 'weighted', 'log2') -0.030583679114799513
+(136, 20, 15, 'entropy', 'weighted', 'log2') -0.030724917309812527
+(136, 19, 15, 'entropy', 'weighted', 'log2') -0.03096052994755725
+(136, 15, 17, 'entropy', 'weighted', 'log2') -0.03106648199445982
+(133, 15, 15, 'entropy', 'weighted', 'log2') -0.031179075560476076
+(135, 19, 15, 'entropy', 'weighted', 'log2') -0.03127724137931034
+(136, 18, 17, 'entropy', 'weighted', 'log2') -0.03132723746190082
+(137, 20, 15, 'entropy', 'weighted', 'log2') -0.03177134986225892
+(133, 17, 20, 'entropy', 'weighted', 'log2') -0.03192914475505129
+(137, 18, 20, 'entropy', 'weighted', 'log2') -0.03225734886300611
+(136, 17, 18, 'entropy', 'weighted', 'log2') -0.032302158273381266
+(133, 17, 19, 'entropy', 'weighted', 'log2') -0.03237288135593219
+(136, 19, 18, 'entropy', 'weighted', 'log2') -0.03240807298866463
+(134, 19, 15, 'entropy', 'weighted', 'log2') -0.03277012127894154
+(133, 15, 17, 'entropy', 'weighted', 'log2') -0.03320121951219513
+(136, 20, 20, 'entropy', 'weighted', 'log2') -0.033376480308455046
+(135, 17, 19, 'entropy', 'weighted', 'log2') -0.03349999999999996
+(133, 18, 19, 'entropy', 'weighted', 'log2') -0.033842541436464084
+(134, 15, 17, 'entropy', 'weighted', 'log2') -0.03395342389797616
+(134, 18, 19, 'entropy', 'weighted', 'log2') -0.033992258777992806
+(135, 15, 17, 'entropy', 'weighted', 'log2') -0.034089147286821705
+(135, 17, 20, 'entropy', 'weighted', 'log2') -0.03422831809365487
+(137, 20, 20, 'entropy', 'weighted', 'log2') -0.034456372144233506
+(134, 18, 17, 'entropy', 'weighted', 'log2') -0.03447273733739275
+(133, 19, 15, 'entropy', 'weighted', 'log2') -0.03453943739658021
+(133, 16, 18, 'entropy', 'weighted', 'log2') -0.0346998616874136
+(135, 18, 17, 'entropy', 'weighted', 'log2') -0.03483799501523124
+(134, 20, 20, 'entropy', 'weighted', 'log2') -0.03508255365987897
+(133, 17, 15, 'entropy', 'weighted', 'log2') -0.03524937999448887
+(135, 17, 18, 'entropy', 'weighted', 'log2') -0.03537759336099583
+(133, 20, 15, 'entropy', 'weighted', 'log2') -0.03545354287289772
+(134, 17, 20, 'entropy', 'weighted', 'log2') -0.03570083102493083
+(134, 17, 19, 'entropy', 'weighted', 'log2') -0.03607837687604224
+(134, 17, 15, 'entropy', 'weighted', 'log2') -0.03643427941581703
+(136, 17, 19, 'entropy', 'weighted', 'log2') -0.036644444444444424
+(135, 16, 18, 'entropy', 'weighted', 'log2') -0.037050856826976286
+(137, 18, 19, 'entropy', 'weighted', 'log2') -0.037072968490878946
+(136, 17, 20, 'entropy', 'weighted', 'log2') -0.03795567867036026
+(135, 15, 18, 'entropy', 'weighted', 'log2') -0.039191583610188166
+(135, 15, 15, 'entropy', 'weighted', 'log2') -0.0392560840707965
+(137, 17, 20, 'entropy', 'weighted', 'log2') -0.03931912538057018
+(137, 15, 19, 'entropy', 'weighted', 'log2') -0.03941290501246195
+(134, 15, 19, 'entropy', 'weighted', 'log2') -0.04042912513842754
+(136, 18, 19, 'entropy', 'weighted', 'log2') -0.0415985643290999
+(135, 18, 19, 'entropy', 'weighted', 'log2') -0.04195964621337758
+(133, 18, 17, 'entropy', 'weighted', 'log2') -0.04221883656509694
+(137, 17, 15, 'entropy', 'weighted', 'log2') -0.04231468724166435
+(133, 15, 18, 'entropy', 'weighted', 'log2') -0.042423066260049824
+(136, 15, 19, 'entropy', 'weighted', 'log2') -0.042647302904564324
+(134, 15, 18, 'entropy', 'weighted', 'log2') -0.04269731376350036
+(137, 17, 19, 'entropy', 'weighted', 'log2') -0.04291747707696581
+(137, 16, 16, 'entropy', 'weighted', 'log2') -0.04351299060254283
+(136, 15, 18, 'entropy', 'weighted', 'log2') -0.044008310249307424
+(136, 17, 15, 'entropy', 'weighted', 'log2') -0.04460055096418731
+(137, 18, 16, 'entropy', 'weighted', 'log2') -0.04572335726118158
+(136, 16, 16, 'entropy', 'weighted', 'log2') -0.04587942477876105
+(133, 15, 19, 'entropy', 'weighted', 'log2') -0.04699778638627564
+(135, 15, 19, 'entropy', 'weighted', 'log2') -0.04715076071922548
+(135, 18, 15, 'entropy', 'weighted', 'log2') -0.04765715868180565
+(137, 15, 18, 'entropy', 'weighted', 'log2') -0.048455577082756614
+(136, 18, 16, 'entropy', 'weighted', 'log2') -0.04976256212037546
+(133, 16, 16, 'entropy', 'weighted', 'log2') -0.049886583679114894
+(135, 16, 16, 'entropy', 'weighted', 'log2') -0.050337016574585745
+(137, 18, 15, 'entropy', 'weighted', 'log2') -0.050770083102493126
+(136, 18, 15, 'entropy', 'weighted', 'log2') -0.051040398450470426
+(134, 16, 16, 'entropy', 'weighted', 'log2') -0.0526174682144832
+(134, 18, 16, 'entropy', 'weighted', 'log2') -0.05306821320077328
+(135, 18, 16, 'entropy', 'weighted', 'log2') -0.053757241379310323
+(133, 18, 16, 'entropy', 'weighted', 'log2') -0.05425379310344821
+(133, 18, 15, 'entropy', 'weighted', 'log2') -0.06477971737323364
+(134, 18, 15, 'entropy', 'weighted', 'log2') -0.06621329639889201
+
+code:
+estimators = list(range(133,138))
+min_samples_leaf_lst = list(range(15,21))
+max_depth = list(range(15,21))
+criteria = ['entropy']
+weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+max_features = ['log2']
+params = {'min_samples_leaf' : min_samples_leaf_lst,
+          #'min_samples_split' : min_samples_leaf_lst,
+          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
+          'max_features' : max_features, 'n_estimators' : estimators}
+params_list = list(ParameterGrid(params))
+best_params = dict()
+
+
+j = 0
+for comb in params_list:
+    clf = RandomForestClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
+    max_depth = comb['max_depth'], criterion= comb['criterion'], class_weight= comb['class_weight'],
+                                 max_features=comb['max_features'], n_estimators=comb['n_estimators'],
+                                      random_state=42, bootstrap=True)
+    #clf.fit(games, results)
+    clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+        is_weighted = 'umweighted'
+    else:
+        is_weighted = 'weighted'
+    params_tuple = (comb['n_estimators'],
+                    comb['min_samples_leaf'], comb['max_depth'], comb['criterion'], is_weighted, comb['max_features'] )
+    print(j)
+    print(params_tuple)
+    best_params[params_tuple] = play(clf)
+    j += 1
+
+
+sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
+for i in sort_orders:
+      print(i[0], i[1])
+	  
+(140, 12, 13, 'entropy', 'weighted', 'log2') 0.009308628318584066
+(139, 12, 13, 'entropy', 'weighted', 'log2') 0.007492397014100101
+(141, 12, 13, 'entropy', 'weighted', 'log2') 0.0067421939762365235
+(138, 12, 13, 'entropy', 'weighted', 'log2') 0.00602985899917059
+(139, 14, 12, 'entropy', 'weighted', 'log2') 0.005265193370165748
+(142, 11, 10, 'entropy', 'weighted', 'log2') 0.0038393596467016238
+(139, 11, 13, 'entropy', 'weighted', 'log2') 0.0030996411813414256
+(140, 11, 13, 'entropy', 'weighted', 'log2') 0.0030968810378139647
+(138, 11, 13, 'entropy', 'weighted', 'log2') 0.0025752970433821376
+(142, 12, 13, 'entropy', 'weighted', 'log2') 0.0016841814159292074
+(141, 11, 13, 'entropy', 'weighted', 'log2') 0.0015288913464196808
+(138, 14, 12, 'entropy', 'weighted', 'log2') -0.0010340060823886925
+(142, 11, 13, 'entropy', 'weighted', 'log2') -0.0016698868341153653
+(142, 15, 12, 'entropy', 'weighted', 'log2') -0.00337651598676957
+(138, 11, 10, 'entropy', 'weighted', 'log2') -0.005624654505251526
+(141, 11, 10, 'entropy', 'weighted', 'log2') -0.006139188069594042
+(140, 14, 12, 'entropy', 'weighted', 'log2') -0.006238608119304037
+(140, 11, 10, 'entropy', 'weighted', 'log2') -0.006279005524861895
+(139, 15, 12, 'entropy', 'weighted', 'log2') -0.007170489085382681
+(142, 10, 13, 'entropy', 'weighted', 'log2') -0.007393720477910507
+(139, 10, 13, 'entropy', 'weighted', 'log2') -0.007868852459016395
+(142, 14, 12, 'entropy', 'weighted', 'log2') -0.00846090080132631
+(139, 11, 10, 'entropy', 'weighted', 'log2') -0.008958563535911611
+(141, 15, 12, 'entropy', 'weighted', 'log2') -0.00933627099972459
+(141, 14, 12, 'entropy', 'weighted', 'log2') -0.010199059994470534
+(140, 10, 13, 'entropy', 'weighted', 'log2') -0.010314412910406225
+(141, 14, 14, 'entropy', 'weighted', 'log2') -0.011545052515201895
+(140, 15, 12, 'entropy', 'weighted', 'log2') -0.01252553132762903
+(138, 14, 14, 'entropy', 'weighted', 'log2') -0.012873722022658338
+(138, 12, 15, 'entropy', 'weighted', 'log2') -0.013139534883720935
+(142, 15, 15, 'entropy', 'weighted', 'log2') -0.013165467625899287
+(138, 14, 10, 'entropy', 'weighted', 'log2') -0.013395862068965562
+(138, 12, 12, 'entropy', 'weighted', 'log2') -0.013683628318584056
+(139, 14, 10, 'entropy', 'weighted', 'log2') -0.014469906129210454
+(140, 14, 14, 'entropy', 'weighted', 'log2') -0.01489773355445011
+(140, 14, 10, 'entropy', 'weighted', 'log2') -0.01499447818884602
+(139, 12, 12, 'entropy', 'weighted', 'log2') -0.015116150442477884
+(139, 12, 15, 'entropy', 'weighted', 'log2') -0.01592192691029901
+(139, 14, 14, 'entropy', 'weighted', 'log2') -0.01639679469466714
+(141, 11, 11, 'entropy', 'weighted', 'log2') -0.01641421096116772
+(141, 10, 13, 'entropy', 'weighted', 'log2') -0.016623991093793478
+(141, 14, 10, 'entropy', 'weighted', 'log2') -0.016882758620689754
+(142, 14, 10, 'entropy', 'weighted', 'log2') -0.017036423841059693
+(142, 14, 14, 'entropy', 'weighted', 'log2') -0.01752349364289681
+(138, 10, 13, 'entropy', 'weighted', 'log2') -0.01755765490414006
+(138, 15, 12, 'entropy', 'weighted', 'log2') -0.018162983425414395
+(142, 12, 12, 'entropy', 'weighted', 'log2') -0.018752420470262782
+(140, 11, 11, 'entropy', 'weighted', 'log2') -0.0195034482758621
+(141, 12, 12, 'entropy', 'weighted', 'log2') -0.020088520055325028
+(140, 15, 15, 'entropy', 'weighted', 'log2') -0.02022431459429521
+(142, 12, 15, 'entropy', 'weighted', 'log2') -0.020664451827242535
+(141, 12, 15, 'entropy', 'weighted', 'log2') -0.02143727499307671
+(139, 11, 11, 'entropy', 'weighted', 'log2') -0.021517241379310378
+(138, 11, 15, 'entropy', 'weighted', 'log2') -0.021827030033370425
+(140, 12, 15, 'entropy', 'weighted', 'log2') -0.022026614915442177
+(140, 12, 12, 'entropy', 'weighted', 'log2') -0.022388059701492522
+(139, 15, 15, 'entropy', 'weighted', 'log2') -0.022852404643449415
+(138, 11, 11, 'entropy', 'weighted', 'log2') -0.02303280948442241
+(138, 11, 12, 'entropy', 'weighted', 'log2') -0.0232991405600222
+(140, 10, 12, 'entropy', 'weighted', 'log2') -0.02330105146651911
+(139, 13, 13, 'entropy', 'weighted', 'log2') -0.023789764868603066
+(138, 15, 10, 'entropy', 'weighted', 'log2') -0.02435826662986479
+(142, 13, 13, 'entropy', 'weighted', 'log2') -0.02527423822714685
+(140, 12, 11, 'entropy', 'weighted', 'log2') -0.025285160575858313
+(141, 15, 15, 'entropy', 'weighted', 'log2') -0.025462347729789583
+(142, 15, 11, 'entropy', 'weighted', 'log2') -0.025487603305785134
+(138, 10, 12, 'entropy', 'weighted', 'log2') -0.02566048186098034
+(142, 11, 11, 'entropy', 'weighted', 'log2') -0.02574262882336734
+(138, 13, 13, 'entropy', 'weighted', 'log2') -0.025849004424778808
+(140, 13, 13, 'entropy', 'weighted', 'log2') -0.025931358981455894
+(142, 11, 12, 'entropy', 'weighted', 'log2') -0.026041608876560336
+(138, 15, 15, 'entropy', 'weighted', 'log2') -0.026264526840066405
+(139, 11, 12, 'entropy', 'weighted', 'log2') -0.026321329639889222
+(139, 10, 12, 'entropy', 'weighted', 'log2') -0.026373961218836558
+(140, 11, 12, 'entropy', 'weighted', 'log2') -0.026867036011080356
+(141, 11, 12, 'entropy', 'weighted', 'log2') -0.027353837628151842
+(141, 12, 11, 'entropy', 'weighted', 'log2') -0.027553279822861917
+(139, 12, 11, 'entropy', 'weighted', 'log2') -0.027589359933499615
+(139, 11, 15, 'entropy', 'weighted', 'log2') -0.02801724137931034
+(141, 10, 12, 'entropy', 'weighted', 'log2') -0.02817627494456762
+(141, 11, 15, 'entropy', 'weighted', 'log2') -0.02873646209386282
+(141, 15, 11, 'entropy', 'weighted', 'log2') -0.028904185022026442
+(142, 10, 12, 'entropy', 'weighted', 'log2') -0.02902216066481993
+(140, 15, 11, 'entropy', 'weighted', 'log2') -0.029371900826446317
+(139, 15, 10, 'entropy', 'weighted', 'log2') -0.029790286975717457
+(139, 15, 11, 'entropy', 'weighted', 'log2') -0.031437620490223146
+(141, 13, 14, 'entropy', 'weighted', 'log2') -0.03159002770083109
+(142, 14, 13, 'entropy', 'weighted', 'log2') -0.03171555063641402
+(138, 14, 13, 'entropy', 'weighted', 'log2') -0.031739972337482804
+(138, 12, 11, 'entropy', 'weighted', 'log2') -0.03184815738431698
+(141, 13, 10, 'entropy', 'weighted', 'log2') -0.032222833562585936
+(140, 13, 12, 'entropy', 'weighted', 'log2') -0.032513827433628274
+(141, 13, 13, 'entropy', 'weighted', 'log2') -0.033201329271669924
+(138, 14, 11, 'entropy', 'weighted', 'log2') -0.033216840946615325
+(142, 12, 11, 'entropy', 'weighted', 'log2') -0.03339340171888003
+(139, 13, 12, 'entropy', 'weighted', 'log2') -0.033529737206085715
+(138, 13, 12, 'entropy', 'weighted', 'log2') -0.03353901494189263
+(141, 14, 15, 'entropy', 'weighted', 'log2') -0.03353952843273232
+(139, 10, 11, 'entropy', 'weighted', 'log2') -0.0336594803758983
+(139, 14, 13, 'entropy', 'weighted', 'log2') -0.03368610113290973
+(140, 11, 15, 'entropy', 'weighted', 'log2') -0.03369752571587437
+(138, 13, 14, 'entropy', 'weighted', 'log2') -0.033762815184261684
+(138, 15, 11, 'entropy', 'weighted', 'log2') -0.034307734654555506
+(142, 14, 15, 'entropy', 'weighted', 'log2') -0.03481954469739036
+(142, 13, 14, 'entropy', 'weighted', 'log2') -0.03533555185801456
+(142, 14, 11, 'entropy', 'weighted', 'log2') -0.03547907488986783
+(140, 14, 15, 'entropy', 'weighted', 'log2') -0.03578480310593455
+(140, 12, 14, 'entropy', 'weighted', 'log2') -0.03598337950138519
+(140, 13, 10, 'entropy', 'weighted', 'log2') -0.03613986784140965
+(142, 10, 11, 'entropy', 'weighted', 'log2') -0.03638973226607782
+(140, 15, 13, 'entropy', 'weighted', 'log2') -0.03645125655896177
+(141, 14, 13, 'entropy', 'weighted', 'log2') -0.036509955752212504
+(140, 13, 14, 'entropy', 'weighted', 'log2') -0.03652258243280696
+(139, 13, 10, 'entropy', 'weighted', 'log2') -0.03667125930008266
+(140, 10, 15, 'entropy', 'weighted', 'log2') -0.036960022209883515
+(138, 13, 10, 'entropy', 'weighted', 'log2') -0.03699256403194711
+(140, 15, 14, 'entropy', 'weighted', 'log2') -0.03717565698478573
+(139, 15, 13, 'entropy', 'weighted', 'log2') -0.0372375690607736
+(138, 10, 14, 'entropy', 'weighted', 'log2') -0.03728330102464695
+(140, 14, 11, 'entropy', 'weighted', 'log2') -0.037301762114537444
+(142, 13, 12, 'entropy', 'weighted', 'log2') -0.03736943907156666
+(140, 10, 10, 'entropy', 'weighted', 'log2') -0.03762758620689662
+(141, 13, 12, 'entropy', 'weighted', 'log2') -0.03769825918762087
+(139, 13, 15, 'entropy', 'weighted', 'log2') -0.037900138696255206
+(140, 15, 10, 'entropy', 'weighted', 'log2') -0.03793979563656447
+(142, 11, 15, 'entropy', 'weighted', 'log2') -0.0379399499582986
+(139, 13, 14, 'entropy', 'weighted', 'log2') -0.03796948682385586
+(140, 13, 11, 'entropy', 'weighted', 'log2') -0.038001656086116505
+(139, 10, 14, 'entropy', 'weighted', 'log2') -0.03812292358803992
+(141, 10, 15, 'entropy', 'weighted', 'log2') -0.03816037735849068
+(138, 15, 14, 'entropy', 'weighted', 'log2') -0.03835726118166778
+(139, 14, 11, 'entropy', 'weighted', 'log2') -0.038444383259911855
+(139, 13, 11, 'entropy', 'weighted', 'log2') -0.03867127071823206
+(138, 15, 13, 'entropy', 'weighted', 'log2') -0.03872170071783555
+(141, 10, 11, 'entropy', 'weighted', 'log2') -0.03935982339955851
+(140, 10, 11, 'entropy', 'weighted', 'log2') -0.03945364238410596
+(140, 14, 13, 'entropy', 'weighted', 'log2') -0.0395019369120089
+(142, 10, 14, 'entropy', 'weighted', 'log2') -0.03976705490848586
+(142, 13, 15, 'entropy', 'weighted', 'log2') -0.039786526199057336
+(141, 15, 14, 'entropy', 'weighted', 'log2') -0.03990873893805317
+(142, 12, 14, 'entropy', 'weighted', 'log2') -0.04013865779256812
+(142, 15, 10, 'entropy', 'weighted', 'log2') -0.040242959690778575
+(138, 13, 11, 'entropy', 'weighted', 'log2') -0.04036464088397791
+(138, 10, 10, 'entropy', 'weighted', 'log2') -0.040493929359823475
+(142, 10, 10, 'entropy', 'weighted', 'log2') -0.04057379310344836
+(141, 13, 11, 'entropy', 'weighted', 'log2') -0.04070698702016013
+(141, 10, 10, 'entropy', 'weighted', 'log2') -0.0407783604747447
+(141, 14, 11, 'entropy', 'weighted', 'log2') -0.0408730377306527
+(142, 13, 10, 'entropy', 'weighted', 'log2') -0.04113098514034116
+(141, 15, 10, 'entropy', 'weighted', 'log2') -0.0411595803423523
+(140, 12, 10, 'entropy', 'weighted', 'log2') -0.04118051733626867
+(141, 12, 14, 'entropy', 'weighted', 'log2') -0.04134423503325962
+(141, 10, 14, 'entropy', 'weighted', 'log2') -0.04179977814753194
+(138, 13, 15, 'entropy', 'weighted', 'log2') -0.04260881619074024
+(142, 15, 14, 'entropy', 'weighted', 'log2') -0.04260989770528069
+(139, 12, 10, 'entropy', 'weighted', 'log2') -0.04280209193503998
+(138, 12, 10, 'entropy', 'weighted', 'log2') -0.04307734654555472
+(138, 14, 15, 'entropy', 'weighted', 'log2') -0.04313992226540806
+(139, 10, 10, 'entropy', 'weighted', 'log2') -0.04322393822393828
+(141, 13, 15, 'entropy', 'weighted', 'log2') -0.04323072656683306
+(141, 15, 13, 'entropy', 'weighted', 'log2') -0.043304780326057016
+(141, 12, 10, 'entropy', 'weighted', 'log2') -0.04365013774104697
+(139, 15, 14, 'entropy', 'weighted', 'log2') -0.04365219795410584
+(142, 15, 13, 'entropy', 'weighted', 'log2') -0.04397347333517557
+(140, 10, 14, 'entropy', 'weighted', 'log2') -0.044023816117419054
+(138, 12, 14, 'entropy', 'weighted', 'log2') -0.04473392461197357
+(138, 10, 11, 'entropy', 'weighted', 'log2') -0.044798231066887816
+(139, 10, 15, 'entropy', 'weighted', 'log2') -0.04525277777777796
+(142, 10, 15, 'entropy', 'weighted', 'log2') -0.04527631213551804
+(139, 14, 15, 'entropy', 'weighted', 'log2') -0.04549944506104322
+(139, 12, 14, 'entropy', 'weighted', 'log2') -0.04577242524916961
+(142, 13, 11, 'entropy', 'weighted', 'log2') -0.04638045278851458
+(138, 10, 15, 'entropy', 'weighted', 'log2') -0.04704495005549403
+(140, 13, 15, 'entropy', 'weighted', 'log2') -0.04851358846367167
+(142, 12, 10, 'entropy', 'weighted', 'log2') -0.050685006877579195
+(139, 11, 14, 'entropy', 'weighted', 'log2') -0.05412892470130601
+(138, 11, 14, 'entropy', 'weighted', 'log2') -0.056285079188663656
+(140, 11, 14, 'entropy', 'weighted', 'log2') -0.057492354740061286
+(142, 11, 14, 'entropy', 'weighted', 'log2') -0.062118855873368614
+(141, 11, 14, 'entropy', 'weighted', 'log2') -0.06747985551542106
+
+code:
+estimators = list(range(138,143))
+min_samples_leaf_lst = list(range(10,16))
+max_depth = list(range(10,16))
+criteria = ['entropy']
+weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+max_features = ['log2']
+params = {'min_samples_leaf' : min_samples_leaf_lst,
+          #'min_samples_split' : min_samples_leaf_lst,
+          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
+          'max_features' : max_features, 'n_estimators' : estimators}
+params_list = list(ParameterGrid(params))
+best_params = dict()
+
+
+j = 0
+for comb in params_list:
+    clf = RandomForestClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
+    max_depth = comb['max_depth'], criterion= comb['criterion'], class_weight= comb['class_weight'],
+                                 max_features=comb['max_features'], n_estimators=comb['n_estimators'],
+                                      random_state=42, bootstrap=True)
+    #clf.fit(games, results)
+    clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+        is_weighted = 'umweighted'
+    else:
+        is_weighted = 'weighted'
+    params_tuple = (comb['n_estimators'],
+                    comb['min_samples_leaf'], comb['max_depth'], comb['criterion'], is_weighted, comb['max_features'] )
+    print(j)
+    print(params_tuple)
+    best_params[params_tuple] = play(clf)
+    j += 1
+
+(28, 21, 20, 'gini', 'weighted', 'sqrt') 0.012424073558094186
+(29, 21, 20, 'gini', 'weighted', 'sqrt') 0.011809841534612184
+(28, 24, 18, 'gini', 'weighted', 'sqrt') 0.010025034770514602
+(30, 24, 18, 'gini', 'weighted', 'sqrt') 0.009624895804390108
+(32, 21, 16, 'gini', 'weighted', 'sqrt') 0.00878922521521797
+(29, 24, 18, 'gini', 'weighted', 'sqrt') 0.006927995551848775
+(32, 24, 20, 'gini', 'weighted', 'sqrt') 0.005921089191442081
+(29, 21, 16, 'gini', 'weighted', 'sqrt') 0.0057107023411371305
+(28, 18, 18, 'gini', 'weighted', 'sqrt') 0.005165507649513215
+(30, 24, 20, 'gini', 'weighted', 'sqrt') 0.00470834496232205
+(32, 24, 18, 'gini', 'weighted', 'sqrt') 0.004241666666666675
+(31, 20, 19, 'gini', 'weighted', 'sqrt') 0.0028906249999999865
+(31, 22, 15, 'gini', 'weighted', 'sqrt') 0.002510436960757031
+(30, 21, 16, 'gini', 'weighted', 'sqrt') 0.002172586015538307
+(30, 21, 20, 'gini', 'weighted', 'sqrt') 0.0020876360591683186
+(28, 23, 20, 'gini', 'weighted', 'sqrt') 0.0018875838926174634
+(28, 21, 16, 'gini', 'weighted', 'sqrt') 0.0016360601001669515
+(29, 19, 13, 'gini', 'weighted', 'sqrt') 0.0008157602663707075
+(31, 24, 19, 'gini', 'weighted', 'sqrt') 0.0007632311977715952
+(31, 19, 13, 'gini', 'weighted', 'sqrt') 7.518796992478866e-05
+(31, 21, 20, 'gini', 'weighted', 'sqrt') -0.0003908431044109184
+(32, 22, 13, 'gini', 'weighted', 'sqrt') -0.0012212045517624144
+(31, 24, 18, 'gini', 'weighted', 'sqrt') -0.0017073170731707328
+(30, 19, 13, 'gini', 'weighted', 'sqrt') -0.0017617589757862452
+(31, 24, 20, 'gini', 'weighted', 'sqrt') -0.0025827078120656158
+(32, 23, 17, 'gini', 'weighted', 'sqrt') -0.003803561491374496
+(28, 24, 20, 'gini', 'weighted', 'sqrt') -0.004158800666296517
+(31, 18, 18, 'gini', 'weighted', 'sqrt') -0.004292479108635092
+(30, 24, 19, 'gini', 'weighted', 'sqrt') -0.004792536897800068
+(31, 21, 16, 'gini', 'weighted', 'sqrt') -0.004798778795448228
+(29, 23, 20, 'gini', 'weighted', 'sqrt') -0.005161920714684511
+(32, 19, 13, 'gini', 'weighted', 'sqrt') -0.005400890868596895
+(29, 19, 20, 'gini', 'weighted', 'sqrt') -0.005779202676331218
+(32, 24, 19, 'gini', 'weighted', 'sqrt') -0.006015559877743831
+(32, 24, 16, 'gini', 'weighted', 'sqrt') -0.006588953649736426
+(31, 21, 17, 'gini', 'weighted', 'sqrt') -0.006725097384529792
+(32, 22, 15, 'gini', 'weighted', 'sqrt') -0.007038686334539399
+(31, 22, 13, 'gini', 'weighted', 'sqrt') -0.007746870653685671
+(30, 23, 20, 'gini', 'weighted', 'sqrt') -0.007833240379252641
+(29, 20, 19, 'gini', 'weighted', 'sqrt') -0.008613199665831265
+(32, 20, 19, 'gini', 'weighted', 'sqrt') -0.00875696767001122
+(29, 23, 17, 'gini', 'weighted', 'sqrt') -0.009045897079276841
+(30, 18, 18, 'gini', 'weighted', 'sqrt') -0.009071906354515038
+(29, 24, 19, 'gini', 'weighted', 'sqrt') -0.009080810885865048
+(29, 21, 19, 'gini', 'weighted', 'sqrt') -0.009117237538290168
+(30, 20, 19, 'gini', 'weighted', 'sqrt') -0.009145322939866396
+(29, 18, 18, 'gini', 'weighted', 'sqrt') -0.010270044543429852
+(31, 24, 16, 'gini', 'weighted', 'sqrt') -0.011289517470881886
+(31, 20, 15, 'gini', 'weighted', 'sqrt') -0.01138064873856389
+(31, 22, 17, 'gini', 'weighted', 'sqrt') -0.011841367713004503
+(32, 21, 17, 'gini', 'weighted', 'sqrt') -0.011913888888888878
+(31, 20, 14, 'gini', 'weighted', 'sqrt') -0.012122222222222234
+(32, 18, 18, 'gini', 'weighted', 'sqrt') -0.01280623608017818
+(28, 20, 19, 'gini', 'weighted', 'sqrt') -0.013003897550111424
+(29, 21, 18, 'gini', 'weighted', 'sqrt') -0.013069417340395864
+(28, 22, 15, 'gini', 'weighted', 'sqrt') -0.013278642936596252
+(32, 21, 13, 'gini', 'weighted', 'sqrt') -0.013508723345333692
+(28, 24, 15, 'gini', 'weighted', 'sqrt') -0.013533667223149727
+(30, 21, 14, 'gini', 'weighted', 'sqrt') -0.013621981681931756
+(29, 24, 20, 'gini', 'weighted', 'sqrt') -0.013674832962138117
+(30, 21, 18, 'gini', 'weighted', 'sqrt') -0.01392797319932997
+(29, 22, 15, 'gini', 'weighted', 'sqrt') -0.014105702364395003
+(28, 21, 17, 'gini', 'weighted', 'sqrt') -0.014584375868779528
+(31, 24, 15, 'gini', 'weighted', 'sqrt') -0.014912524298805904
+(28, 23, 19, 'gini', 'weighted', 'sqrt') -0.015285118219749642
+(30, 20, 15, 'gini', 'weighted', 'sqrt') -0.015488346281909003
+(28, 19, 13, 'gini', 'weighted', 'sqrt') -0.015489813005861048
+(30, 22, 15, 'gini', 'weighted', 'sqrt') -0.01551417454141198
+(29, 21, 17, 'gini', 'weighted', 'sqrt') -0.01620055710306405
+(31, 21, 18, 'gini', 'weighted', 'sqrt') -0.016293920803123276
+(29, 23, 13, 'gini', 'weighted', 'sqrt') -0.016604921205418958
+(28, 23, 17, 'gini', 'weighted', 'sqrt') -0.01710044395116541
+(28, 20, 14, 'gini', 'weighted', 'sqrt') -0.017324646520654286
+(28, 21, 19, 'gini', 'weighted', 'sqrt') -0.017348759408976882
+(28, 21, 14, 'gini', 'weighted', 'sqrt') -0.017354247640199903
+(31, 19, 20, 'gini', 'weighted', 'sqrt') -0.017694025683975514
+(31, 20, 20, 'gini', 'weighted', 'sqrt') -0.01793633063390115
+(30, 22, 17, 'gini', 'weighted', 'sqrt') -0.018199105145413834
+(30, 22, 13, 'gini', 'weighted', 'sqrt') -0.01843011947763273
+(31, 23, 20, 'gini', 'weighted', 'sqrt') -0.01853841870824054
+(30, 19, 20, 'gini', 'weighted', 'sqrt') -0.01870447595218238
+(30, 23, 17, 'gini', 'weighted', 'sqrt') -0.01875867814495987
+(30, 19, 17, 'gini', 'weighted', 'sqrt') -0.018922172452407644
+(30, 23, 19, 'gini', 'weighted', 'sqrt') -0.01926131630102749
+(30, 21, 19, 'gini', 'weighted', 'sqrt') -0.019423076923076953
+(28, 24, 19, 'gini', 'weighted', 'sqrt') -0.019561111111111123
+(30, 20, 20, 'gini', 'weighted', 'sqrt') -0.01961646136618141
+(28, 19, 20, 'gini', 'weighted', 'sqrt') -0.019854991634132756
+(28, 23, 16, 'gini', 'weighted', 'sqrt') -0.01987486095661847
+(32, 20, 20, 'gini', 'weighted', 'sqrt') -0.02023503077783997
+(30, 20, 14, 'gini', 'weighted', 'sqrt') -0.020263596004439537
+(32, 21, 18, 'gini', 'weighted', 'sqrt') -0.020395543175487474
+(32, 19, 20, 'gini', 'weighted', 'sqrt') -0.020499720826354092
+(32, 23, 19, 'gini', 'weighted', 'sqrt') -0.020537904124860645
+(28, 21, 13, 'gini', 'weighted', 'sqrt') -0.02072636540060994
+(30, 24, 15, 'gini', 'weighted', 'sqrt') -0.020906310814567716
+(28, 20, 16, 'gini', 'weighted', 'sqrt') -0.02097989949748743
+(32, 21, 20, 'gini', 'weighted', 'sqrt') -0.02135881696428571
+(29, 23, 16, 'gini', 'weighted', 'sqrt') -0.021882647385984434
+(32, 23, 18, 'gini', 'weighted', 'sqrt') -0.021924255082149995
+(30, 19, 18, 'gini', 'weighted', 'sqrt') -0.02273284997211381
+(32, 22, 17, 'gini', 'weighted', 'sqrt') -0.022855546241967048
+(28, 20, 20, 'gini', 'weighted', 'sqrt') -0.022905744562186345
+(29, 22, 13, 'gini', 'weighted', 'sqrt') -0.022915856706470474
+(28, 23, 13, 'gini', 'weighted', 'sqrt') -0.022957941339236513
+(30, 23, 13, 'gini', 'weighted', 'sqrt') -0.023200553250345885
+(29, 20, 14, 'gini', 'weighted', 'sqrt') -0.023321339606974807
+(28, 19, 18, 'gini', 'weighted', 'sqrt') -0.023402719955592604
+(30, 21, 17, 'gini', 'weighted', 'sqrt') -0.023465814341300736
+(29, 23, 14, 'gini', 'weighted', 'sqrt') -0.023758668515950324
+(28, 23, 18, 'gini', 'weighted', 'sqrt') -0.023785813630041917
+(29, 23, 18, 'gini', 'weighted', 'sqrt') -0.023950892857142917
+(32, 24, 15, 'gini', 'weighted', 'sqrt') -0.024049471928849372
+(29, 19, 18, 'gini', 'weighted', 'sqrt') -0.024269005847953252
+(29, 20, 20, 'gini', 'weighted', 'sqrt') -0.02429770565193063
+(29, 21, 15, 'gini', 'weighted', 'sqrt') -0.024755555555555548
+(28, 20, 15, 'gini', 'weighted', 'sqrt') -0.02475952182374202
+(29, 20, 15, 'gini', 'weighted', 'sqrt') -0.02505268996117584
+(28, 21, 15, 'gini', 'weighted', 'sqrt') -0.025248680188941358
+(28, 22, 13, 'gini', 'weighted', 'sqrt') -0.025296727676095452
+(28, 24, 16, 'gini', 'weighted', 'sqrt') -0.02538910505836591
+(31, 23, 17, 'gini', 'weighted', 'sqrt') -0.025635605006954276
+(31, 21, 13, 'gini', 'weighted', 'sqrt') -0.025757407920243704
+(31, 20, 18, 'gini', 'weighted', 'sqrt') -0.025829608938547462
+(28, 21, 18, 'gini', 'weighted', 'sqrt') -0.025968280467445762
+(29, 24, 15, 'gini', 'weighted', 'sqrt') -0.026766750069502347
+(28, 20, 18, 'gini', 'weighted', 'sqrt') -0.026854748603352113
+(29, 22, 17, 'gini', 'weighted', 'sqrt') -0.02714125874125873
+(32, 20, 18, 'gini', 'weighted', 'sqrt') -0.027179487179487222
+(32, 20, 15, 'gini', 'weighted', 'sqrt') -0.027441021371079687
+(28, 24, 13, 'gini', 'weighted', 'sqrt') -0.02770213948318991
+(31, 23, 13, 'gini', 'weighted', 'sqrt') -0.0277553279822864
+(32, 24, 14, 'gini', 'weighted', 'sqrt') -0.027820762593932635
+(28, 23, 14, 'gini', 'weighted', 'sqrt') -0.028025442477876344
+(31, 23, 18, 'gini', 'weighted', 'sqrt') -0.02860724233983308
+(31, 23, 19, 'gini', 'weighted', 'sqrt') -0.02886818687430477
+(28, 18, 17, 'gini', 'weighted', 'sqrt') -0.029209938581797917
+(29, 18, 17, 'gini', 'weighted', 'sqrt') -0.029382647385984444
+(30, 21, 13, 'gini', 'weighted', 'sqrt') -0.02990605139541309
+(30, 23, 18, 'gini', 'weighted', 'sqrt') -0.030312325711098955
+(29, 21, 14, 'gini', 'weighted', 'sqrt') -0.0305024986118823
+(29, 24, 16, 'gini', 'weighted', 'sqrt') -0.030997499305362667
+(32, 23, 20, 'gini', 'weighted', 'sqrt') -0.031033426183843967
+(31, 22, 18, 'gini', 'weighted', 'sqrt') -0.031078896013381638
+(32, 23, 13, 'gini', 'weighted', 'sqrt') -0.03126141078838194
+(32, 20, 17, 'gini', 'weighted', 'sqrt') -0.03129598662207359
+(31, 22, 16, 'gini', 'weighted', 'sqrt') -0.03147600446428574
+(28, 20, 17, 'gini', 'weighted', 'sqrt') -0.03166481378543639
+(31, 23, 14, 'gini', 'weighted', 'sqrt') -0.0317189669536242
+(29, 18, 13, 'gini', 'weighted', 'sqrt') -0.03188199105145425
+(28, 18, 14, 'gini', 'weighted', 'sqrt') -0.03198213288665568
+(28, 22, 17, 'gini', 'weighted', 'sqrt') -0.03203064066852364
+(29, 21, 13, 'gini', 'weighted', 'sqrt') -0.03241407982261641
+(29, 20, 17, 'gini', 'weighted', 'sqrt') -0.03247078464106846
+(30, 24, 16, 'gini', 'weighted', 'sqrt') -0.03256317689530695
+(30, 20, 17, 'gini', 'weighted', 'sqrt') -0.03258208124652199
+(32, 18, 13, 'gini', 'weighted', 'sqrt') -0.032582984658298626
+(29, 24, 14, 'gini', 'weighted', 'sqrt') -0.032593828190158554
+(29, 24, 13, 'gini', 'weighted', 'sqrt') -0.03287145242070119
+(32, 23, 14, 'gini', 'weighted', 'sqrt') -0.03306348766287797
+(31, 21, 14, 'gini', 'weighted', 'sqrt') -0.03341754580788446
+(29, 22, 20, 'gini', 'weighted', 'sqrt') -0.03352695942190115
+(32, 20, 14, 'gini', 'weighted', 'sqrt') -0.03356725146198833
+(31, 18, 14, 'gini', 'weighted', 'sqrt') -0.03356983240223468
+(29, 19, 17, 'gini', 'weighted', 'sqrt') -0.03380553227158426
+(29, 20, 18, 'gini', 'weighted', 'sqrt') -0.03393727247269684
+(30, 20, 18, 'gini', 'weighted', 'sqrt') -0.03403856903297935
+(32, 21, 14, 'gini', 'weighted', 'sqrt') -0.03408661854525263
+(32, 21, 15, 'gini', 'weighted', 'sqrt') -0.03476627712854756
+(29, 18, 19, 'gini', 'weighted', 'sqrt') -0.03483258928571437
+(31, 19, 18, 'gini', 'weighted', 'sqrt') -0.03489136490250698
+(31, 24, 17, 'gini', 'weighted', 'sqrt') -0.0351878652936265
+(28, 18, 13, 'gini', 'weighted', 'sqrt') -0.035209614309670324
+(32, 19, 17, 'gini', 'weighted', 'sqrt') -0.035420168067226906
+(32, 21, 19, 'gini', 'weighted', 'sqrt') -0.035429447852760754
+(30, 18, 14, 'gini', 'weighted', 'sqrt') -0.03544134078212295
+(31, 18, 19, 'gini', 'weighted', 'sqrt') -0.03560635628659057
+(30, 24, 13, 'gini', 'weighted', 'sqrt') -0.03567529935951003
+(29, 18, 14, 'gini', 'weighted', 'sqrt') -0.03578756621131874
+(28, 19, 17, 'gini', 'weighted', 'sqrt') -0.03604021223122034
+(30, 23, 15, 'gini', 'weighted', 'sqrt') -0.03645143334261085
+(28, 24, 14, 'gini', 'weighted', 'sqrt') -0.03667686318131267
+(29, 19, 16, 'gini', 'weighted', 'sqrt') -0.036771763392857135
+(31, 19, 19, 'gini', 'weighted', 'sqrt') -0.03678541608683549
+(32, 22, 16, 'gini', 'weighted', 'sqrt') -0.037471456418824864
+(29, 23, 19, 'gini', 'weighted', 'sqrt') -0.03753816264224256
+(31, 21, 19, 'gini', 'weighted', 'sqrt') -0.03762064156206419
+(30, 19, 19, 'gini', 'weighted', 'sqrt') -0.037698523265533565
+(32, 22, 18, 'gini', 'weighted', 'sqrt') -0.03803351955307261
+(30, 23, 14, 'gini', 'weighted', 'sqrt') -0.038066481994460034
+(30, 18, 19, 'gini', 'weighted', 'sqrt') -0.038130058610103365
+(30, 22, 18, 'gini', 'weighted', 'sqrt') -0.03819092680211517
+(30, 18, 17, 'gini', 'weighted', 'sqrt') -0.03836717663421427
+(32, 18, 19, 'gini', 'weighted', 'sqrt') -0.03844822774211562
+(30, 22, 20, 'gini', 'weighted', 'sqrt') -0.03859244863964482
+(31, 19, 15, 'gini', 'weighted', 'sqrt') -0.03879632209529122
+(28, 22, 16, 'gini', 'weighted', 'sqrt') -0.03880859374999994
+(31, 19, 17, 'gini', 'weighted', 'sqrt') -0.03918464555898012
+(30, 24, 14, 'gini', 'weighted', 'sqrt') -0.03937257079400353
+(31, 24, 13, 'gini', 'weighted', 'sqrt') -0.03947705146036178
+(28, 19, 19, 'gini', 'weighted', 'sqrt') -0.0395592747559275
+(30, 19, 16, 'gini', 'weighted', 'sqrt') -0.0395674016187553
+(32, 18, 14, 'gini', 'weighted', 'sqrt') -0.03959240647682865
+(32, 20, 16, 'gini', 'weighted', 'sqrt') -0.039722222222222166
+(32, 19, 16, 'gini', 'weighted', 'sqrt') -0.04003891050583664
+(30, 19, 15, 'gini', 'weighted', 'sqrt') -0.04066090351366425
+(28, 19, 16, 'gini', 'weighted', 'sqrt') -0.04071508379888268
+(32, 18, 20, 'gini', 'weighted', 'sqrt') -0.04077094350125249
+(30, 19, 14, 'gini', 'weighted', 'sqrt') -0.040937934873365035
+(30, 22, 16, 'gini', 'weighted', 'sqrt') -0.041000836353498736
+(30, 20, 16, 'gini', 'weighted', 'sqrt') -0.04162952646239557
+(30, 23, 16, 'gini', 'weighted', 'sqrt') -0.041695857659160396
+(29, 20, 13, 'gini', 'weighted', 'sqrt') -0.041871880199667345
+(30, 21, 15, 'gini', 'weighted', 'sqrt') -0.042127541074909465
+(31, 20, 16, 'gini', 'weighted', 'sqrt') -0.04226084538375968
+(29, 20, 16, 'gini', 'weighted', 'sqrt') -0.042812500000000024
+(31, 23, 16, 'gini', 'weighted', 'sqrt') -0.04284286507495841
+(29, 19, 19, 'gini', 'weighted', 'sqrt') -0.04328404017857139
+(31, 20, 17, 'gini', 'weighted', 'sqrt') -0.04341029207232269
+(31, 19, 14, 'gini', 'weighted', 'sqrt') -0.04347535505430253
+(31, 24, 14, 'gini', 'weighted', 'sqrt') -0.04362750556792871
+(30, 18, 20, 'gini', 'weighted', 'sqrt') -0.043804347826086956
+(28, 23, 15, 'gini', 'weighted', 'sqrt') -0.043929168990518755
+(31, 19, 16, 'gini', 'weighted', 'sqrt') -0.04410878661087866
+(29, 18, 20, 'gini', 'weighted', 'sqrt') -0.044264952487423154
+(30, 24, 17, 'gini', 'weighted', 'sqrt') -0.04550748752079867
+(32, 19, 18, 'gini', 'weighted', 'sqrt') -0.04559699415530196
+(32, 24, 13, 'gini', 'weighted', 'sqrt') -0.045905928193710206
+(32, 20, 13, 'gini', 'weighted', 'sqrt') -0.04596783139212438
+(28, 24, 17, 'gini', 'weighted', 'sqrt') -0.04620756816917092
+(31, 18, 15, 'gini', 'weighted', 'sqrt') -0.046518828451882925
+(32, 22, 20, 'gini', 'weighted', 'sqrt') -0.04666759156492797
+(28, 22, 20, 'gini', 'weighted', 'sqrt') -0.046676863181312665
+(29, 19, 14, 'gini', 'weighted', 'sqrt') -0.04687169496242714
+(32, 23, 16, 'gini', 'weighted', 'sqrt') -0.04693207126948771
+(31, 18, 20, 'gini', 'weighted', 'sqrt') -0.047440111420612864
+(28, 18, 20, 'gini', 'weighted', 'sqrt') -0.04762541806020072
+(31, 22, 20, 'gini', 'weighted', 'sqrt') -0.04791840133222327
+(32, 22, 19, 'gini', 'weighted', 'sqrt') -0.04792389479574713
+(31, 20, 13, 'gini', 'weighted', 'sqrt') -0.04800999167360539
+(31, 23, 15, 'gini', 'weighted', 'sqrt') -0.04868692500696978
+(29, 24, 17, 'gini', 'weighted', 'sqrt') -0.04899304589707926
+(28, 20, 13, 'gini', 'weighted', 'sqrt') -0.049603548655392404
+(29, 22, 18, 'gini', 'weighted', 'sqrt') -0.04985240879977724
+(30, 18, 13, 'gini', 'weighted', 'sqrt') -0.04993286713286731
+(28, 22, 14, 'gini', 'weighted', 'sqrt') -0.050444691495275126
+(32, 19, 14, 'gini', 'weighted', 'sqrt') -0.05049344856425998
+(28, 19, 14, 'gini', 'weighted', 'sqrt') -0.05058314732142871
+(30, 20, 13, 'gini', 'weighted', 'sqrt') -0.05074361820199785
+(28, 18, 15, 'gini', 'weighted', 'sqrt') -0.05086024498886431
+(29, 22, 19, 'gini', 'weighted', 'sqrt') -0.050864849833147964
+(28, 18, 19, 'gini', 'weighted', 'sqrt') -0.05114533744049294
+(29, 22, 14, 'gini', 'weighted', 'sqrt') -0.051374513077351254
+(30, 22, 19, 'gini', 'weighted', 'sqrt') -0.0515391038129697
+(32, 23, 15, 'gini', 'weighted', 'sqrt') -0.05154854910714302
+(32, 18, 17, 'gini', 'weighted', 'sqrt') -0.051611111111111226
+(31, 21, 15, 'gini', 'weighted', 'sqrt') -0.05239910937934869
+(31, 22, 19, 'gini', 'weighted', 'sqrt') -0.052597656250000034
+(31, 18, 13, 'gini', 'weighted', 'sqrt') -0.05261366806136694
+(30, 18, 15, 'gini', 'weighted', 'sqrt') -0.052707520891365045
+(28, 18, 16, 'gini', 'weighted', 'sqrt') -0.052770044543429775
+(29, 22, 16, 'gini', 'weighted', 'sqrt') -0.05280178422079728
+(29, 18, 16, 'gini', 'weighted', 'sqrt') -0.052836444692114716
+(32, 19, 19, 'gini', 'weighted', 'sqrt') -0.05349652294853956
+(28, 22, 19, 'gini', 'weighted', 'sqrt') -0.054803675856307354
+(31, 18, 17, 'gini', 'weighted', 'sqrt') -0.054854207164676615
+(32, 19, 15, 'gini', 'weighted', 'sqrt') -0.05657587548638142
+(32, 18, 15, 'gini', 'weighted', 'sqrt') -0.05721384701284207
+(28, 22, 18, 'gini', 'weighted', 'sqrt') -0.05750416898276829
+(29, 23, 15, 'gini', 'weighted', 'sqrt') -0.05855314412910423
+(30, 22, 14, 'gini', 'weighted', 'sqrt') -0.06001952580195271
+(29, 18, 15, 'gini', 'weighted', 'sqrt') -0.061790295593976696
+(30, 18, 16, 'gini', 'weighted', 'sqrt') -0.06250418293363069
+(32, 24, 17, 'gini', 'weighted', 'sqrt') -0.06471242011669903
+(32, 22, 14, 'gini', 'weighted', 'sqrt') -0.0655716675962076
+(29, 19, 15, 'gini', 'weighted', 'sqrt') -0.07453886876567307
+(28, 19, 15, 'gini', 'weighted', 'sqrt') -0.07458715596330291
+(31, 22, 14, 'gini', 'weighted', 'sqrt') -0.07505286588759057
+(31, 18, 16, 'gini', 'weighted', 'sqrt') -0.07839609483960958
+(32, 18, 16, 'gini', 'weighted', 'sqrt') -0.08414620535714305
+
+code:
+estimators = list(range(28,33))
+min_samples_leaf_lst = list(range(18,25))
+max_depth = list(range(13,21))
+criteria = ['gini']
+weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+max_features = ['sqrt']
+params = {'min_samples_leaf' : min_samples_leaf_lst,
+          #'min_samples_split' : min_samples_leaf_lst,
+          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
+          'max_features' : max_features, 'n_estimators' : estimators}
+params_list = list(ParameterGrid(params))
+best_params = dict()
+
+
+j = 0
+for comb in params_list:
+    clf = RandomForestClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
+    max_depth = comb['max_depth'], criterion= comb['criterion'], class_weight= comb['class_weight'],
+                                 max_features=comb['max_features'], n_estimators=comb['n_estimators'],
+                                      random_state=42, bootstrap=True)
+    #clf.fit(games, results)
+    clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+        is_weighted = 'umweighted'
+    else:
+        is_weighted = 'weighted'
+    params_tuple = (comb['n_estimators'],
+                    comb['min_samples_leaf'], comb['max_depth'], comb['criterion'], is_weighted, comb['max_features'] )
+    print(j)
+    print(params_tuple)
+    best_params[params_tuple] = play(clf)
+    j += 1
+
+(86, 15, 25, 'entropy', 'weighted', 'log2') 0.0030208044382801723
+(85, 15, 25, 'entropy', 'weighted', 'log2') 0.0016333333333333425
+(87, 15, 25, 'entropy', 'weighted', 'log2') 0.0002080443828016747
+(84, 15, 25, 'entropy', 'weighted', 'log2') -0.0037242912729293833
+(83, 15, 25, 'entropy', 'weighted', 'log2') -0.004838978345363689
+(83, 16, 26, 'entropy', 'weighted', 'log2') -0.009707439398161032
+(84, 15, 23, 'entropy', 'weighted', 'log2') -0.01134353268428381
+(85, 16, 26, 'entropy', 'weighted', 'log2') -0.011602671118530888
+(87, 16, 23, 'entropy', 'weighted', 'log2') -0.01174532253560457
+(85, 15, 23, 'entropy', 'weighted', 'log2') -0.01287857738260648
+(83, 13, 26, 'entropy', 'weighted', 'log2') -0.013339838304990295
+(87, 16, 27, 'entropy', 'weighted', 'log2') -0.013457579972183602
+(87, 15, 23, 'entropy', 'weighted', 'log2') -0.013530720044481533
+(83, 15, 23, 'entropy', 'weighted', 'log2') -0.013684942944614621
+(86, 16, 23, 'entropy', 'weighted', 'log2') -0.01376957494407158
+(86, 15, 23, 'entropy', 'weighted', 'log2') -0.013942174033917358
+(84, 13, 26, 'entropy', 'weighted', 'log2') -0.014124546216140883
+(87, 16, 24, 'entropy', 'weighted', 'log2') -0.014962406015037599
+(83, 13, 27, 'entropy', 'weighted', 'log2') -0.014977666108319377
+(86, 13, 26, 'entropy', 'weighted', 'log2') -0.015504587155963373
+(85, 16, 23, 'entropy', 'weighted', 'log2') -0.015800781250000024
+(85, 16, 24, 'entropy', 'weighted', 'log2') -0.0160953177257525
+(84, 13, 27, 'entropy', 'weighted', 'log2') -0.01620882188721382
+(87, 16, 26, 'entropy', 'weighted', 'log2') -0.01623922114047288
+(85, 17, 24, 'entropy', 'weighted', 'log2') -0.016526780784097188
+(84, 16, 26, 'entropy', 'weighted', 'log2') -0.017047857540345043
+(86, 16, 26, 'entropy', 'weighted', 'log2') -0.017108333333333357
+(86, 16, 27, 'entropy', 'weighted', 'log2') -0.017504873294347
+(86, 14, 23, 'entropy', 'weighted', 'log2') -0.017656424581005588
+(87, 17, 24, 'entropy', 'weighted', 'log2') -0.017691034482758612
+(85, 16, 27, 'entropy', 'weighted', 'log2') -0.018046265328874076
+(87, 13, 26, 'entropy', 'weighted', 'log2') -0.018405676126878146
+(86, 17, 24, 'entropy', 'weighted', 'log2') -0.018586806513938733
+(86, 16, 24, 'entropy', 'weighted', 'log2') -0.0192292710072343
+(83, 17, 24, 'entropy', 'weighted', 'log2') -0.01925884955752214
+(84, 17, 24, 'entropy', 'weighted', 'log2') -0.02007196235815113
+(84, 15, 27, 'entropy', 'weighted', 'log2') -0.020456824512534978
+(85, 14, 23, 'entropy', 'weighted', 'log2') -0.020457589285714287
+(85, 13, 26, 'entropy', 'weighted', 'log2') -0.022178272980501477
+(87, 14, 23, 'entropy', 'weighted', 'log2') -0.02223059743160251
+(86, 16, 25, 'entropy', 'weighted', 'log2') -0.022305764411027593
+(84, 16, 27, 'entropy', 'weighted', 'log2') -0.022328308207705257
+(85, 14, 27, 'entropy', 'weighted', 'log2') -0.02278966379549873
+(83, 15, 27, 'entropy', 'weighted', 'log2') -0.022936264959643893
+(85, 16, 25, 'entropy', 'weighted', 'log2') -0.023294314381271
+(84, 16, 24, 'entropy', 'weighted', 'log2') -0.023717306622148056
+(83, 16, 27, 'entropy', 'weighted', 'log2') -0.024048481471161964
+(87, 13, 24, 'entropy', 'weighted', 'log2') -0.02420716467647878
+(87, 15, 27, 'entropy', 'weighted', 'log2') -0.024407015590200636
+(86, 17, 25, 'entropy', 'weighted', 'log2') -0.024489908764169184
+(83, 16, 23, 'entropy', 'weighted', 'log2') -0.025226383454443838
+(85, 17, 27, 'entropy', 'weighted', 'log2') -0.02535269709543569
+(85, 13, 27, 'entropy', 'weighted', 'log2') -0.02584310441094359
+(85, 15, 27, 'entropy', 'weighted', 'log2') -0.026060183895235595
+(86, 15, 26, 'entropy', 'weighted', 'log2') -0.027054737427063137
+(87, 17, 27, 'entropy', 'weighted', 'log2') -0.027397676991150435
+(84, 14, 27, 'entropy', 'weighted', 'log2') -0.027841446453407456
+(87, 14, 25, 'entropy', 'weighted', 'log2') -0.02794493882091212
+(84, 17, 27, 'entropy', 'weighted', 'log2') -0.028209944751381208
+(85, 17, 23, 'entropy', 'weighted', 'log2') -0.02839878318584079
+(85, 17, 25, 'entropy', 'weighted', 'log2') -0.028465579209289466
+(86, 17, 23, 'entropy', 'weighted', 'log2') -0.028677937915742833
+(85, 17, 26, 'entropy', 'weighted', 'log2') -0.028817829457364323
+(84, 16, 23, 'entropy', 'weighted', 'log2') -0.028896031302403636
+(84, 16, 25, 'entropy', 'weighted', 'log2') -0.02898300362217898
+(87, 15, 24, 'entropy', 'weighted', 'log2') -0.029286510590858617
+(84, 17, 25, 'entropy', 'weighted', 'log2') -0.029339596573639114
+(86, 15, 27, 'entropy', 'weighted', 'log2') -0.030208623087621875
+(86, 13, 27, 'entropy', 'weighted', 'log2') -0.03030395984383712
+(87, 17, 25, 'entropy', 'weighted', 'log2') -0.030404208194905868
+(86, 14, 25, 'entropy', 'weighted', 'log2') -0.030436960757027513
+(87, 17, 26, 'entropy', 'weighted', 'log2') -0.0309174057649667
+(83, 16, 25, 'entropy', 'weighted', 'log2') -0.030943870427255053
+(83, 15, 24, 'entropy', 'weighted', 'log2') -0.031092226246865657
+(85, 13, 24, 'entropy', 'weighted', 'log2') -0.03195664257921069
+(83, 13, 23, 'entropy', 'weighted', 'log2') -0.03204564430837759
+(83, 17, 26, 'entropy', 'weighted', 'log2') -0.03242876901798059
+(85, 15, 26, 'entropy', 'weighted', 'log2') -0.032731815657967976
+(83, 16, 24, 'entropy', 'weighted', 'log2') -0.032882582081246545
+(85, 15, 24, 'entropy', 'weighted', 'log2') -0.03305377542490963
+(86, 13, 24, 'entropy', 'weighted', 'log2') -0.03308934038408017
+(84, 13, 24, 'entropy', 'weighted', 'log2') -0.033202559821925534
+(87, 17, 23, 'entropy', 'weighted', 'log2') -0.033240099695375336
+(83, 17, 25, 'entropy', 'weighted', 'log2') -0.03364819944598342
+(85, 13, 25, 'entropy', 'weighted', 'log2') -0.033685236768802265
+(83, 17, 27, 'entropy', 'weighted', 'log2') -0.034485903814262045
+(86, 15, 24, 'entropy', 'weighted', 'log2') -0.03507949790794998
+(84, 14, 23, 'entropy', 'weighted', 'log2') -0.035297071129707105
+(85, 14, 24, 'entropy', 'weighted', 'log2') -0.03535644937586681
+(87, 16, 25, 'entropy', 'weighted', 'log2') -0.03605292479108644
+(84, 17, 23, 'entropy', 'weighted', 'log2') -0.0365124653739613
+(86, 17, 27, 'entropy', 'weighted', 'log2') -0.036653761061947024
+(87, 14, 26, 'entropy', 'weighted', 'log2') -0.036688888888888944
+(83, 13, 24, 'entropy', 'weighted', 'log2') -0.03707615341856601
+(84, 15, 26, 'entropy', 'weighted', 'log2') -0.037547222222222426
+(87, 13, 25, 'entropy', 'weighted', 'log2') -0.03796162402669633
+(86, 17, 26, 'entropy', 'weighted', 'log2') -0.0388525498891352
+(87, 14, 27, 'entropy', 'weighted', 'log2') -0.039030016675930986
+(84, 13, 25, 'entropy', 'weighted', 'log2') -0.03903288740245271
+(83, 17, 23, 'entropy', 'weighted', 'log2') -0.03934408004446918
+(84, 17, 26, 'entropy', 'weighted', 'log2') -0.039415674328440856
+(86, 14, 24, 'entropy', 'weighted', 'log2') -0.039497640854843225
+(86, 14, 27, 'entropy', 'weighted', 'log2') -0.039732888146911415
+(83, 14, 27, 'entropy', 'weighted', 'log2') -0.03988585746102449
+(84, 15, 24, 'entropy', 'weighted', 'log2') -0.040078059659883127
+(83, 13, 25, 'entropy', 'weighted', 'log2') -0.04119040981321443
+(87, 13, 27, 'entropy', 'weighted', 'log2') -0.04125313283208017
+(87, 15, 26, 'entropy', 'weighted', 'log2') -0.041273584905660514
+(85, 14, 25, 'entropy', 'weighted', 'log2') -0.04197386711148179
+(87, 14, 24, 'entropy', 'weighted', 'log2') -0.042871396895787096
+(85, 14, 26, 'entropy', 'weighted', 'log2') -0.04314778736431951
+(83, 14, 23, 'entropy', 'weighted', 'log2') -0.044083682008368236
+(84, 14, 25, 'entropy', 'weighted', 'log2') -0.04470768374164813
+(86, 13, 25, 'entropy', 'weighted', 'log2') -0.04537242912729297
+(84, 14, 24, 'entropy', 'weighted', 'log2') -0.04758476931628687
+(83, 15, 26, 'entropy', 'weighted', 'log2') -0.04887347391786919
+(84, 13, 23, 'entropy', 'weighted', 'log2') -0.04949317738791438
+(86, 14, 26, 'entropy', 'weighted', 'log2') -0.050075083426028975
+(83, 14, 25, 'entropy', 'weighted', 'log2') -0.05077864293659632
+(87, 13, 23, 'entropy', 'weighted', 'log2') -0.05086206896551738
+(83, 14, 26, 'entropy', 'weighted', 'log2') -0.051442869057547976
+(85, 13, 23, 'entropy', 'weighted', 'log2') -0.05165693633583554
+(86, 13, 23, 'entropy', 'weighted', 'log2') -0.05221202003338908
+(83, 14, 24, 'entropy', 'weighted', 'log2') -0.052641982182628146
+(84, 14, 26, 'entropy', 'weighted', 'log2') -0.05686700055648302
+
+code:
+estimators = list(range(83,88))
+min_samples_leaf_lst = list(range(13,18))
+max_depth = list(range(23,28))
+criteria = ['entropy']
+weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+max_features = ['log2']
+params = {'min_samples_leaf' : min_samples_leaf_lst,
+          #'min_samples_split' : min_samples_leaf_lst,
+          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
+          'max_features' : max_features, 'n_estimators' : estimators}
+params_list = list(ParameterGrid(params))
+best_params = dict()
+
+
+j = 0
+for comb in params_list:
+    clf = RandomForestClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
+    max_depth = comb['max_depth'], criterion= comb['criterion'], class_weight= comb['class_weight'],
+                                 max_features=comb['max_features'], n_estimators=comb['n_estimators'],
+                                      random_state=42, bootstrap=True)
+    #clf.fit(games, results)
+    clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+        is_weighted = 'umweighted'
+    else:
+        is_weighted = 'weighted'
+    params_tuple = (comb['n_estimators'],
+                    comb['min_samples_leaf'], comb['max_depth'], comb['criterion'], is_weighted, comb['max_features'] )
+    print(j)
+    print(params_tuple)
+    best_params[params_tuple] = play(clf)
+    j += 1
+
+(53, 49, 13, 'entropy', 'weighted', 'sqrt') 0.0019934102141680008
+(55, 48, 13, 'entropy', 'weighted', 'sqrt') 0.0003546879296122263
+(55, 49, 13, 'entropy', 'weighted', 'sqrt') -0.0018901098901099147
+(53, 48, 13, 'entropy', 'weighted', 'sqrt') -0.002981349424026351
+(57, 49, 13, 'entropy', 'weighted', 'sqrt') -0.0038467874794069186
+(54, 49, 13, 'entropy', 'weighted', 'sqrt') -0.005558912386706986
+(56, 47, 11, 'entropy', 'weighted', 'sqrt') -0.006144346871569716
+(57, 49, 15, 'entropy', 'weighted', 'sqrt') -0.006201486374896798
+(55, 50, 11, 'entropy', 'weighted', 'sqrt') -0.00644462719298245
+(54, 48, 13, 'entropy', 'weighted', 'sqrt') -0.007205599780400776
+(56, 47, 13, 'entropy', 'weighted', 'sqrt') -0.007235326385079579
+(55, 47, 11, 'entropy', 'weighted', 'sqrt') -0.007329857299670682
+(56, 49, 13, 'entropy', 'weighted', 'sqrt') -0.007620614035087758
+(54, 45, 13, 'entropy', 'weighted', 'sqrt') -0.008292481410079895
+(53, 47, 11, 'entropy', 'weighted', 'sqrt') -0.008791872597473925
+(57, 48, 13, 'entropy', 'weighted', 'sqrt') -0.009618236748146233
+(57, 47, 11, 'entropy', 'weighted', 'sqrt') -0.009772415684123934
+(54, 47, 11, 'entropy', 'weighted', 'sqrt') -0.009871056241426639
+(57, 47, 13, 'entropy', 'weighted', 'sqrt') -0.011570134504529327
+(57, 50, 11, 'entropy', 'weighted', 'sqrt') -0.013234730210901154
+(56, 48, 13, 'entropy', 'weighted', 'sqrt') -0.013304945054945132
+(53, 49, 15, 'entropy', 'weighted', 'sqrt') -0.01332600329851571
+(55, 49, 15, 'entropy', 'weighted', 'sqrt') -0.01341127922971117
+(57, 49, 12, 'entropy', 'weighted', 'sqrt') -0.01493549272577544
+(56, 49, 12, 'entropy', 'weighted', 'sqrt') -0.015093304061470905
+(56, 49, 15, 'entropy', 'weighted', 'sqrt') -0.015383557877371511
+(53, 45, 13, 'entropy', 'weighted', 'sqrt') -0.016173553719008315
+(53, 47, 13, 'entropy', 'weighted', 'sqrt') -0.01620131651124534
+(56, 50, 11, 'entropy', 'weighted', 'sqrt') -0.016892299260071294
+(55, 47, 13, 'entropy', 'weighted', 'sqrt') -0.017238539665111307
+(54, 46, 12, 'entropy', 'weighted', 'sqrt') -0.017422283356258644
+(54, 49, 15, 'entropy', 'weighted', 'sqrt') -0.017490368739680837
+(54, 49, 12, 'entropy', 'weighted', 'sqrt') -0.01778724573941727
+(54, 47, 13, 'entropy', 'weighted', 'sqrt') -0.017819879187259857
+(55, 46, 11, 'entropy', 'weighted', 'sqrt') -0.017860874346989315
+(57, 45, 13, 'entropy', 'weighted', 'sqrt') -0.018229625550660843
+(53, 46, 12, 'entropy', 'weighted', 'sqrt') -0.018960681880670988
+(56, 49, 11, 'entropy', 'weighted', 'sqrt') -0.019081913139087414
+(57, 49, 11, 'entropy', 'weighted', 'sqrt') -0.01961221122112213
+(53, 49, 12, 'entropy', 'weighted', 'sqrt') -0.019730473047304756
+(54, 50, 11, 'entropy', 'weighted', 'sqrt') -0.020912078882498006
+(53, 49, 11, 'entropy', 'weighted', 'sqrt') -0.02105248694696348
+(53, 50, 14, 'entropy', 'weighted', 'sqrt') -0.021144660993686518
+(57, 50, 13, 'entropy', 'weighted', 'sqrt') -0.022354723216744796
+(56, 45, 13, 'entropy', 'weighted', 'sqrt') -0.02258535242290756
+(57, 46, 12, 'entropy', 'weighted', 'sqrt') -0.02275633958103651
+(53, 50, 11, 'entropy', 'weighted', 'sqrt') -0.02327761030419295
+(54, 49, 11, 'entropy', 'weighted', 'sqrt') -0.02370981038746909
+(55, 45, 13, 'entropy', 'weighted', 'sqrt') -0.023735537190082697
+(55, 46, 12, 'entropy', 'weighted', 'sqrt') -0.025019251925192606
+(55, 49, 12, 'entropy', 'weighted', 'sqrt') -0.02536136301181642
+(56, 50, 12, 'entropy', 'weighted', 'sqrt') -0.025605270381553687
+(55, 50, 12, 'entropy', 'weighted', 'sqrt') -0.026330954994511546
+(55, 49, 11, 'entropy', 'weighted', 'sqrt') -0.02665475536008797
+(57, 46, 11, 'entropy', 'weighted', 'sqrt') -0.0270222711025571
+(54, 48, 15, 'entropy', 'weighted', 'sqrt') -0.027078528281164218
+(54, 46, 11, 'entropy', 'weighted', 'sqrt') -0.027337733773377372
+(53, 45, 12, 'entropy', 'weighted', 'sqrt') -0.02768681318681328
+(56, 46, 11, 'entropy', 'weighted', 'sqrt') -0.02774380165289263
+(54, 50, 14, 'entropy', 'weighted', 'sqrt') -0.029741970903101832
+(56, 48, 15, 'entropy', 'weighted', 'sqrt') -0.030142700329308474
+(57, 50, 12, 'entropy', 'weighted', 'sqrt') -0.030145484490804293
+(54, 50, 12, 'entropy', 'weighted', 'sqrt') -0.03033488882788911
+(53, 45, 11, 'entropy', 'weighted', 'sqrt') -0.031205050782322254
+(53, 49, 14, 'entropy', 'weighted', 'sqrt') -0.03138592166529726
+(57, 48, 11, 'entropy', 'weighted', 'sqrt') -0.0314646187602853
+(53, 45, 14, 'entropy', 'weighted', 'sqrt') -0.031659773917838425
+(55, 48, 14, 'entropy', 'weighted', 'sqrt') -0.03166529266281961
+(56, 45, 12, 'entropy', 'weighted', 'sqrt') -0.03216543006320419
+(56, 46, 12, 'entropy', 'weighted', 'sqrt') -0.03307353346185646
+(55, 48, 15, 'entropy', 'weighted', 'sqrt') -0.03409390444810546
+(54, 50, 15, 'entropy', 'weighted', 'sqrt') -0.03428375034368987
+(55, 50, 14, 'entropy', 'weighted', 'sqrt') -0.03438856828799125
+(54, 45, 14, 'entropy', 'weighted', 'sqrt') -0.034532413793103574
+(54, 45, 12, 'entropy', 'weighted', 'sqrt') -0.034533223503569514
+(53, 48, 15, 'entropy', 'weighted', 'sqrt') -0.034685698600054896
+(53, 46, 11, 'entropy', 'weighted', 'sqrt') -0.03511007154650528
+(55, 45, 12, 'entropy', 'weighted', 'sqrt') -0.035219780219780304
+(53, 50, 15, 'entropy', 'weighted', 'sqrt') -0.0352269601100413
+(55, 45, 14, 'entropy', 'weighted', 'sqrt') -0.03651130722559295
+(56, 45, 14, 'entropy', 'weighted', 'sqrt') -0.036778726922017085
+(56, 45, 15, 'entropy', 'weighted', 'sqrt') -0.037467032967032986
+(57, 48, 15, 'entropy', 'weighted', 'sqrt') -0.03758091058694465
+(53, 50, 12, 'entropy', 'weighted', 'sqrt') -0.03791929728245952
+(53, 48, 14, 'entropy', 'weighted', 'sqrt') -0.03792468389224868
+(57, 48, 14, 'entropy', 'weighted', 'sqrt') -0.03793624622148954
+(54, 45, 11, 'entropy', 'weighted', 'sqrt') -0.038074175824175875
+(53, 45, 15, 'entropy', 'weighted', 'sqrt') -0.03848418156808803
+(57, 45, 12, 'entropy', 'weighted', 'sqrt') -0.038768892552899135
+(56, 50, 13, 'entropy', 'weighted', 'sqrt') -0.03908239184348318
+(55, 45, 11, 'entropy', 'weighted', 'sqrt') -0.03913783635365185
+(54, 48, 14, 'entropy', 'weighted', 'sqrt') -0.03978553753093227
+(55, 45, 15, 'entropy', 'weighted', 'sqrt') -0.03999725048116578
+(55, 50, 15, 'entropy', 'weighted', 'sqrt') -0.04012372834753918
+(56, 48, 14, 'entropy', 'weighted', 'sqrt') -0.04026120428924956
+(54, 49, 14, 'entropy', 'weighted', 'sqrt') -0.04094820498766793
+(57, 47, 15, 'entropy', 'weighted', 'sqrt') -0.04158285243198685
+(57, 50, 14, 'entropy', 'weighted', 'sqrt') -0.041777960978290715
+(54, 45, 15, 'entropy', 'weighted', 'sqrt') -0.04296917996697857
+(53, 47, 14, 'entropy', 'weighted', 'sqrt') -0.043013736263736425
+(53, 46, 14, 'entropy', 'weighted', 'sqrt') -0.04390237175951476
+(57, 50, 15, 'entropy', 'weighted', 'sqrt') -0.044080285949958734
+(55, 49, 14, 'entropy', 'weighted', 'sqrt') -0.04417877707704973
+(57, 46, 14, 'entropy', 'weighted', 'sqrt') -0.044579774042436064
+(56, 50, 14, 'entropy', 'weighted', 'sqrt') -0.04487778082944249
+(53, 48, 12, 'entropy', 'weighted', 'sqrt') -0.04556074766355147
+(56, 48, 11, 'entropy', 'weighted', 'sqrt') -0.04585941790225154
+(55, 48, 11, 'entropy', 'weighted', 'sqrt') -0.046031267142073486
+(56, 49, 14, 'entropy', 'weighted', 'sqrt') -0.046365880416895315
+(54, 50, 13, 'entropy', 'weighted', 'sqrt') -0.046580325158445963
+(54, 48, 12, 'entropy', 'weighted', 'sqrt') -0.04690784044016512
+(56, 45, 11, 'entropy', 'weighted', 'sqrt') -0.04696404062585773
+(55, 50, 13, 'entropy', 'weighted', 'sqrt') -0.047297297297297404
+(57, 48, 12, 'entropy', 'weighted', 'sqrt') -0.04760241957657419
+(53, 50, 13, 'entropy', 'weighted', 'sqrt') -0.048078722818607304
+(56, 50, 15, 'entropy', 'weighted', 'sqrt') -0.04819780219780217
+(57, 46, 15, 'entropy', 'weighted', 'sqrt') -0.04823350814242353
+(57, 45, 11, 'entropy', 'weighted', 'sqrt') -0.04853618421052625
+(53, 47, 15, 'entropy', 'weighted', 'sqrt') -0.048545855136326234
+(54, 46, 15, 'entropy', 'weighted', 'sqrt') -0.04861402540033145
+(57, 45, 15, 'entropy', 'weighted', 'sqrt') -0.04912015397305477
+(55, 46, 15, 'entropy', 'weighted', 'sqrt') -0.04946787979046055
+(57, 49, 14, 'entropy', 'weighted', 'sqrt') -0.04998902003842983
+(56, 47, 15, 'entropy', 'weighted', 'sqrt') -0.050231468724166534
+(53, 48, 11, 'entropy', 'weighted', 'sqrt') -0.050594683474924636
+(53, 46, 15, 'entropy', 'weighted', 'sqrt') -0.05140525587828507
+(56, 46, 15, 'entropy', 'weighted', 'sqrt') -0.05192996967190528
+(55, 47, 12, 'entropy', 'weighted', 'sqrt') -0.05212046204620476
+(57, 45, 14, 'entropy', 'weighted', 'sqrt') -0.052321674469843225
+(53, 46, 13, 'entropy', 'weighted', 'sqrt') -0.0526060606060607
+(56, 48, 12, 'entropy', 'weighted', 'sqrt') -0.054261754193016314
+(54, 47, 12, 'entropy', 'weighted', 'sqrt') -0.05514859658778223
+(54, 46, 14, 'entropy', 'weighted', 'sqrt') -0.055737931034482886
+(54, 47, 15, 'entropy', 'weighted', 'sqrt') -0.05595270827605188
+(56, 46, 14, 'entropy', 'weighted', 'sqrt') -0.056960595205290857
+(54, 48, 11, 'entropy', 'weighted', 'sqrt') -0.0581037321624589
+(55, 48, 12, 'entropy', 'weighted', 'sqrt') -0.05814580467675388
+(55, 47, 15, 'entropy', 'weighted', 'sqrt') -0.058320946875860355
+(56, 47, 12, 'entropy', 'weighted', 'sqrt') -0.058637864611997915
+(54, 46, 13, 'entropy', 'weighted', 'sqrt') -0.059050371593724345
+(56, 46, 13, 'entropy', 'weighted', 'sqrt') -0.05920297848869292
+(54, 47, 14, 'entropy', 'weighted', 'sqrt') -0.05954920285871371
+(55, 46, 14, 'entropy', 'weighted', 'sqrt') -0.06037782680639838
+(55, 46, 13, 'entropy', 'weighted', 'sqrt') -0.060482359426681474
+(53, 47, 12, 'entropy', 'weighted', 'sqrt') -0.06119702806824455
+(57, 47, 14, 'entropy', 'weighted', 'sqrt') -0.06261957119296331
+(57, 46, 13, 'entropy', 'weighted', 'sqrt') -0.0628929950358523
+(55, 47, 14, 'entropy', 'weighted', 'sqrt') -0.06410002748007709
+(56, 47, 14, 'entropy', 'weighted', 'sqrt') -0.06494641384995892
+(57, 47, 12, 'entropy', 'weighted', 'sqrt') -0.0655561674008811
+
+code:
+estimators = list(range(53,58))
+min_samples_leaf_lst = list(range(45,51))
+max_depth = list(range(11,16))
+criteria = ['entropy']
+weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+max_features = ['sqrt']
+params = {'min_samples_leaf' : min_samples_leaf_lst,
+          #'min_samples_split' : min_samples_leaf_lst,
+          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
+          'max_features' : max_features, 'n_estimators' : estimators}
+params_list = list(ParameterGrid(params))
+best_params = dict()
+
+
+j = 0
+for comb in params_list:
+    clf = RandomForestClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
+    max_depth = comb['max_depth'], criterion= comb['criterion'], class_weight= comb['class_weight'],
+                                 max_features=comb['max_features'], n_estimators=comb['n_estimators'],
+                                      random_state=42, bootstrap=True)
+    #clf.fit(games, results)
+    clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+        is_weighted = 'umweighted'
+    else:
+        is_weighted = 'weighted'
+    params_tuple = (comb['n_estimators'],
+                    comb['min_samples_leaf'], comb['max_depth'], comb['criterion'], is_weighted, comb['max_features'] )
+    print(j)
+    print(params_tuple)
+    best_params[params_tuple] = play(clf)
+    j += 1
