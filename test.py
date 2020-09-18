@@ -8,19 +8,13 @@ from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.feature_selection import RFE
-from sklearn.feature_selection import SelectFromModel
 from sklearn.model_selection import ParameterSampler
 from sklearn.model_selection import ParameterGrid
-#clf_rand_10_3 = RandomForestClassifier(n_estimators = 10, min_samples_leaf = 3, min_samples_split=3,
-#                                  random_state=42, max_features=None)
-#clf_rand_100_def = RandomForestClassifier()
-#clf_rand_10_1 = RandomForestClassifier(n_estimators = 10, random_state=42, max_features=None)
-#clf_rand_10_1 = RandomForestClassifier(n_estimators = 1, random_state=42, max_features=None, warm_start=True)
-#clf_rand_20_1 = RandomForestClassifier(n_estimators=20, random_state=42, max_features=None )
-#clf_rand_100_1 = RandomForestClassifier(n_estimators=100, random_state=42, max_features=None)
-
+from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LogisticRegression
 import LogiReg, LinearReg, MultiReg
 import random
+import copy
 from itertools import product
 
 games = []
@@ -180,12 +174,12 @@ def create_training_group():
         i += 1
 
 
+
 def odds_func(row):
     home_odds = float(row['home_odd'])
     draw_odds = float(row['draw_odd'])
     away_odds = float(row['away_odd'])
     return home_odds, draw_odds, away_odds
-
 
 def game_stats(row):
     h_played = row['h_played']
@@ -278,23 +272,23 @@ def game_stats(row):
 
     lst.append(float(row['a_goal_diff']) / 100)
     lst.append(float(row['a_goal_diff_a']) / 100)
-    lst.append(float(row['a_shots']) / float(h_played))
-    lst.append(float(row['a_shots_a']) / float(h_played_h))
-    lst.append(float(row['a_shots_against']) / float(h_played))
-    lst.append(float(row['a_shots_against_a']) / float(h_played_h))
-    lst.append(float(row['a_shots_target']) / float(h_played))
-    lst.append(float(row['a_shots_target_a']) / float(h_played_h))
+    lst.append(float(row['a_shots']) / float(a_played))
+    lst.append(float(row['a_shots_a']) / float(a_played_a))
+    lst.append(float(row['a_shots_against']) / float(a_played))
+    lst.append(float(row['a_shots_against_a']) / float(a_played_a))
+    lst.append(float(row['a_shots_target']) / float(a_played))
+    lst.append(float(row['a_shots_target_a']) / float(a_played_a))
     lst.append(float(row['a_shots_diff_a']))
     lst.append(float(row['a_shots_diff']))
     lst.append(float(row['a_shots_target_against']))
     lst.append(float(row['a_shots_target_against_a']))
     lst.append(float(row['a_shots_target_diff']))
     lst.append(float(row['a_shots_target_diff_a']))
-    lst.append(float(row['a_red_cards']) / float(h_played))
-    lst.append(float(row['a_red_cards_a']) / float(h_played_h))
-    lst.append(float(row['a_red_cards_against']) / float(h_played))
+    lst.append(float(row['a_red_cards']) / float(a_played))
+    lst.append(float(row['a_red_cards_a']) / float(a_played_a))
+    lst.append(float(row['a_red_cards_against']) / float(a_played))
     lst.append(float(row['a_red_cards_diff']))
-    lst.append(float(row['a_red_cards_against_a']) / float(h_played_h))
+    lst.append(float(row['a_red_cards_against_a']) / float(a_played_a))
     lst.append(float(row['a_red_cards_diff_a']))
     lst.append(float(row['a_elo']) / 2200)
     lst.append(float(row['a_fifa_rating']) / 100)
@@ -311,6 +305,7 @@ def game_stats(row):
     lst.append(float(row['a_last_5_games_goal_diff']) / 5)
     lst.append(float(row['a_last_5_games_clean']) / 5)
     lst.append(float(row['a_last_5_games_failed']) / 5)
+
     return lst
 
 def choose_bet(odds, predict):
@@ -358,7 +353,7 @@ def ret_calc(odds):
 
 rows_extrac()
 create_training_group()
-clf = tree.DecisionTreeClassifier(max_features=None, random_state=42)
+clf =LinearRegression()
 rfe = RFE(estimator=clf, n_features_to_select=102)
 rfe.fit(games, results)
 best_features = rfe.transform(games)
@@ -435,6 +430,8 @@ def play_reg(clf):
         # ret = ret_calc(odds)
         # rets.append(ret)
         game_test = game_stats(row)
+        game_test = normal_single_games(game_test)
+        #game_test = rfe.transform([game_test])
         prediction = clf.calculate_prob_for_test_group([game_test])
         prediction = tuple(predict[0] for predict in prediction)
         bet_chosen = choose_bet(odds, prediction)
@@ -645,16 +642,12 @@ def play_favourite():
     print("number of wins = ", wins)
     return (balance / bets)
 
-
-#random_profits = []
-# home_profits = []
-# draw_profits = []
-# away_profits = []
-# favour_profits = []
-# underdog_profits = []
-
+max_feature = []
+min_feature = []
 
 def normal_games():
+    global max_feature
+    global min_feature
     global games
     max_feature = [0] * len(games[0])
     min_feature = [0] * len(games[0])
@@ -666,9 +659,15 @@ def normal_games():
         for i in range(len(game)):
             game[i] = (game[i] - min_feature[i]) / (max_feature[i] - min_feature[i])
 
+def normal_single_games(game):
+    global max_feature
+    global min_feature
+    normal_game = copy.deepcopy(game)
+    for i in range(len(normal_game)):
+        normal_game[i] = (normal_game[i] - min_feature[i]) / (max_feature[i] - min_feature[i])
+    return normal_game
 #estimators = list(range(10,115,15))
 
-normal_games()
 
 features = ['h_won'
 ,'h_won_h'
@@ -778,7 +777,7 @@ features = ['h_won'
 # min_samples_leaf_lst = list(range(3,51))
 # max_depth = [None] + list(range(10,41))
 # criteria = ['gini', 'entropy']
-weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+#weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
 # max_features = ['sqrt', 'log2']
 # profits = dict()
 # params = {'min_samples_leaf' : min_samples_leaf_lst,
@@ -786,38 +785,57 @@ weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
 #           'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
 #           'max_features' : max_features, 'n_estimators' : estimators}
 
+normal_games()
+
+# estimators = list(range(10,100,10))
+# min_samples_leaf_lst = list(range(10,50))
+# max_depth = list(range(10,41))
+# weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+# max_features = ['log2']
+# profits = dict()
+# subsample= [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+# rate= [0.02, 0.04, 0.06, 0.08, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0]
+# base = LogisticRegression(solver= 'saga', random_state=42, max_iter=1000, C=1.0,
+#                                       fit_intercept=True, penalty='elasticnet',
+#                                       class_weight= {0.0:2.15865, 1.0:3.84336, 2.0:3.61584},
+#                           l1_ratio=0.6)
+# init = [base]
+# params = {'n_estimators' : estimators, 'learning_rate' : rate}
+#
+# params_list = list(ParameterGrid(params))
+# best_params = dict()
+#
+
+#weigths = [{0.0: 1, 1.0: 1, 2.0: 1}, {0.0: 2.15865, 1.0: 3.84336, 2.0: 3.61584}]
+weigths = [{0.0: 1, 1.0: 1}, {0.0: 2.15865, 1.0: 1.86307}]
 normalize = [True, False]
 c = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+l1_ratio = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
 fit = [True, False]
-l1_ratio = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-#penalty = ['l1', 'l2']
+penalty = ['l1', 'l2']
 # estimators_ada = list(range(10,101))
-params = {'c' : c, 'fit_intercept' : fit,
-          'class_weight' : weigths, 'l1_ratio': l1_ratio}
+params = {'c': c, 'fit_intercept': fit, 'penalty' : penalty}
 params_list = list(ParameterGrid(params))
 best_params = dict()
 
-
-
 j = 0
 for comb in params_list:
-    clf = clf_linearReg = MultiReg.MultiRegSoccerGame(games, results, comb)
-    #clf.fit(games, results)
-    #clf.fit(best_features, results)
-    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
-         is_weighted = 'umweighted'
-    else:
-         is_weighted = 'weighted'
-    params_tuple = (comb['c'], comb['fit_intercept'], comb['l1_ratio'], is_weighted)
+    clf = clf_linearReg = LogiReg.LogiRegSoccerGame(games, results, comb)
+   # if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+   #  if comb['class_weight'] == {0.0: 1, 1.0: 1}:
+   #       is_weighted = 'umweighted'
+   #  else:
+   #       is_weighted = 'weighted'
+    params_tuple = (comb['c'], comb['fit_intercept'], comb['penalty'])
     print(j)
     print(params_tuple)
     best_params[params_tuple] = play_reg(clf)
     j += 1
 
-
 sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
 for i in sort_orders:
-      print(i[0], i[1])
+    print(i[0], i[1])
+
 # sord_orderes_first = [feature[0] for feature in sort_orders]
 # for i in range(len(selected)):
 #     index = features.index(selected[i])
@@ -825,12 +843,12 @@ for i in sort_orders:
 #         print('error')
 # for i in sort_orders:
 #       print(i[0], i[1])
-#clf_logiReg = LogiReg.LogiRegSoccerGame(games, results)
-#clf.fit(games, results)
+# clf_logiReg = LogiReg.LogiRegSoccerGame(games, results)
+# clf.fit(games, results)
 #clf_linearReg = LinearReg.LinearRegSoccerGame(games, results)
 #clf_multiReg = MultiReg.MultiRegSoccerGame(games, results)
-#print("Logistic reg")
-#print(play_reg(clf_logiReg))
+# print("Logistic reg")
+# print(play_reg(clf_logiReg))
 #print("Linear reg")
 #print(play_reg(clf_linearReg))
 #print("Multi reg")

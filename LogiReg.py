@@ -8,7 +8,7 @@ class LogiRegSoccerGame:
     # y - result: home, draw, away
     # y_h - home win or not
     # y_a - away win or not
-    def __init__(self, x, y):
+    def __init__(self, x, y, params):
         y_h = []
         y_a = []
         for k in y:
@@ -21,8 +21,14 @@ class LogiRegSoccerGame:
             else:
                 y_h.append(0)
                 y_a.append(1)
-        self.clf_h = LogisticRegression(random_state=0, max_iter=1000).fit(x, y_h)
-        self.clf_a = LogisticRegression(random_state=0, max_iter=1000).fit(x, y_a)
+        self.clf_h = LogisticRegression(solver= 'liblinear', random_state=42, max_iter=1000, C=params['c'],
+                                      fit_intercept=params['fit_intercept'], penalty=params['penalty'],
+                                      #class_weight={0: 2.15865, 1: 1.86307}).fit(x, y_h)
+                                        class_weight={0: 1.0, 1: 1.0}).fit(x, y_a)
+        self.clf_a = LogisticRegression(solver= 'liblinear', random_state=42, max_iter=1000, C=params['c'],
+                                      fit_intercept=params['fit_intercept'], penalty=params['penalty'],
+                                      #class_weight={0 : 3.61584, 1 : 1.38226}).fit(x, y_a)
+                                        class_weight={0 : 1.0, 1 : 1.0}).fit(x, y_a)
         self.X = x
         self.Y_h = y_h
         self.Y_a = y_a

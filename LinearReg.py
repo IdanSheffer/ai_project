@@ -1,6 +1,8 @@
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import Ridge
+from sklearn.linear_model import ElasticNet
 import math
+from sklearn.feature_selection import RFE
 
 
 class LinearRegSoccerGame:
@@ -8,14 +10,20 @@ class LinearRegSoccerGame:
     # x - features list per game
     # y - 0 1 2 == home draw away
     def __init__(self, x, y):
-        self.clf = LinearRegression().fit(x, y)
-        self.X = x
+        clf = LinearRegression()
+        self.rfe = RFE(estimator=clf, n_features_to_select=102)
+        self.rfe.fit(x, y)
+        best_features = self.rfe.transform(x)
+        self.clf = LinearRegression()
+       # self.clf = ElasticNet(normalize=params['normalize'], fit_intercept=params['fit_intercept'], alpha =params['alpha'],
+        #                 selection=params['selection'], l1_ratio=params['l1_ratio'], random_state=42).fit(x,y)
+        self.X = best_features
         self.Y = y
 
     # return the probabilities per game in test group
     # x - test group
     def take_the_more_prob(self, x):
-        bet = [round(k) for k in self.clf.predict(x)]
+        bet = [round(k) for k in self.clf.predict(self.rfe.transform(x))]
 
         return
 
@@ -23,7 +31,7 @@ class LinearRegSoccerGame:
         home = []
         draw = []
         away = []
-        for k in self.clf.predict(x):
+        for k in self.clf.predict(self.rfe.transform(x)):
             if k == 0.0:
                 home.append(1)
                 draw.append(0)
@@ -46,7 +54,9 @@ class LinearRegSoccerGame:
                 away.append(a / norm_)
         return home, draw, away
     def predict_proba(self, x):
-        return self.calculate_prob_for_test_group(x)
+        return [self.calculate_prob_for_test_group(x)]
+    def fit(self, x, y):
+        return self
     # return in how much games the result with more probability is equal to the real result
     # 1 return parameter: number of games
     # 2 return parameter: number of the probability right
