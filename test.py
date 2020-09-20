@@ -75,18 +75,18 @@ def create_training_group():
         lst.append(float(row['h_shots_against_h']) / float(h_played_h))
         lst.append(float(row['h_shots_target']) / float(h_played))
         lst.append(float(row['h_shots_target_h']) / float(h_played_h))
-        lst.append(float(row['h_shots_diff_h']))
-        lst.append(float(row['h_shots_diff']))
-        lst.append(float(row['h_shots_target_against']))
-        lst.append(float(row['h_shots_target_against_h']))
-        lst.append(float(row['h_shots_target_diff']))
-        lst.append(float(row['h_shots_target_diff_h']))
+        lst.append(float(row['h_shots_diff_h'])/ float(h_played_h))
+        lst.append(float(row['h_shots_diff'])/ float(h_played))
+        lst.append(float(row['h_shots_target_against'])/ float(h_played))
+        lst.append(float(row['h_shots_target_against_h'])/ float(h_played_h))
+        lst.append(float(row['h_shots_target_diff'])/ float(h_played))
+        lst.append(float(row['h_shots_target_diff_h'])/ float(h_played_h))
         lst.append(float(row['h_red_cards']) / float(h_played))
         lst.append(float(row['h_red_cards_h']) / float(h_played_h))
         lst.append(float(row['h_red_cards_against']) / float(h_played))
-        lst.append(float(row['h_red_cards_diff']))
+        lst.append(float(row['h_red_cards_diff'])/ float(h_played))
         lst.append(float(row['h_red_cards_against_h']) / float(h_played_h))
-        lst.append(float(row['h_red_cards_diff_h']))
+        lst.append(float(row['h_red_cards_diff_h'])/ float(h_played))
         lst.append(float(row['h_elo']) / 2200)
         lst.append(float(row['h_fifa_rating']) / 100)
         lst.append(float(row['h_current_win_streak']))
@@ -108,11 +108,11 @@ def create_training_group():
 
         lst.append(float(row['a_drawn']) / float(a_played))
         lst.append(float(row['a_drawn_a']) / float(a_played_a))
-
         lst.append(float(row['a_lost']) / float(a_played))
         lst.append(float(row['a_lost_a']) / float(a_played_a))
 
         lst.append(float(row['a_points']) / float(a_played))
+
         lst.append(float(row['a_points_a']) / float(a_played_a))
 
         lst.append(float(row['a_scored']) / float(a_played))
@@ -127,24 +127,24 @@ def create_training_group():
         ####
         lst.append(float(row['a_goal_diff']) / 100)
         lst.append(float(row['a_goal_diff_a']) / 100)
-        lst.append(float(row['a_shots']) / float(h_played))
-        lst.append(float(row['a_shots_a']) / float(h_played_h))
-        lst.append(float(row['a_shots_against']) / float(h_played))
-        lst.append(float(row['a_shots_against_a']) / float(h_played_h))
-        lst.append(float(row['a_shots_target']) / float(h_played))
-        lst.append(float(row['a_shots_target_a']) / float(h_played_h))
-        lst.append(float(row['a_shots_diff_a']))
-        lst.append(float(row['a_shots_diff']))
-        lst.append(float(row['a_shots_target_against']))
-        lst.append(float(row['a_shots_target_against_a']))
-        lst.append(float(row['a_shots_target_diff']))
-        lst.append(float(row['a_shots_target_diff_a']))
-        lst.append(float(row['a_red_cards']) / float(h_played))
-        lst.append(float(row['a_red_cards_a']) / float(h_played_h))
-        lst.append(float(row['a_red_cards_against']) / float(h_played))
-        lst.append(float(row['a_red_cards_diff']))
-        lst.append(float(row['a_red_cards_against_a']) / float(h_played_h))
-        lst.append(float(row['a_red_cards_diff_a']))
+        lst.append(float(row['a_shots']) / float(a_played))
+        lst.append(float(row['a_shots_a']) / float(a_played_a))
+        lst.append(float(row['a_shots_against']) / float(a_played))
+        lst.append(float(row['a_shots_against_a']) / float(a_played_a))
+        lst.append(float(row['a_shots_target']) / float(a_played))
+        lst.append(float(row['a_shots_target_a']) / float(a_played_a))
+        lst.append(float(row['a_shots_diff_a'])/ float(a_played_a))
+        lst.append(float(row['a_shots_diff'])/ float(a_played))
+        lst.append(float(row['a_shots_target_against'])/ float(a_played_a))
+        lst.append(float(row['a_shots_target_against_a'])/ float(a_played_a))
+        lst.append(float(row['a_shots_target_diff'])/ float(a_played))
+        lst.append(float(row['a_shots_target_diff_a'])/ float(a_played_a))
+        lst.append(float(row['a_red_cards']) / float(a_played))
+        lst.append(float(row['a_red_cards_a']) / float(a_played_a))
+        lst.append(float(row['a_red_cards_against']) / float(a_played))
+        lst.append(float(row['a_red_cards_diff'])/ float(a_played))
+        lst.append(float(row['a_red_cards_against_a']) / float(a_played_a))
+        lst.append(float(row['a_red_cards_diff_a']) / float(a_played_a))
         lst.append(float(row['a_elo']) / 2200)
         lst.append(float(row['a_fifa_rating']) / 100)
         lst.append(float(row['a_current_win_streak']))
@@ -160,7 +160,6 @@ def create_training_group():
         lst.append(float(row['a_last_5_games_goal_diff']) / 5)
         lst.append(float(row['a_last_5_games_clean']) / 5)
         lst.append(float(row['a_last_5_games_failed']) / 5)
-
 
         if i == 18000:
             break
@@ -220,18 +219,18 @@ def game_stats(row):
     lst.append(float(row['h_shots_against_h']) / float(h_played_h))
     lst.append(float(row['h_shots_target']) / float(h_played))
     lst.append(float(row['h_shots_target_h']) / float(h_played_h))
-    lst.append(float(row['h_shots_diff_h']))
-    lst.append(float(row['h_shots_diff']))
-    lst.append(float(row['h_shots_target_against']))
-    lst.append(float(row['h_shots_target_against_h']))
-    lst.append(float(row['h_shots_target_diff']))
-    lst.append(float(row['h_shots_target_diff_h']))
+    lst.append(float(row['h_shots_diff_h']) / float(h_played_h))
+    lst.append(float(row['h_shots_diff'])/ float(h_played))
+    lst.append(float(row['h_shots_target_against'])/ float(h_played))
+    lst.append(float(row['h_shots_target_against_h']) / float(h_played_h))
+    lst.append(float(row['h_shots_target_diff'])/ float(h_played))
+    lst.append(float(row['h_shots_target_diff_h']) / float(h_played_h))
     lst.append(float(row['h_red_cards']) / float(h_played))
     lst.append(float(row['h_red_cards_h']) / float(h_played_h))
     lst.append(float(row['h_red_cards_against']) / float(h_played))
-    lst.append(float(row['h_red_cards_diff']))
+    lst.append(float(row['h_red_cards_diff'])/ float(h_played))
     lst.append(float(row['h_red_cards_against_h']) / float(h_played_h))
-    lst.append(float(row['h_red_cards_diff_h']))
+    lst.append(float(row['h_red_cards_diff_h']) / float(h_played_h))
     lst.append(float(row['h_elo']) / 2200)
     lst.append(float(row['h_fifa_rating']) / 100)
     lst.append(float(row['h_current_win_streak']))
@@ -278,18 +277,18 @@ def game_stats(row):
     lst.append(float(row['a_shots_against_a']) / float(a_played_a))
     lst.append(float(row['a_shots_target']) / float(a_played))
     lst.append(float(row['a_shots_target_a']) / float(a_played_a))
-    lst.append(float(row['a_shots_diff_a']))
-    lst.append(float(row['a_shots_diff']))
-    lst.append(float(row['a_shots_target_against']))
-    lst.append(float(row['a_shots_target_against_a']))
-    lst.append(float(row['a_shots_target_diff']))
-    lst.append(float(row['a_shots_target_diff_a']))
+    lst.append(float(row['a_shots_diff_a'])/ float(a_played_a))
+    lst.append(float(row['a_shots_diff'])/ float(a_played))
+    lst.append(float(row['a_shots_target_against'])/ float(a_played))
+    lst.append(float(row['a_shots_target_against_a'])/ float(a_played_a))
+    lst.append(float(row['a_shots_target_diff'])/ float(a_played))
+    lst.append(float(row['a_shots_target_diff_a'])/ float(a_played_a))
     lst.append(float(row['a_red_cards']) / float(a_played))
     lst.append(float(row['a_red_cards_a']) / float(a_played_a))
     lst.append(float(row['a_red_cards_against']) / float(a_played))
-    lst.append(float(row['a_red_cards_diff']))
+    lst.append(float(row['a_red_cards_diff'])/ float(a_played))
     lst.append(float(row['a_red_cards_against_a']) / float(a_played_a))
-    lst.append(float(row['a_red_cards_diff_a']))
+    lst.append(float(row['a_red_cards_diff_a'])/ float(a_played_a))
     lst.append(float(row['a_elo']) / 2200)
     lst.append(float(row['a_fifa_rating']) / 100)
     lst.append(float(row['a_current_win_streak']))
@@ -377,6 +376,7 @@ def play(clf):
         ret = ret_calc(odds)
         rets.append(ret)
         game_test = game_stats(row)
+        #game_test = normal_single_games(game_test)
         game_test = rfe.transform([game_test])
         #prediction = clf.calculate_prob_for_test_group([game_test])
         #prediction = tuple(predict[0] for predict in prediction)
@@ -402,8 +402,8 @@ def play(clf):
     # print(balance / len(rows))
  #   print("balance = ", balance)
    # print(balance / (len(rows) - 20000))
-  #  print("number of bets = ", bets )
-  #  print("number of wins =", wins)
+    print("number of bets = ", bets )
+    print("number of wins =", wins)
     #print(balance / ((24800-18000)/2))
     print("return = ", balance / bets )
     return balance / bets
@@ -431,7 +431,7 @@ def play_reg(clf):
         # rets.append(ret)
         game_test = game_stats(row)
         game_test = normal_single_games(game_test)
-        #game_test = rfe.transform([game_test])
+       # game_test = rfe.transform([game_test])
         prediction = clf.calculate_prob_for_test_group([game_test])
         prediction = tuple(predict[0] for predict in prediction)
         bet_chosen = choose_bet(odds, prediction)
@@ -785,57 +785,37 @@ features = ['h_won'
 #           'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
 #           'max_features' : max_features, 'n_estimators' : estimators}
 
-normal_games()
+#normal_games()
 
-# estimators = list(range(10,100,10))
-# min_samples_leaf_lst = list(range(10,50))
-# max_depth = list(range(10,41))
-# weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
-# max_features = ['log2']
-# profits = dict()
-# subsample= [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-# rate= [0.02, 0.04, 0.06, 0.08, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0]
-# base = LogisticRegression(solver= 'saga', random_state=42, max_iter=1000, C=1.0,
-#                                       fit_intercept=True, penalty='elasticnet',
-#                                       class_weight= {0.0:2.15865, 1.0:3.84336, 2.0:3.61584},
-#                           l1_ratio=0.6)
-# init = [base]
-# params = {'n_estimators' : estimators, 'learning_rate' : rate}
-#
-# params_list = list(ParameterGrid(params))
-# best_params = dict()
-#
+min_samples_leaf_lst = list(range(10,100))
+max_depth = [None] + list(range(6,36))
+criteria = ['gini', 'entropy']
+weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+#max_features = [None, 'sqrt', 'log2']
+profits = dict()
 
-#weigths = [{0.0: 1, 1.0: 1, 2.0: 1}, {0.0: 2.15865, 1.0: 3.84336, 2.0: 3.61584}]
-weigths = [{0.0: 1, 1.0: 1}, {0.0: 2.15865, 1.0: 1.86307}]
-normalize = [True, False]
-c = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-l1_ratio = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-fit = [True, False]
-penalty = ['l1', 'l2']
-# estimators_ada = list(range(10,101))
-params = {'c': c, 'fit_intercept': fit, 'penalty' : penalty}
+params = {'min_samples_leaf' : min_samples_leaf_lst,
+          #'min_samples_split' : min_samples_leaf_lst,
+          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth}
 params_list = list(ParameterGrid(params))
 best_params = dict()
 
 j = 0
 for comb in params_list:
-    clf = clf_linearReg = LogiReg.LogiRegSoccerGame(games, results, comb)
-   # if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
-   #  if comb['class_weight'] == {0.0: 1, 1.0: 1}:
-   #       is_weighted = 'umweighted'
-   #  else:
-   #       is_weighted = 'weighted'
-    params_tuple = (comb['c'], comb['fit_intercept'], comb['penalty'])
+    clf = tree.DecisionTreeClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
+    max_depth = comb['max_depth'], criterion= comb['criterion'], class_weight= comb['class_weight'], max_features=None,
+                                      random_state=42)
+    #clf.fit(games, results)
+    clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+        is_weighted = 'umweighted'
+    else:
+        is_weighted = 'weighted'
+    params_tuple = (comb['min_samples_leaf'], comb['max_depth'], comb['criterion'], is_weighted )
     print(j)
     print(params_tuple)
-    best_params[params_tuple] = play_reg(clf)
+    best_params[params_tuple] = play(clf)
     j += 1
-
-sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
-for i in sort_orders:
-    print(i[0], i[1])
-
 # sord_orderes_first = [feature[0] for feature in sort_orders]
 # for i in range(len(selected)):
 #     index = features.index(selected[i])
