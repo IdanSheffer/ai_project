@@ -775,21 +775,19 @@ features = ['h_won'
 
 #normal_games()
 
-estimators = list(range(5,100, 5))
-# min_samples_leaf_lst = list(range(3,51))
-# max_depth = [None] + list(range(5,41))
+
+min_samples_leaf_lst = list(range(3,51))
+max_depth = [None] + list(range(3,41))
 # criteria = ['gini', 'entropy']
 # weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
-# max_features = ['sqrt', 'log2']
-learning_rate = [0.2, 0.4, 0.6, 0.8, 1]
-# profits = dict()
+max_features = ['log2']
 
-# params = {'min_samples_leaf' : min_samples_leaf_lst,
-#           #'min_samples_split' : min_samples_leaf_lst,
-#           'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
-#           'max_features' : max_features, 'n_estimators' : estimators}
-params = {'learning_rate': learning_rate, 'n_estimators' : estimators}
-params_list = list(ParameterGrid(params))
+estimators = list(range(10 ,100, 10))
+learning_rate = [0.02, 0.04, 0.06, 0.08, 0.1]
+subsample = (0.5, 0.75, 1.0)
+params = {'learning_rate': learning_rate, 'n_estimators' : estimators, 'subsample': subsample, 'max_depth': max_depth,
+          'max_features' : max_features, 'min_samples_leaf' : min_samples_leaf_lst}
+params_list = list(ParameterSampler(params, 500))
 best_params = dict()
 
 j = 0
@@ -797,17 +795,21 @@ for comb in params_list:
     our_tree= tree.DecisionTreeClassifier(min_samples_leaf = 14, min_samples_split=14,
     max_depth = 11, criterion= 'gini', class_weight= {0.0:2.15865, 1.0:3.84336, 2.0:3.61584},
                                  max_features=None, random_state=42)
-    clf = AdaBoostClassifier(base_estimator=our_tree, n_estimators=comb['n_estimators'], learning_rate=comb['learning_rate'],
-                             random_state=42)
+    print(j)
+    params_tuple = (comb['n_estimators'], comb['min_samples_leaf'], comb['max_depth'], comb['learning_rate'],
+                    comb['subsample'], comb['max_features'])
+    print(params_tuple)
+    clf = GradientBoostingClassifier(n_estimators=comb['n_estimators'], learning_rate=comb['learning_rate'],
+                             subsample=comb['subsample'], max_features=comb['max_features'],
+                                     min_samples_split= comb['min_samples_leaf'], min_samples_leaf= comb['min_samples_leaf'],
+                                     max_depth=comb['max_depth'],
+                                     init = our_tree, random_state=42)
     #clf.fit(games, results)
     clf.fit(best_features, results)
     # if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
     #     is_weighted = 'umweighted'
     # else:
     #     is_weighted = 'weighted'
-    params_tuple = (comb['n_estimators'], comb['learning_rate'])
-    print(j)
-    print(params_tuple)
     best_params[params_tuple] = play(clf)
     j += 1
 
