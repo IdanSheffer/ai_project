@@ -773,56 +773,48 @@ features = ['h_won'
 ,'a_last_5_games_failed']
 
 
-# estimators = list(range(10,150,5))
+#normal_games()
+
+estimators = list(range(5,100, 5))
 # min_samples_leaf_lst = list(range(3,51))
-# max_depth = [None] + list(range(10,41))
+# max_depth = [None] + list(range(5,41))
 # criteria = ['gini', 'entropy']
-#weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+# weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
 # max_features = ['sqrt', 'log2']
+learning_rate = [0.2, 0.4, 0.6, 0.8, 1]
 # profits = dict()
+
 # params = {'min_samples_leaf' : min_samples_leaf_lst,
 #           #'min_samples_split' : min_samples_leaf_lst,
 #           'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
 #           'max_features' : max_features, 'n_estimators' : estimators}
-
-#normal_games()
-
-min_samples_leaf_lst = list(range(10,100))
-max_depth = [None] + list(range(6,36))
-criteria = ['gini', 'entropy']
-weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
-#max_features = [None, 'sqrt', 'log2']
-profits = dict()
-
-params = {'min_samples_leaf' : min_samples_leaf_lst,
-          #'min_samples_split' : min_samples_leaf_lst,
-          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth}
+params = {'learning_rate': learning_rate, 'n_estimators' : estimators}
 params_list = list(ParameterGrid(params))
 best_params = dict()
 
 j = 0
 for comb in params_list:
-    clf = tree.DecisionTreeClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
-    max_depth = comb['max_depth'], criterion= comb['criterion'], class_weight= comb['class_weight'], max_features=None,
-                                      random_state=42)
+    our_tree= tree.DecisionTreeClassifier(min_samples_leaf = 14, min_samples_split=14,
+    max_depth = 11, criterion= 'gini', class_weight= {0.0:2.15865, 1.0:3.84336, 2.0:3.61584},
+                                 max_features=None, random_state=42)
+    clf = AdaBoostClassifier(base_estimator=our_tree, n_estimators=comb['n_estimators'], learning_rate=comb['learning_rate'],
+                             random_state=42)
     #clf.fit(games, results)
     clf.fit(best_features, results)
-    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
-        is_weighted = 'umweighted'
-    else:
-        is_weighted = 'weighted'
-    params_tuple = (comb['min_samples_leaf'], comb['max_depth'], comb['criterion'], is_weighted )
+    # if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+    #     is_weighted = 'umweighted'
+    # else:
+    #     is_weighted = 'weighted'
+    params_tuple = (comb['n_estimators'], comb['learning_rate'])
     print(j)
     print(params_tuple)
     best_params[params_tuple] = play(clf)
     j += 1
-# sord_orderes_first = [feature[0] for feature in sort_orders]
-# for i in range(len(selected)):
-#     index = features.index(selected[i])
-#     if sord_orderes_first.index(features[index]) > 50:
-#         print('error')
-# for i in sort_orders:
-#       print(i[0], i[1])
+
+
+sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
+for i in sort_orders:
+      print(i[0], i[1])
 # clf_logiReg = LogiReg.LogiRegSoccerGame(games, results)
 # clf.fit(games, results)
 #clf_linearReg = LinearReg.LinearRegSoccerGame(games, results)
