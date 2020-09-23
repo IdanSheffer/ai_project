@@ -1,43 +1,44 @@
-(0.6, True, 'weighted') -0.0158621636463482
-(0.8, False, 'weighted') -0.01748699698877639
-(0.6, False, 'weighted') -0.01808936403508775
-(0.6, False, 'umweighted') -0.01982012195121956
-(0.7, False, 'umweighted') -0.022831398900427673
-(0.5, False, 'umweighted') -0.023421855921855965
-(0.9, True, 'weighted') -0.024530867555072073
-(0.3, True, 'umweighted') -0.026009762050030513
-(0.4, False, 'weighted') -0.02601920438957496
-(0.4, False, 'umweighted') -0.026175395858708938
-(0.3, True, 'weighted') -0.026313477902827436
-(0.4, True, 'umweighted') -0.026469692354553768
-(0.1, False, 'weighted') -0.029846785225718382
-(0.3, False, 'weighted') -0.03064418859649142
-(0.2, True, 'weighted') -0.03088840142582958
-(0.7, False, 'weighted') -0.03128909437041069
-(0.3, False, 'umweighted') -0.0326501982311681
-(0.5, True, 'umweighted') -0.03406650396583285
-(0.2, False, 'weighted') -0.03420865279299038
-(0.2, False, 'umweighted') -0.03623939393939398
-(0.6, True, 'umweighted') -0.036980499695307714
-(0.8, True, 'weighted') -0.037245036714713034
-(0.7, True, 'umweighted') -0.03756946564885496
-(0.8, False, 'umweighted') -0.03810934636530242
-(0.9, True, 'umweighted') -0.04070448307410796
-(0.4, True, 'weighted') -0.04131134133042554
-(0.9, False, 'umweighted') -0.04150274893097131
-(0.8, True, 'umweighted') -0.04157173317088031
-(1.0, False, 'weighted') -0.04388177608281123
-(0.1, True, 'weighted') -0.04453351573187432
-(0.2, True, 'umweighted') -0.04477272727272725
-(1.0, True, 'umweighted') -0.04596335877862594
-(1.0, False, 'umweighted') -0.046126867947544975
-(0.1, False, 'umweighted') -0.057251838235294
-(1.0, True, 'weighted') -0.06019377729257624
-(0.1, True, 'umweighted') -0.062076452599388314
-(0.7, True, 'weighted') -0.06396812311074469
-(0.5, False, 'weighted') -0.07010357045516469
-(0.5, True, 'weighted') -0.07681568842567203
-(0.9, False, 'weighted') -0.0804098360655738
+(0.7, False, 'weighted') -0.01700299156921406
+(0.8, True, 'weighted') -0.019118549511855005
+(0.8, False, 'weighted') -0.02299972729751845
+(0.9, True, 'weighted') -0.024298877051540605
+(0.6, False, 'weighted') -0.045040805223068615
+(0.5, False, 'weighted') -0.0645199891215666
+(1.0, False, 'weighted') -0.06636413191605328
+(0.5, True, 'weighted') -0.06645116537180915
+(1.0, True, 'weighted') -0.07226373626373621
+(0.6, True, 'weighted') -0.07412069907154574
+(0.1, True, 'umweighted') -0.07735113566605277
+(0.4, False, 'weighted') -0.07826516607191884
+(0.3, True, 'weighted') -0.0783545706371192
+(0.2, True, 'umweighted') -0.07863885505481125
+(0.7, True, 'weighted') -0.07885101704233116
+(0.2, False, 'umweighted') -0.08124505327245056
+(0.4, True, 'weighted') -0.08209794101279914
+(0.2, True, 'weighted') -0.08277071823204414
+(0.1, True, 'weighted') -0.08324122685824822
+(0.1, False, 'umweighted') -0.08464603125957698
+(0.3, False, 'weighted') -0.08520873652197965
+(0.3, True, 'umweighted') -0.08618786215309544
+(0.4, True, 'umweighted') -0.08737065052950063
+(0.5, False, 'umweighted') -0.08745449119665757
+(0.1, False, 'weighted') -0.08751381215469593
+(0.3, False, 'umweighted') -0.08777676675765846
+(0.4, False, 'umweighted') -0.08985817742908869
+(0.2, False, 'weighted') -0.09039502762430925
+(0.6, True, 'umweighted') -0.0915026994601079
+(0.6, False, 'umweighted') -0.09157138581263086
+(0.7, True, 'umweighted') -0.09335921170498646
+(0.5, True, 'umweighted') -0.09528386902973861
+(0.7, False, 'umweighted') -0.09677910447761179
+(0.8, True, 'umweighted') -0.10011326378539478
+(0.8, False, 'umweighted') -0.10080799045915309
+(0.9, True, 'umweighted') -0.10253491827637429
+(0.9, False, 'weighted') -0.10297791109899065
+(0.9, False, 'umweighted') -0.10399107142857128
+(1.0, True, 'umweighted') -0.10460553736231004
+(1.0, False, 'umweighted') -0.10648986889153739
+
     def __init__(self, x, y, params):
         self.clf = LogisticRegression(solver= 'sag', random_state=42, max_iter=1000, C=params['c'],
                                       fit_intercept=params['fit_intercept'],
@@ -79,8 +80,50 @@ for i in sort_orders:
 	  
 	  
 no penalty:
-(True, 'umweighted') -0.061036677781145805
-(False, 'umweighted') -0.061036677781145805
-(True, weighted) -0.08546296296296281
-(False, weighted) -0.045012291723572954
+umweighted   -0.08694557035321364
+(True, weighted) -0.10791235710397383
+(False, weighted)  -0.09444384008702737
 	  
+	  
+no normal:
+(0.1, False, 'umweighted') -0.08496553704767368
+(0.1, True, 'weighted') -0.08778486276684223
+(0.2, True, 'weighted') -0.0892567942318358
+(0.1, True, 'umweighted') -0.09128911857594026
+(0.7, False, 'umweighted') -0.09161918604651173
+(0.6, False, 'weighted') -0.09221976197066134
+(0.7, False, 'weighted') -0.09245919778699846
+(0.2, False, 'umweighted') -0.09303519907674551
+(0.6, True, 'weighted') -0.09318848602269567
+(0.8, False, 'weighted') -0.09343749999999985
+(0.5, False, 'weighted') -0.09343940232429425
+(0.7, True, 'weighted') -0.09355186721991689
+(0.5, True, 'weighted') -0.09361825726141064
+(0.9, True, 'weighted') -0.09431415929203527
+(0.8, True, 'weighted') -0.09433471645919764
+(0.7, True, 'umweighted') -0.09438081395348846
+(0.4, True, 'weighted') -0.09451121572971462
+(0.8, True, 'umweighted') -0.09472262561719437
+(1.0, True, 'umweighted') -0.09482858803021504
+(0.4, False, 'weighted') -0.09487541528239186
+(0.3, True, 'weighted') -0.09490576496674043
+(0.2, True, 'umweighted') -0.09507078878936721
+(0.1, False, 'weighted') -0.09517748197448689
+(1.0, False, 'umweighted') -0.09522839685772483
+(0.2, False, 'weighted') -0.0953050471436493
+(0.3, False, 'weighted') -0.09539207536713756
+(0.9, False, 'weighted') -0.09577273983964596
+(1.0, True, 'weighted') -0.09602046460176979
+(0.9, True, 'umweighted') -0.09608645198723535
+(0.9, False, 'umweighted') -0.09632481115630455
+(0.5, True, 'umweighted') -0.09648217907852802
+(1.0, False, 'weighted') -0.09726493362831844
+(0.8, False, 'umweighted') -0.0974106364428946
+(0.3, True, 'umweighted') -0.09764638015575425
+(0.6, True, 'umweighted') -0.09778229317851965
+(0.4, False, 'umweighted') -0.09814034074501879
+(0.3, False, 'umweighted') -0.09860847018150388
+(0.6, False, 'umweighted') -0.09958115183246079
+(0.5, False, 'umweighted') -0.0996113689095128
+(0.4, True, 'umweighted') -0.10106647398843932
+

@@ -1,43 +1,49 @@
-(0.6, False, 'weighted') -0.018592978606692318
-(0.6, False, 'umweighted') -0.019521195486428847
-(1.0, False, 'weighted') -0.023198902606310072
-(0.8, False, 'weighted') -0.023326015367727854
-(0.5, False, 'umweighted') -0.023567287152883806
-(0.7, True, 'weighted') -0.02367901234567914
-(0.9, False, 'weighted') -0.024364534724128528
-(0.4, False, 'umweighted') -0.02479768786127172
-(0.7, False, 'weighted') -0.02483136824787504
-(0.4, False, 'weighted') -0.025836992316136315
-(0.4, True, 'weighted') -0.02624417009602209
-(0.7, False, 'umweighted') -0.026565841735411003
-(1.0, True, 'weighted') -0.026579813494240438
-(0.3, True, 'umweighted') -0.027123664122137427
-(0.8, True, 'weighted') -0.02720911086717909
-(0.5, False, 'weighted') -0.02729018102029634
-(0.6, True, 'weighted') -0.027520570488206445
-(0.5, True, 'weighted') -0.02796159122085068
-(0.9, True, 'weighted') -0.027969821673525547
-(0.4, True, 'umweighted') -0.028662808406944847
-(0.3, True, 'weighted') -0.029319242382651833
-(0.1, False, 'weighted') -0.029846785225718382
-(0.3, False, 'weighted') -0.030411184210526503
-(0.5, True, 'umweighted') -0.03188052423041754
-(0.3, False, 'umweighted') -0.03382881510813285
-(0.2, False, 'weighted') -0.035139649507119626
-(0.2, True, 'weighted') -0.03599232456140373
-(0.8, False, 'umweighted') -0.03649251451267955
-(0.2, False, 'umweighted') -0.0366252274105519
-(0.6, True, 'umweighted') -0.0367805920048825
-(0.7, True, 'umweighted') -0.04101435991445157
-(0.8, True, 'umweighted') -0.04177276880901615
-(0.9, False, 'umweighted') -0.04220287198289034
-(0.9, True, 'umweighted') -0.04336485661989018
-(0.2, True, 'umweighted') -0.04414796846573679
-(1.0, False, 'umweighted') -0.04641768292682926
-(1.0, True, 'umweighted') -0.0470320610687023
-(0.1, True, 'weighted') -0.04718818380744001
-(0.1, False, 'umweighted') -0.057251838235294
-(0.1, True, 'umweighted') -0.060766646304214945
+(0.3, True, 'weighted') -0.07504011065006928
+(0.6, True, 'weighted') -0.07679568703345313
+(0.1, True, 'umweighted') -0.07785933660933658
+(0.2, True, 'umweighted') -0.07863885505481127
+(0.8, True, 'weighted') -0.08048186098033794
+(0.2, False, 'umweighted') -0.08098630136986307
+(0.6, False, 'weighted') -0.0814759535655058
+(0.2, True, 'weighted') -0.08171965717445397
+(0.7, True, 'weighted') -0.08267441860465119
+(0.1, True, 'weighted') -0.08412317039491862
+(0.7, False, 'weighted') -0.08491694352159466
+(0.4, True, 'weighted') -0.085787728026534
+(0.1, False, 'umweighted') -0.08608575803981615
+(0.9, True, 'weighted') -0.0864441982830241
+(0.3, True, 'umweighted') -0.08648458956362524
+(1.0, True, 'weighted') -0.0864847645429363
+(0.5, True, 'weighted') -0.0866546762589928
+(0.5, False, 'weighted') -0.08711639480232229
+(0.3, False, 'weighted') -0.08711995577667227
+(0.3, False, 'umweighted') -0.08726500909642199
+(0.1, False, 'weighted') -0.08776581054957173
+(0.9, False, 'weighted') -0.08798449612403103
+(0.4, False, 'weighted') -0.08828681956341529
+(0.8, False, 'weighted') -0.0885441461389427
+(0.5, False, 'umweighted') -0.08877924415116967
+(1.0, False, 'weighted') -0.08899336283185841
+(0.4, True, 'umweighted') -0.08934703748488505
+(0.4, False, 'umweighted') -0.09006940253470125
+(0.2, False, 'weighted') -0.09065193370165729
+(0.6, False, 'umweighted') -0.09107057416267936
+(0.5, True, 'umweighted') -0.09159206969059766
+(0.6, True, 'umweighted') -0.09232983508245869
+(0.7, True, 'umweighted') -0.09461492537313422
+(0.7, False, 'umweighted') -0.09797313432835807
+(0.8, False, 'umweighted') -0.09812350835322181
+(0.8, True, 'umweighted') -0.09918951132300342
+(0.9, True, 'umweighted') -0.10345513963161006
+(0.9, False, 'umweighted') -0.10350386674598437
+(1.0, False, 'umweighted') -0.10507879869164424
+(1.0, True, 'umweighted') -0.10908603751116387
+no penalty:
+(True, 'umweighted') -0.09072590011614408
+(False, 'umweighted') -0.09126596980255522
+(True, 'weighted') -0.09871745152354566
+*False, 'weighted') -0.09666574279379149
+
 
 
 code:
@@ -72,8 +78,3 @@ for comb in params_list:
     best_params[params_tuple] = play_reg(clf)
     j += 1
 
-no penalty:
-(True, 'umweighted') -0.06172581134364574
-(False, 'umweighted') -0.06372537132464381
-(True, 'weighted') -0.022762218561230133
-*False, 'weighted') -0.022817133443163128

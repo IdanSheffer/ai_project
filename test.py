@@ -430,7 +430,7 @@ def play_reg(clf):
         # ret = ret_calc(odds)
         # rets.append(ret)
         game_test = game_stats(row)
-        game_test = normal_single_games(game_test)
+        #game_test = normal_single_games(game_test)
        # game_test = rfe.transform([game_test])
         prediction = clf.calculate_prob_for_test_group([game_test])
         prediction = tuple(predict[0] for predict in prediction)
@@ -447,6 +447,8 @@ def play_reg(clf):
             winning = win(odds, bet_chosen)
             balance += winning
             wins += 1
+    print("number of bets = ", bets )
+    print("number of wins =", wins)
     print("return = ", balance / bets )
     return balance / bets
 
@@ -482,6 +484,7 @@ def play_random():
         #if odds != (0.0,0.0,0.0):
             #print("ret = ", ret_calc(odds))
         game_test = game_stats(row)
+        game_test = normal_single_games(game_test)
         bet_chosen = choose_bet_random(odds)
         if not bet_chosen:
             continue
@@ -496,9 +499,9 @@ def play_random():
     # print(balance / len(rows))
    # print("balance = ", balance)
    # print(balance / (len(rows) - 20000))
-   # print("number of bets = ", bets)
-   # print("number of wins =", wins)
-   # print("balance = ", balance)
+    print("number of bets = ", bets)
+    print("number of wins =", wins)
+    print("return = ", balance / bets)
    # print("normal balanced = ", balance / ((24800-18000)/2))
     return balance / bets
 
@@ -773,50 +776,30 @@ features = ['h_won'
 ,'a_last_5_games_failed']
 
 
+#weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
 #normal_games()
-
-
-min_samples_leaf_lst = list(range(3,51))
-max_depth = [None] + list(range(3,41))
-# criteria = ['gini', 'entropy']
-# weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
-max_features = ['log2']
-
-estimators = list(range(10 ,100, 10))
-learning_rate = [0.02, 0.04, 0.06, 0.08, 0.1]
-subsample = (0.5, 0.75, 1.0)
-params = {'learning_rate': learning_rate, 'n_estimators' : estimators, 'subsample': subsample, 'max_depth': max_depth,
-          'max_features' : max_features, 'min_samples_leaf' : min_samples_leaf_lst}
-params_list = list(ParameterSampler(params, 500))
+normalize = [True, False]
+alpha = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]
+solver = ['svd', 'cholesky', 'lsqr', 'sparse_cg', 'sag', 'saga']
+fit = [True, False]
+# estimators_ada = list(range(10,101))
+params = {'normalize' : normalize, 'alpha' : alpha, 'fit_intercept' : fit}
+params_list = list(ParameterGrid(params))
 best_params = dict()
+
 
 j = 0
 for comb in params_list:
-    our_tree= tree.DecisionTreeClassifier(min_samples_leaf = 14, min_samples_split=14,
-    max_depth = 11, criterion= 'gini', class_weight= {0.0:2.15865, 1.0:3.84336, 2.0:3.61584},
-                                 max_features=None, random_state=42)
+    clf = clf_linearReg = LinearReg.LinearRegSoccerGame(games, results, comb)
+    params_tuple = (comb['alpha'] ,comb['normalize'], comb['fit_intercept'])
     print(j)
-    params_tuple = (comb['n_estimators'], comb['min_samples_leaf'], comb['max_depth'], comb['learning_rate'],
-                    comb['subsample'], comb['max_features'])
     print(params_tuple)
-    clf = GradientBoostingClassifier(n_estimators=comb['n_estimators'], learning_rate=comb['learning_rate'],
-                             subsample=comb['subsample'], max_features=comb['max_features'],
-                                     min_samples_split= comb['min_samples_leaf'], min_samples_leaf= comb['min_samples_leaf'],
-                                     max_depth=comb['max_depth'],
-                                     init = our_tree, random_state=42)
-    #clf.fit(games, results)
-    clf.fit(best_features, results)
-    # if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
-    #     is_weighted = 'umweighted'
-    # else:
-    #     is_weighted = 'weighted'
-    best_params[params_tuple] = play(clf)
+    best_params[params_tuple] = play_reg(clf)
     j += 1
-
 
 sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
 for i in sort_orders:
-      print(i[0], i[1])
+    print(i[0], i[1])
 # clf_logiReg = LogiReg.LogiRegSoccerGame(games, results)
 # clf.fit(games, results)
 #clf_linearReg = LinearReg.LinearRegSoccerGame(games, results)
@@ -828,6 +811,6 @@ for i in sort_orders:
 #print("Multi reg")
 #print(play_reg(clf_multiReg))
 # random_results = []
-# for i in range(100):
-#     random_results.append(play_random())
+# for i in range(1000):
+#      random_results.append(play_random())
 # print((sum(random_results)) / (len(random_results)) )
