@@ -376,7 +376,7 @@ def play(clf):
         ret = ret_calc(odds)
         rets.append(ret)
         game_test = game_stats(row)
-        #game_test = normal_single_games(game_test)
+        game_test = normal_single_games(game_test)
         game_test = rfe.transform([game_test])
         #prediction = clf.calculate_prob_for_test_group([game_test])
         #prediction = tuple(predict[0] for predict in prediction)
@@ -430,7 +430,7 @@ def play_reg(clf):
         # ret = ret_calc(odds)
         # rets.append(ret)
         game_test = game_stats(row)
-        #game_test = normal_single_games(game_test)
+        game_test = normal_single_games(game_test)
        # game_test = rfe.transform([game_test])
         prediction = clf.calculate_prob_for_test_group([game_test])
         prediction = tuple(predict[0] for predict in prediction)
@@ -777,29 +777,42 @@ features = ['h_won'
 
 
 #weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
-#normal_games()
-normalize = [True, False]
-alpha = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]
-solver = ['svd', 'cholesky', 'lsqr', 'sparse_cg', 'sag', 'saga']
-fit = [True, False]
-# estimators_ada = list(range(10,101))
-params = {'normalize' : normalize, 'alpha' : alpha, 'fit_intercept' : fit}
+normal_games()
+min_samples_leaf_lst = list(range(14,17))
+max_depth = list(range(22,25))
+# criteria = ['gini', 'entropy']
+# weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+max_features = ['log2']
+
+estimators = list(range(69 ,72))
+learning_rate = [0.08, 0.1]
+subsample = (0.5, 0.75, 1.0)
+params = {'learning_rate': learning_rate, 'n_estimators' : estimators, 'subsample': subsample, 'max_depth': max_depth,
+          'max_features' : max_features, 'min_samples_leaf' : min_samples_leaf_lst}
 params_list = list(ParameterGrid(params))
 best_params = dict()
-
-
 j = 0
+our_tree = tree.DecisionTreeClassifier(min_samples_split=14, min_samples_leaf=14, max_depth = 11, class_weight={0.0:2.15865, 1.0:3.84336, 2.0:3.61584},
+                                       random_state=42, max_features=None)
 for comb in params_list:
-    clf = clf_linearReg = LinearReg.LinearRegSoccerGame(games, results, comb)
-    params_tuple = (comb['alpha'] ,comb['normalize'], comb['fit_intercept'])
+    params_tuple = (comb['n_estimators'],
+                    comb['min_samples_leaf'], comb['max_depth'], comb['learning_rate'],
+                  comb['subsample']  , comb['max_features'] )
     print(j)
     print(params_tuple)
-    best_params[params_tuple] = play_reg(clf)
     j += 1
+    clf = GradientBoostingClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
+    max_depth = comb['max_depth'], learning_rate=comb['learning_rate'],
+                                 max_features=comb['max_features'], n_estimators=comb['n_estimators'],
+                                      random_state=42, subsample=comb['subsample'], init = our_tree)
+    #clf.fit(games, results)
+    clf.fit(best_features, results)
+    best_params[params_tuple] = play(clf)
 
 sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
 for i in sort_orders:
-    print(i[0], i[1])
+      print(i[0], i[1])
+
 # clf_logiReg = LogiReg.LogiRegSoccerGame(games, results)
 # clf.fit(games, results)
 #clf_linearReg = LinearReg.LinearRegSoccerGame(games, results)
