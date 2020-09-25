@@ -39,7 +39,8 @@ def choose_features_from_clusters(estimator, X, y, fraction=0.5, distance_split=
     estimator.fit(X, y)
     importance = estimator.feature_importances_
     selected_features = []
-    for i in range(len(cluster_id_to_feature_ids)):
+    for r in range(len(cluster_id_to_feature_ids)):
+        i = r + 1
         a = [(importance[k], k) for k in cluster_id_to_feature_ids[i]]
         a = sorted(a, key=lambda x: x[0], reverse=True)
         cluster_id_to_feature_ids[i] = [k[1] for k in a]
