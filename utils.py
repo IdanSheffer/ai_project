@@ -52,5 +52,5 @@ def choose_features_from_clusters(estimator, X, y, fraction=0.5, distance_split=
 
 
 def transform(X, sel):
-    new_X = [[row[f] for f in sel] for row in X]
+    new_X = [[row[f] for f in range(len(row)) if f in sel] for row in X]
     return new_X
