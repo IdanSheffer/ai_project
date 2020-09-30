@@ -15,6 +15,7 @@ from sklearn.linear_model import LogisticRegression
 import LogiReg, LinearReg, MultiReg
 import random
 import copy
+import utils
 from itertools import product
 
 games = []
@@ -349,13 +350,34 @@ def ret_calc(odds):
         sum += (1/odd)
     return 1/sum
 
+def normal_games():
+    global max_feature
+    global min_feature
+    global games
+    max_feature = [0] * len(games[0])
+    min_feature = [0] * len(games[0])
+    for game in games:
+        for i, feature in enumerate(game):
+            max_feature[i] = max(max_feature[i], feature)
+            min_feature[i] = min(min_feature[i], feature)
+    for game in games:
+        for i in range(len(game)):
+            game[i] = (game[i] - min_feature[i]) / (max_feature[i] - min_feature[i])
+
+max_feature = []
+min_feature = []
+
+
 
 rows_extrac()
 create_training_group()
-clf =LinearRegression()
-rfe = RFE(estimator=clf, n_features_to_select=102)
+normal_games()
+clf =tree.DecisionTreeClassifier()
+rfe = RFE(estimator=clf, n_features_to_select=91)
 rfe.fit(games, results)
 best_features = rfe.transform(games)
+#rfe = utils.choose_features_from_clusters(tree.DecisionTreeClassifier(), games, results, 1.0)
+#best_features = utils.transform(games, rfe)
 
 def play(clf):
     balance = 0.0
@@ -378,6 +400,7 @@ def play(clf):
         game_test = game_stats(row)
         game_test = normal_single_games(game_test)
         game_test = rfe.transform([game_test])
+     #   game_test = utils.transform([game_test], rfe)
         #prediction = clf.calculate_prob_for_test_group([game_test])
         #prediction = tuple(predict[0] for predict in prediction)
         prediction = clf.predict_proba(game_test)
@@ -431,7 +454,7 @@ def play_reg(clf):
         # rets.append(ret)
         game_test = game_stats(row)
         game_test = normal_single_games(game_test)
-       # game_test = rfe.transform([game_test])
+        game_test = rfe.transform([game_test])
         prediction = clf.calculate_prob_for_test_group([game_test])
         prediction = tuple(predict[0] for predict in prediction)
         bet_chosen = choose_bet(odds, prediction)
@@ -645,22 +668,6 @@ def play_favourite():
     print("number of wins = ", wins)
     return (balance / bets)
 
-max_feature = []
-min_feature = []
-
-def normal_games():
-    global max_feature
-    global min_feature
-    global games
-    max_feature = [0] * len(games[0])
-    min_feature = [0] * len(games[0])
-    for game in games:
-        for i, feature in enumerate(game):
-            max_feature[i] = max(max_feature[i], feature)
-            min_feature[i] = min(min_feature[i], feature)
-    for game in games:
-        for i in range(len(game)):
-            game[i] = (game[i] - min_feature[i]) / (max_feature[i] - min_feature[i])
 
 def normal_single_games(game):
     global max_feature
@@ -775,39 +782,40 @@ features = ['h_won'
 ,'a_last_5_games_clean'
 ,'a_last_5_games_failed']
 
+estimators = list(range(10,150))
+min_samples_leaf_lst = list(range(3,51))
+max_depth = [None] + list(range(10,41))
+criteria = ['gini', 'entropy']
+weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+max_features = ['sqrt', 'log2']
+profits = dict()
 
-#weigths = [{0.0:1, 1.0:1, 2.0:1}, {0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
-normal_games()
-min_samples_leaf_lst = list(range(14,17))
-max_depth = list(range(22,25))
-# criteria = ['gini', 'entropy']
-# weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
-max_features = ['log2']
-
-estimators = list(range(69 ,72))
-learning_rate = [0.08, 0.1]
-subsample = (0.5, 0.75, 1.0)
-params = {'learning_rate': learning_rate, 'n_estimators' : estimators, 'subsample': subsample, 'max_depth': max_depth,
-          'max_features' : max_features, 'min_samples_leaf' : min_samples_leaf_lst}
-params_list = list(ParameterGrid(params))
+params = {'min_samples_leaf' : min_samples_leaf_lst,
+          #'min_samples_split' : min_samples_leaf_lst,
+          'criterion' : criteria, 'class_weight' : weigths, 'max_depth' : max_depth,
+          'max_features' : max_features, 'n_estimators' : estimators}
+params_list = list(ParameterSampler(params, 500))
 best_params = dict()
+
 j = 0
-our_tree = tree.DecisionTreeClassifier(min_samples_split=14, min_samples_leaf=14, max_depth = 11, class_weight={0.0:2.15865, 1.0:3.84336, 2.0:3.61584},
-                                       random_state=42, max_features=None)
 for comb in params_list:
-    params_tuple = (comb['n_estimators'],
-                    comb['min_samples_leaf'], comb['max_depth'], comb['learning_rate'],
-                  comb['subsample']  , comb['max_features'] )
-    print(j)
-    print(params_tuple)
-    j += 1
-    clf = GradientBoostingClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
-    max_depth = comb['max_depth'], learning_rate=comb['learning_rate'],
+    clf = ExtraTreesClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
+    max_depth = comb['max_depth'], criterion= comb['criterion'], class_weight= comb['class_weight'],
                                  max_features=comb['max_features'], n_estimators=comb['n_estimators'],
-                                      random_state=42, subsample=comb['subsample'], init = our_tree)
+                                      random_state=42, bootstrap=False)
     #clf.fit(games, results)
     clf.fit(best_features, results)
+    if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+        is_weighted = 'umweighted'
+    else:
+        is_weighted = 'weighted'
+    params_tuple = (comb['n_estimators'],
+                    comb['min_samples_leaf'], comb['max_depth'], comb['criterion'], is_weighted, comb['max_features'] )
+    print(j)
+    print(params_tuple)
     best_params[params_tuple] = play(clf)
+    j += 1
+
 
 sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
 for i in sort_orders:
