@@ -27,18 +27,17 @@ for i in sort_orders:
 
 
 not normalized:
-(True, True) -0.022791712104689242
+(False, True) -0.025010922992900093
 (True, False) -0.02561015561015565
 (False, False) -0.02561015561015565
-(False, True) -0.02563899508465323
+(True, True) -0.027814804698169934
 
 
 normalized:
-(True, True) -0.02281574630945872
-(False, True) -0.02335790335790339
+(False, True) -0.023552165622446226
 (True, False) -0.02561015561015565
 (False, False) -0.02561015561015565
-
+(True, True) -0.028574549426542906
 
 ridge:
 normalized:
