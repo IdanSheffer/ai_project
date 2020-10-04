@@ -499,3 +499,42 @@ None:
 (10, 26, 16, 0.04, 0.5, 'log2') -0.005361173814898364
 (10, 27, 28, 0.04, 1.0, 'log2') -0.005892303354948076
 (10, 6, 32, 0.08, 1.0, 'log2') -0.035632471504031364
+
+estimators = list(range(10,100, 10))
+min_samples_leaf_lst = list(range(3,51))
+max_depth = [None] + list(range(10,41))
+learning_rate = [0.02, 0.04, 0.06, 0.08, 0.1]
+subsample = (0.5, 0.75, 1.0)
+weigths = [{0.0:2.15865, 1.0:3.84336, 2.0:3.61584}]
+max_features = ['log2']
+profits = dict()
+
+params = {'learning_rate': learning_rate, 'n_estimators' : estimators, 'subsample': subsample, 'max_depth': max_depth,
+          'max_features' : max_features, 'min_samples_leaf' : min_samples_leaf_lst}
+params_list = list(ParameterSampler(params, 500))
+best_params = dict()
+
+j = 0
+for comb in params_list:
+    params_tuple = (comb['n_estimators'],
+                    comb['min_samples_leaf'], comb['max_depth'], comb['learning_rate'],
+                    comb['subsample'], comb['max_features'])
+    print(j)
+    print(params_tuple)
+    j += 1
+    tree = tree.DecisionTreeClassifier(random_state=42)
+    clf =GradientBoostingClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
+    max_depth = comb['max_depth'], max_features=comb['max_features'], n_estimators=comb['n_estimators'],
+                                      random_state=42, init=tree)
+    clf.fit(best_features, results)
+    # if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
+    #     is_weighted = 'umweighted'
+    # else:
+    #     is_weighted = 'weighted'
+    best_params[params_tuple] = play(clf)
+
+
+
+sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
+for i in sort_orders:
+      print(i[0], i[1])
