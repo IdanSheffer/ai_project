@@ -1,0 +1,84 @@
+l2 penalty:
+(0.1, True) -0.03054406964091405
+(0.6, True) -0.030737816498774856
+(0.6, False) -0.030737816498774856
+(0.3, True) -0.03106967882416986
+(0.4, True) -0.03106967882416986
+(0.4, False) -0.03106967882416986
+(0.5, True) -0.03106967882416986
+(0.8, False) -0.031532389765922715
+(0.7, True) -0.031758780288592456
+(0.7, False) -0.031826844541246964
+(0.5, False) -0.03195427327163856
+(0.3, False) -0.031954273271638564
+(0.9, True) -0.032484353741496615
+(0.9, False) -0.032484353741496615
+(1.0, True) -0.032484353741496615
+(1.0, False) -0.032484353741496615
+(0.2, True) -0.03254421768707485
+(0.8, True) -0.032630002722570134
+(0.2, False) -0.03331156462585038
+(0.1, False) -0.03340494968724505
+
+no penalty: -0.03519597169297768
+
+code:
+
+class LogiRegSoccerGame:
+    # create classifier for home and away
+    # x - features list per game
+    # y - result: home, draw, away
+    # y_h - home win or not
+    # y_a - away win or not
+    def __init__(self, x, y, params):
+        y_h = []
+        y_a = []
+        for k in y:
+            if k == 0:
+                y_h.append(1)
+                y_a.append(0)
+            elif k == 1:
+                y_h.append(0)
+                y_a.append(0)
+            else:
+                y_h.append(0)
+                y_a.append(1)
+        clf = LinearRegression()
+        self.rfe = RFE(estimator=clf, n_features_to_select=91)
+        self.rfe.fit(x, y)
+        best_features = self.rfe.transform(x)
+        self.clf_h = LogisticRegression(solver= 'liblinear', random_state=42, max_iter=1000, C=params['c'],
+                                      fit_intercept=params['fit_intercept'], penalty=params['penalty'],
+                                      class_weight={0: 2.15865, 1: 1.86307}).fit(best_features, y_h)
+                                    #    class_weight={0: 1.0, 1: 1.0}).fit(best_features, y_h)
+        self.clf_a = LogisticRegression(solver= 'liblinear', random_state=42, max_iter=1000, C=params['c'],
+                                      fit_intercept=params['fit_intercept'], penalty=params['penalty'],
+                                     class_weight={0 : 3.61584, 1 : 1.38226}).fit(best_features, y_a)
+                                     #   class_weight={0 : 1.0, 1 : 1.0}).fit(best_features, y_a)
+        self.X = best_features
+        self.Y_h = y_h
+        self.Y_a = y_a
+
+
+normalize = [True, False]
+c = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+l1_ratio = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+fit = [True, False]
+penalty = ['l1', 'l2']
+# estimators_ada = list(range(10,101))
+params = {'c': c, 'fit_intercept': fit, 'penalty': penalty}
+params_list = list(ParameterGrid(params))
+best_params = dict()
+
+j = 0
+for comb in params_list:
+    clf = clf_linearReg = LogiReg.LogiRegSoccerGame(games, results, comb)
+    params_tuple = (comb['c'], comb['fit_intercept'], comb['penalty'])
+    print(j)
+    print(params_tuple)
+    best_params[params_tuple] = play_reg(clf)
+    j += 1
+
+sort_orders = sorted(best_params.items(), key=lambda x: x[1], reverse=True)
+for i in sort_orders:
+    print(i[0], i[1])
