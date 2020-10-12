@@ -1533,7 +1533,8 @@ for comb in params_list:
     j += 1
     clf =GradientBoostingClassifier(min_samples_leaf = comb['min_samples_leaf'], min_samples_split=comb['min_samples_leaf'],
     max_depth = comb['max_depth'], max_features=comb['max_features'], n_estimators=comb['n_estimators'],
-                                      random_state=42, init=None)
+                                      random_state=42, init=our_tree, learning_rate=comb['learning_rate'],
+                                    subsample=comb['subsample'])
     clf.fit(best_features, results)
     # if comb['class_weight']  == {0.0:1, 1.0:1, 2.0:1}:
     #     is_weighted = 'umweighted'
