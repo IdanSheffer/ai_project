@@ -208,6 +208,23 @@ by coef:
 102. a_current_no_win_streak 0.01275634765625
 
 code:
+
+#original is the original "names" of the features, all the features! Before rfe
+#rfe is the importance or abs of coef, of the clf. the "rank" for eech feature after using rfe
+#ranking simply output of rfe.ranking_
+def rank(original, rfe, ranking):
+    best = {}
+    j = 0
+    for i in range(len(ranking)):
+        if ranking[i] != 1:
+            continue
+        feature_name = original[i]
+        score = rfe[j]
+        best[feature_name] = score
+        j +=1
+    return best
+
+
 features = list(features)
 clf.fit(best_features, results)
 #importances = clf.coef_
@@ -222,4 +239,6 @@ j = 1
 for i in sort_orders:
       print(str(j) + ".", i[0], i[1])
       j+=1
+
+
 
