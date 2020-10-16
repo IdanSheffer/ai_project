@@ -8,7 +8,7 @@ for club in clubs:
 	print(club)
 	if ' ' in club:
 		skipped_club.append(club)
-		#continue
-	#response = urllib.request.urlopen(f"http://api.clubelo.com/{club}")
-	#open(fr"C:\Users\Idan\PycharmProjects\project_ai\{club}.csv", "wb").write(response.read())
+		continue
+	response = urllib.request.urlopen(f"http://api.clubelo.com/{club}")
+	open(fr"C:\Users\Idan\PycharmProjects\project_ai\{club}.csv", "wb").write(response.read())
 print(skipped_club)
